@@ -532,64 +532,47 @@
   <!-- ========================= CONTACT SECTION ========================= -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <div class="row g-5">
+      <div class="row g-5 align-items-center">
         <!-- Contact Info -->
-        <div class="col-xl-4">
-          <div class="reveal-left">
-            <h6
-              style="color:var(--accent);font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">
-              Contact Us</h6>
-            <h2 style="color:var(--text-primary);margin-bottom:12px;">Let's talk about<br>your project</h2>
-            <p style="margin-bottom:36px;">Reach out through any of the channels below — we typically respond within 2
-              business hours.</p>
+        <div class="col-lg-5 col-xl-4">
+          <div class="contact-info-panel reveal-left">
+            <span class="contact-sub-badge">Contact Us</span>
+            <h2 class="contact-title">Let's talk about<br>your project</h2>
+            <p class="contact-desc">
+              Have a question or looking to start a new project? Reach out directly or send us a message.
+            </p>
 
-            <div class="contact-item-wrapper">
-              <div class="row g-3">
-                <div class="col-12">
-                  <a href="tel:+918700852782" class="contact-item">
-                    <div class="contact-icon"><i class="lni lni-phone"></i></div>
-                    <div class="contact-content">
-                      <h4>Call Us</h4>
-                      <p>(+91) 8700852782</p>
-                    </div>
-                  </a>
+            <div class="contact-channels-list">
+              <a href="tel:+918700852782" class="contact-channel-card">
+                <div class="channel-icon phone"><i class="lni lni-phone"></i></div>
+                <div class="channel-body">
+                  <span class="channel-label">Call Us</span>
+                  <span class="channel-value">(+91) 8700852782</span>
                 </div>
-                <div class="col-12">
-                  <a href="https://wa.me/918700852782?text=Hi%20there!%20I%20have%20an%20enquiry%20about%20your%20services."
-                    target="_blank" rel="noopener" class="contact-item">
-                    <div class="contact-icon"><i class="lni lni-whatsapp"></i></div>
-                    <div class="contact-content">
-                      <h4>WhatsApp</h4>
-                      <p>Chat on WhatsApp</p>
-                    </div>
-                  </a>
+              </a>
+
+              <a href="https://wa.me/918700852782?text=Hi%20there!%20I%20have%20an%20enquiry%20about%20your%20services."
+                target="_blank" rel="noopener" class="contact-channel-card">
+                <div class="channel-icon whatsapp"><i class="lni lni-whatsapp"></i></div>
+                <div class="channel-body">
+                  <span class="channel-label">WhatsApp</span>
+                  <span class="channel-value">Chat on WhatsApp</span>
                 </div>
-                <div class="col-12">
-                  <a href="mailto:sales@313techsolution.com" class="contact-item" target="_blank" rel="noopener">
-                    <div class="contact-icon"><i class="lni lni-envelope"></i></div>
-                    <div class="contact-content">
-                      <h4>Email Us</h4>
-                      <p>sales@313techsolution.com</p>
-                    </div>
-                  </a>
+              </a>
+
+              <a href="mailto:sales@313techsolution.com" class="contact-channel-card" target="_blank" rel="noopener">
+                <div class="channel-icon email"><i class="lni lni-envelope"></i></div>
+                <div class="channel-body">
+                  <span class="channel-label">Email</span>
+                  <span class="channel-value">sales@313techsolution.com</span>
                 </div>
-                <div class="col-12">
-                  <div class="contact-item">
-                    <div class="contact-icon"><i class="lni lni-map-marker"></i></div>
-                    <div class="contact-content">
-                      <h4>Address</h4>
-                      <p>New Delhi, India</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="contact-item">
-                    <div class="contact-icon"><i class="lni lni-alarm-clock"></i></div>
-                    <div class="contact-content">
-                      <h4>Schedule</h4>
-                      <p>24/7 Support · Office: 8 AM – 5:30 PM</p>
-                    </div>
-                  </div>
+              </a>
+
+              <div class="contact-channel-card">
+                <div class="channel-icon map"><i class="lni lni-map-marker"></i></div>
+                <div class="channel-body">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-value">New Delhi, India</span>
                 </div>
               </div>
             </div>
@@ -597,47 +580,64 @@
         </div>
 
         <!-- Contact Form -->
-        <div class="col-xl-8">
+        <div class="col-lg-7 col-xl-8">
           <div class="contact-form-wrapper reveal-right">
-            <div class="row">
-              <div class="col-xl-10 col-lg-8 mx-auto">
-                <div class="section-title text-center">
-                  <span>Get in Touch</span>
-                  <h2>Ready to Get Started?</h2>
-                  <p>Let's build smarter, faster, better — together. Reach out and take the first step.</p>
-                </div>
-              </div>
+            <div class="form-header">
+              <h3>Send us a Message</h3>
+              <p>Fill out the form below and we'll get back to you within 2 business hours.</p>
             </div>
+
             <form action="#" class="contact-form" id="contactForm" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" name="name" id="contactName" placeholder="Your Name" />
+                  <div class="form-group">
+                    <label for="contactName" class="form-label">Your Name</label>
+                    <input type="text" name="name" id="contactName" class="form-control" placeholder="John Doe" autocomplete="name" />
+                  </div>
                 </div>
+
                 <div class="col-md-6">
-                  <label for="contactEmail" class="form-label">Email <span class="req-star"
-                      id="emailReq">*</span></label>
-                  <input type="email" name="email" id="contactEmail" placeholder="Email Address" />
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Email Address <span class="req-star" id="emailReq">*</span></label>
+                    <input type="email" name="email" id="contactEmail" class="form-control" placeholder="john@example.com" autocomplete="email" />
+                  </div>
                 </div>
+
                 <div class="col-md-6">
-                  <label for="contactPhone" class="form-label">Phone <span class="req-star"
-                      id="phoneReq">*</span></label>
-                  <input type="text" name="phone" id="contactPhone" placeholder="Phone Number" />
+                  <div class="form-group">
+                    <label for="contactPhone" class="form-label">Phone Number <span class="req-star" id="phoneReq">*</span></label>
+                    <input type="tel" name="phone" id="contactPhone" class="form-control" placeholder="+91 98765 43210" autocomplete="tel" />
+                  </div>
                 </div>
+
                 <div class="col-md-6">
-                  <input type="text" name="subject" id="contactSubject" placeholder="Subject" />
+                  <div class="form-group">
+                    <label for="contactSubject" class="form-label">Subject</label>
+                    <input type="text" name="subject" id="contactSubject" class="form-control" placeholder="e.g. Website Development" />
+                  </div>
                 </div>
+
                 <div class="col-12">
-                  <textarea name="message" id="contactMessage" placeholder="Tell us about your project..."
-                    rows="5"></textarea>
+                  <div class="form-group">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea name="message" id="contactMessage" class="form-control" placeholder="Tell us about your project or inquiry..." rows="4"></textarea>
+                  </div>
                 </div>
+
                 <div class="col-12">
-                  <div id="contactError" class="form-error" style="display:none"></div>
+                  <div id="contactError" class="form-feedback-banner" style="display:none;"></div>
                 </div>
-                <div class="col-12 text-center">
-                  <button type="submit" class="btn primary-btn rounded-full" id="submitBtn">
-                    <i class="lni lni-telegram-original"></i>
-                    Send Message
-                  </button>
+
+                <div class="col-12">
+                  <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3 pt-2">
+                    <span class="form-privacy-note">
+                      <i class="lni lni-lock"></i> We respect your privacy. No spam.
+                    </span>
+                    <button type="submit" class="btn primary-btn btn-send-message" id="submitBtn">
+                      <span>Send Message</span>
+                      <i class="lni lni-telegram-original"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -696,11 +696,11 @@
 
     // EmailJS integration for contact form
     (function () {
-      // Initialize EmailJS - replace the user ID with your EmailJS public key
+      // Initialize EmailJS
       try {
         emailjs.init('4D7f21wMJCHPuJTIu');
       } catch (e) {
-        // emailjs may already be initialized or script not loaded yet
+        // emailjs already initialized or pending
       }
 
       const form = document.getElementById('contactForm');
@@ -715,91 +715,96 @@
         const emailVal = emailInput.value.trim();
         const phoneVal = phoneInput.value.trim();
         if (emailVal && !phoneVal) {
-          // email provided, phone no longer required
-          emailReq.classList.remove('hidden');
-          phoneReq.classList.add('hidden');
+          if (emailReq) emailReq.classList.remove('hidden');
+          if (phoneReq) phoneReq.classList.add('hidden');
         } else if (phoneVal && !emailVal) {
-          phoneReq.classList.remove('hidden');
-          emailReq.classList.add('hidden');
+          if (phoneReq) phoneReq.classList.remove('hidden');
+          if (emailReq) emailReq.classList.add('hidden');
         } else if (emailVal && phoneVal) {
-          // both provided, remove stars
-          emailReq.classList.add('hidden');
-          phoneReq.classList.add('hidden');
+          if (emailReq) emailReq.classList.add('hidden');
+          if (phoneReq) phoneReq.classList.add('hidden');
         } else {
-          // none provided, both marked
-          emailReq.classList.remove('hidden');
-          phoneReq.classList.remove('hidden');
+          if (emailReq) emailReq.classList.remove('hidden');
+          if (phoneReq) phoneReq.classList.remove('hidden');
         }
       }
 
-      // init stars
       updateReqStars();
+
+      function hideAlert() {
+        if (errorDiv) {
+          errorDiv.style.display = 'none';
+          errorDiv.className = 'form-feedback-banner';
+          errorDiv.innerHTML = '';
+        }
+      }
 
       emailInput.addEventListener('input', function () {
         updateReqStars();
-        if (errorDiv.style.display === 'block') { errorDiv.style.display = 'none'; }
+        hideAlert();
       });
       phoneInput.addEventListener('input', function () {
         updateReqStars();
-        if (errorDiv.style.display === 'block') { errorDiv.style.display = 'none'; }
+        hideAlert();
       });
 
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        // gather values
         const name = document.getElementById('contactName').value.trim();
         const email = emailInput.value.trim();
         const phone = phoneInput.value.trim();
         const subject = document.getElementById('contactSubject').value.trim();
         let message = document.getElementById('contactMessage').value.trim();
 
-        // require at least email or phone - show inline error instead of popup
+        // require at least email or phone
         if (!email && !phone) {
-          errorDiv.innerText = 'Please provide either an email address or a phone number so we can contact you.';
-          errorDiv.style.display = 'block';
+          errorDiv.className = 'form-feedback-banner error';
+          errorDiv.innerHTML = '<i class="lni lni-warning"></i><span>Please provide either an email address or a phone number.</span>';
+          errorDiv.style.display = 'flex';
           updateReqStars();
           return;
         }
 
-        // if message empty, use email or phone as message
-        if (!message) {
-          message = email || phone || '';
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          errorDiv.className = 'form-feedback-banner error';
+          errorDiv.innerHTML = '<i class="lni lni-warning"></i><span>Please enter a valid email address.</span>';
+          errorDiv.style.display = 'flex';
+          emailInput.focus();
+          return;
         }
 
         submitBtn.disabled = true;
-        submitBtn.innerText = 'Sending...';
+        submitBtn.innerHTML = '<i class="lni lni-spinner spin"></i><span>Sending...</span>';
 
         const templateParams = {
           from_name: name || (email || phone),
           from_email: email || '',
           from_phone: phone || '',
           subject: subject || 'Website Inquiry',
-          message: message,
+          message: message || (email || phone)
         };
 
-        // Replace service and template IDs as provided
         emailjs.send('service_000x4n8', 'template_9iyfnwb', templateParams)
-          .then(function (response) {
+          .then(function () {
             submitBtn.disabled = false;
-            submitBtn.innerText = 'Send Message';
-            // show success inline
-            errorDiv.style.color = '#1a7f37';
-            errorDiv.innerText = 'Thanks — your message has been sent. We will get back to you shortly.';
-            errorDiv.style.display = 'block';
+            submitBtn.innerHTML = '<span>Send Message</span><i class="lni lni-telegram-original"></i>';
+            errorDiv.className = 'form-feedback-banner success';
+            errorDiv.innerHTML = '<i class="lni lni-checkmark-circle"></i><span>Thank you! Your message has been sent successfully.</span>';
+            errorDiv.style.display = 'flex';
             form.reset();
             updateReqStars();
-            // reset color after 5s
-            setTimeout(() => { errorDiv.style.display = 'none'; errorDiv.style.color = '#b62323'; }, 5000);
+            setTimeout(hideAlert, 6000);
           }, function (error) {
             submitBtn.disabled = false;
-            submitBtn.innerText = 'Send Message';
+            submitBtn.innerHTML = '<span>Send Message</span><i class="lni lni-telegram-original"></i>';
             console.error('EmailJS error:', error);
-            errorDiv.style.color = '#b62323';
-            errorDiv.innerText = 'Sorry — there was an error sending your message. Please try again later.';
-            errorDiv.style.display = 'block';
+            errorDiv.className = 'form-feedback-banner error';
+            errorDiv.innerHTML = '<i class="lni lni-warning"></i><span>Error sending message. Please reach out via WhatsApp or phone.</span>';
+            errorDiv.style.display = 'flex';
           });
       });
     })();
+  </script>
   </script>
 </body>
 
