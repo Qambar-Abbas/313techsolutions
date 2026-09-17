@@ -2728,3 +2728,14 @@ p {
   border: none;
   background: none;
 }
+
+/* =============================
+   ICON ALIASES / FALLBACKS
+============================= */
+.lni-bot::before {
+  content: "\eb38"; /* Maps to lni-network */
+}
+
+.lni-c-sharp::before {
+  content: "\eb2f"; /* Maps to lni-microsoft */
+}
