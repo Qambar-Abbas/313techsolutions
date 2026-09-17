@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow private or non-content files
+Disallow: /.git/
+Disallow: /CNAME
+
+# Sitemap Location
+Sitemap: https://313techsolutions.com/sitemap.xml

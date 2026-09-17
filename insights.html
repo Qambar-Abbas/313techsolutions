@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#0A1931" />
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('313_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Primary SEO Metadata -->
+  <title>Engineering Insights & Technology Strategy | 313 Tech Solutions</title>
+  <meta name="description"
+    content="Authoritative technical guides, enterprise architectural strategies, and engineering insights on AI agents, .NET modernization, cloud scalability, and software development." />
+  <meta name="keywords"
+    content="technology insights, software engineering blog, enterprise architecture, AI agent development, .NET modernization, cloud native architecture, custom software strategy" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://313techsolutions.com/insights.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://313techsolutions.com/insights.html" />
+  <meta property="og:title" content="Engineering Insights & Technology Strategy | 313 Tech Solutions" />
+  <meta property="og:description"
+    content="Authoritative technical perspectives on building resilient distributed systems, enterprise AI automation, and cloud-native software architecture." />
+  <meta property="og:image" content="https://313techsolutions.com/assets/images/logo.png" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://313techsolutions.com/insights.html" />
+  <meta name="twitter:title" content="Engineering Insights & Technology Strategy | 313 Tech Solutions" />
+  <meta name="twitter:description"
+    content="Authoritative technical perspectives on building resilient distributed systems, enterprise AI automation, and cloud-native software architecture." />
+  <meta name="twitter:image" content="https://313techsolutions.com/assets/images/logo.png" />
+
+  <!-- Structured Data: CollectionPage + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://313techsolutions.com/insights.html#collection",
+        "name": "Engineering Insights & Technology Strategy",
+        "url": "https://313techsolutions.com/insights.html",
+        "description": "Technical analysis, architectural blueprints, and engineering perspectives from the 313 Tech Solutions engineering team.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "313 Tech Solutions",
+          "url": "https://313techsolutions.com/",
+          "logo": "https://313techsolutions.com/assets/images/logo.png"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://313techsolutions.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Insights",
+            "item": "https://313techsolutions.com/insights.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="page-loader">
+    <div class="spinner"></div>
+  </div>
+  <div id="navbar-container"></div>
+
+  <!-- Hero Section -->
+  <section class="header-area header-eight py-5" style="position:relative;overflow:hidden;padding-top:140px;padding-bottom:70px;">
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="header-content reveal">
+            <div class="badge-chip mx-auto mb-3">
+              <span class="dot"></span>
+              Engineering & Architecture Hub
+            </div>
+            <h1 class="fw-bold display-5 mb-4">Engineering <span class="highlight">Insights</span> & Technology Strategy</h1>
+            <p class="lead text-secondary mb-4">In-depth technical guides, architecture blueprints, and battle-tested strategies written by senior software engineers, cloud architects, and systems specialists.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Grid -->
+  <section class="services-area services-eight py-5" style="background:var(--bg-secondary);">
+    <div class="container py-4">
+
+      <!-- Featured Long-Form Article 1 -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="p-4 p-lg-5 rounded-4 shadow-sm reveal" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-7">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-primary text-white">Featured Architecture Guide</span>
+                  <span class="text-secondary small">• 8 min read</span>
+                </div>
+                <h2 class="fw-bold mb-3">Architecting Multi-Agent Workflows: How Autonomous LLM Swarms Replace Manual Business Operations</h2>
+                <p class="text-secondary mb-4">Traditional robotic process automation (RPA) breaks when confronted with unstructured documents and non-linear business decisions. Explore how production systems utilize LangGraph, persistent session state, and deterministic tool sandboxes to coordinate autonomous multi-agent swarms safely.</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge" style="background:var(--bg-secondary);color:var(--text-primary);border:1px solid var(--border-color);">LangGraph</span>
+                  <span class="badge" style="background:var(--bg-secondary);color:var(--text-primary);border:1px solid var(--border-color);">RAG Architectures</span>
+                  <span class="badge" style="background:var(--bg-secondary);color:var(--text-primary);border:1px solid var(--border-color);">Python FastAPI</span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <a href="ai-agent-integration-services.html" class="btn primary-btn btn-sm">Explore Our AI Agent Engineering Practice →</a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="p-4 rounded-3 text-secondary small font-monospace" style="background:var(--bg-primary);border:1px solid var(--border-color);line-height:1.7;">
+                  <span class="text-primary">// LangGraph State Transition Graph</span><br>
+                  state_graph = StateGraph(AgentOperationalState)<br>
+                  state_graph.add_node("ingestion", parse_unstructured_input)<br>
+                  state_graph.add_node("synthesis", query_vector_knowledge_store)<br>
+                  state_graph.add_node("guardrails", enforce_deterministic_schema)<br>
+                  state_graph.add_edge("ingestion", "synthesis")<br>
+                  state_graph.add_conditional_edges("synthesis", evaluate_accuracy)<br>
+                  <span class="text-success">✔ 99.4% Deterministic Verification Passed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="row g-4">
+
+        <!-- Article 2: .NET Modernization -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 h-100 reveal reveal-delay-1 d-flex flex-column" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-info text-dark">.NET & Modernization</span>
+              <span class="text-secondary small">10 min read</span>
+            </div>
+            <h4 class="fw-bold mb-3">Deconstructing Legacy .NET Framework Monoliths to .NET 8 Microservices</h4>
+            <p class="text-secondary small flex-grow-1">A step-by-step architectural breakdown of migrating legacy ASP.NET Web Forms and WCF services into containerized ASP.NET Core microservices using the Strangler Fig pattern without disrupting live traffic.</p>
+            <div class="pt-3 border-top" style="border-color:var(--border-color)!important;">
+              <a href="dotnet-development.html" class="text-primary fw-bold text-decoration-none small">Read Modernization Guide →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3: Cloud FinOps & Resiliency -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 h-100 reveal reveal-delay-2 d-flex flex-column" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-success text-white">Cloud & DevOps</span>
+              <span class="text-secondary small">7 min read</span>
+            </div>
+            <h4 class="fw-bold mb-3">Kubernetes Cost Governance: Cutting AWS & Azure Infrastructure Overhead by 40%</h4>
+            <p class="text-secondary small flex-grow-1">How engineering leaders audit over-provisioned cluster nodes, configure automated Karpenter autoscaling, and implement spot instance fallbacks to slash cloud compute bills while maintaining 99.99% availability.</p>
+            <div class="pt-3 border-top" style="border-color:var(--border-color)!important;">
+              <a href="cloud-solutions.html" class="text-primary fw-bold text-decoration-none small">Read Cloud Architecture Guide →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4: High-Performance Web Applications -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 h-100 reveal reveal-delay-3 d-flex flex-column" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-warning text-dark">Web Engineering</span>
+              <span class="text-secondary small">6 min read</span>
+            </div>
+            <h4 class="fw-bold mb-3">Optimizing Core Web Vitals for Heavy B2B SaaS Interfaces: Beyond Lighthouse Scores</h4>
+            <p class="text-secondary small flex-grow-1">Strategies for mastering Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS) in data-dense dashboards with real-time WebSocket feeds, virtualized tables, and worker thread offloading.</p>
+            <div class="pt-3 border-top" style="border-color:var(--border-color)!important;">
+              <a href="web-development-service.html" class="text-primary fw-bold text-decoration-none small">Read Web Performance Guide →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5: Virtual CTO & Tech Debt -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 h-100 reveal reveal-delay-1 d-flex flex-column" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-secondary text-white">Consulting & Leadership</span>
+              <span class="text-secondary small">9 min read</span>
+            </div>
+            <h4 class="fw-bold mb-3">The Technical Debt Taxonomy: Prioritizing Refactoring Before Scaling Engineering Teams</h4>
+            <p class="text-secondary small flex-grow-1">A quantifiable framework for software executives to categorize, measure, and systematically remediate architectural, test, and dependency debt to unlock developer velocity.</p>
+            <div class="pt-3 border-top" style="border-color:var(--border-color)!important;">
+              <a href="technology-consulting.html" class="text-primary fw-bold text-decoration-none small">Read Advisory Perspective →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6: Headless E-Commerce -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 h-100 reveal reveal-delay-2 d-flex flex-column" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-danger text-white">E-Commerce & Scale</span>
+              <span class="text-secondary small">8 min read</span>
+            </div>
+            <h4 class="fw-bold mb-3">Headless Commerce Architecture: When Shopify Plus & BigCommerce Hit Customization Ceilings</h4>
+            <p class="text-secondary small flex-grow-1">Analyzing the inflection point when growing multi-market brands require decoupled storefronts, microservice pricing engines, and multi-warehouse synchronization architectures.</p>
+            <div class="pt-3 border-top" style="border-color:var(--border-color)!important;">
+              <a href="e-commerce-development.html" class="text-primary fw-bold text-decoration-none small">Read E-Commerce Architecture →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 7: Enterprise Automation -->
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 rounded-4 h-100 reveal reveal-delay-3 d-flex flex-column" style="background:var(--bg-card);border:1px solid var(--border-color);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="badge bg-primary text-white">Workflow Systems</span>
+              <span class="text-secondary small">7 min read</span>
+            </div>
+            <h4 class="fw-bold mb-3">Building Event-Driven Enterprise Integrations with Apache Kafka & Webhook Meshes</h4>
+            <p class="text-secondary small flex-grow-1">How high-volume enterprises eliminate point-to-point spaghetti integrations by establishing resilient event brokers with guaranteed delivery and idempotency.</p>
+            <div class="pt-3 border-top" style="border-color:var(--border-color)!important;">
+              <a href="business-automation.html" class="text-primary fw-bold text-decoration-none small">Read Automation Guide →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="call-action py-5 text-center" style="background:var(--bg-card);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="reveal">
+            <h2 class="fw-bold mb-3">Need An Architectural Review of Your System?</h2>
+            <p class="text-secondary mb-4">Our principal consultants and lead software engineers conduct comprehensive code, cloud, and AI readiness audits for scaling businesses worldwide.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="index.html#contact" class="btn primary-btn btn-lg">Request Engineering Discovery</a>
+              <a href="custom-software-development.html" class="btn primary-btn-outline btn-lg">Our Software Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+  <a href="#" class="scroll-top btn-hover" aria-label="Scroll to top"><i class="lni lni-chevron-up"></i></a>
+
+  <script src="components.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('page-loader');
+      if (loader) { loader.style.opacity = '0'; setTimeout(() => loader.style.display = 'none', 400); }
+    });
+  </script>
+</body>
+
+</html>
