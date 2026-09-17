@@ -4,12 +4,73 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="description"
-    content="Join 313 Tech Solutions — Explore exciting career opportunities in tech, design, and business strategy." />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="theme-color" content="#050b18" />
+  <meta name="theme-color" content="#0A1931" />
 
-  <title>Careers | 313 Tech Solutions</title>
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('313_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Primary SEO Metadata -->
+  <title>Engineering Careers & Technology Roles | 313 Tech Solutions</title>
+  <meta name="description"
+    content="Explore engineering and technology consulting careers at 313 Tech Solutions. Work on complex enterprise cloud, AI agent, .NET, and software architecture projects worldwide." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://313techsolutions.com/careers.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://313techsolutions.com/careers.html" />
+  <meta property="og:title" content="Engineering Careers & Technology Roles | 313 Tech Solutions" />
+  <meta property="og:description"
+    content="Join an engineering-driven technology team delivering modern cloud architecture, autonomous AI agents, and enterprise web solutions for international clients." />
+  <meta property="og:image" content="https://313techsolutions.com/assets/images/logo.png" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://313techsolutions.com/careers.html" />
+  <meta name="twitter:title" content="Engineering Careers & Technology Roles | 313 Tech Solutions" />
+  <meta name="twitter:description"
+    content="Join an engineering-driven technology team delivering modern cloud architecture, autonomous AI agents, and enterprise web solutions for international clients." />
+  <meta name="twitter:image" content="https://313techsolutions.com/assets/images/logo.png" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://313techsolutions.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Careers",
+            "item": "https://313techsolutions.com/careers.html"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "name": "313 Tech Solutions",
+        "url": "https://313techsolutions.com/",
+        "logo": "https://313techsolutions.com/assets/images/logo.png"
+      }
+    ]
+  }
+  </script>
 
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -30,20 +91,61 @@
     <div class="hero-grid"></div>
     <div class="container">
       <div class="row align-items-center g-5">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-7 col-md-12">
           <div class="header-content reveal-left">
             <div class="badge-chip">
               <span class="dot"></span>
-              We're Hiring — Join Us
+              Engineering Careers — Global Delivery
             </div>
-            <h1>Build Your Career<br>with <span class="highlight">313 Tech</span></h1>
-            <p>Be part of a growing company that's making a real impact in the tech world.
-              Explore open positions and grow your career with passionate, talented people.</p>
+            <h1>Build Scalable Systems.<br>Work With <span class="highlight">Exceptional Engineers</span>.</h1>
+            <p>We are an engineering-driven technology company building resilient software, autonomous AI agent workflows, and enterprise cloud solutions for growing organizations worldwide. Explore our open positions and build your career on projects that demand architectural excellence.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#open-positions" class="btn primary-btn">View Open Roles</a>
+              <a href="about-us-full.html" class="btn primary-btn-outline">Our Engineering Culture</a>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-5 col-md-12">
           <div class="header-image reveal-right">
-            <img src="assets/images/team/20.jpg" alt="Join our team" />
+            <img src="assets/images/team/20.jpg" alt="313 Tech Solutions engineering team collaboration" class="img-fluid rounded-4 shadow-lg" width="540" height="420" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====== CULTURE VALUES ======-->
+  <section class="services-area services-eight py-5" style="background:var(--bg-secondary);">
+    <div class="container py-4">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <div class="section-title-five reveal">
+            <h6>Why Work With Us</h6>
+            <h2 class="fw-bold">Engineering Standards That Respect Your Craft</h2>
+            <p>We avoid corporate bureaucracy and low-quality code mills. We focus on clean architecture, continuous learning, and direct impact.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="capability-card p-4 h-100 reveal reveal-delay-1">
+            <div class="card-icon mb-3"><i class="lni lni-code-alt"></i></div>
+            <h4>Production-Grade Architecture</h4>
+            <p class="text-secondary small">Work with modern technology stacks—ASP.NET Core, React, TypeScript, Next.js, Python AI frameworks, and cloud-native Kubernetes—written with clean code and strict CI/CD discipline.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="capability-card p-4 h-100 reveal reveal-delay-2">
+            <div class="card-icon mb-3"><i class="lni lni-world"></i></div>
+            <h4>Global Impact & High-Value Clients</h4>
+            <p class="text-secondary small">Build mission-critical systems for international enterprises and high-growth ventures across North America, the UK, Europe, and Australia.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="capability-card p-4 h-100 reveal reveal-delay-3">
+            <div class="card-icon mb-3"><i class="lni lni-graduation"></i></div>
+            <h4>Continuous Technical Growth</h4>
+            <p class="text-secondary small">Dedicated learning allowances, certification sponsorships (AWS, Azure, Microsoft Certified), and collaborative peer code review loops.</p>
           </div>
         </div>
       </div>
@@ -51,204 +153,185 @@
   </section>
 
   <!--====== OPEN POSITIONS ======-->
-  <section class="services-area services-eight team-section">
-    <div class="container">
+  <section id="open-positions" class="services-area services-eight team-section py-5">
+    <div class="container py-4">
       <div class="row mb-5 text-center">
         <div class="col-lg-12">
           <div class="section-title-five reveal">
-            <h6>Careers</h6>
-            <h2 class="fw-bold">Open Positions</h2>
-            <p>Find your next opportunity at 313 Tech Solutions and help shape the future of technology.</p>
+            <h6>Current Openings</h6>
+            <h2 class="fw-bold">Explore Available Engineering Roles</h2>
+            <p>Join our distributed engineering squads delivering end-to-end software solutions.</p>
           </div>
         </div>
       </div>
       <div class="row g-4">
+
+        <!-- Role 1: Senior .NET & Cloud Architect -->
         <div class="col-lg-4 col-md-6">
-          <div class="single-team reveal reveal-delay-1" style="min-height:auto;">
-            <div class="team-content" style="padding:28px;">
+          <div class="single-team reveal reveal-delay-1 h-100" style="min-height:auto;">
+            <div class="team-content d-flex flex-column h-100" style="padding:28px;">
               <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                <div
-                  style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
+                <div style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
+                  <i class="lni lni-microsoft"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom:2px;font-size:1.15rem;">Senior .NET & Cloud Architect</h4>
+                  <span style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">.NET 8 / Azure · 5+ yrs</span>
+                </div>
+              </div>
+              <div class="team-bio flex-grow-1">
+                <p>Lead the architectural design and modernization of enterprise .NET backends, distributed microservices, and secure Azure/AWS infrastructure for high-throughput client platforms.</p>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
+                <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote / Hybrid</span>
+                <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
+              </div>
+              <a href="index.html#contact" class="btn btn-sm primary-btn-outline w-100 text-center">Apply For Role →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2: Full-Stack Web Application Engineer -->
+        <div class="col-lg-4 col-md-6">
+          <div class="single-team reveal reveal-delay-2 h-100" style="min-height:auto;">
+            <div class="team-content d-flex flex-column h-100" style="padding:28px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
                   <i class="lni lni-code-alt"></i>
                 </div>
                 <div>
-                  <h4 style="margin-bottom:2px;">Frontend Developer</h4>
-                  <span
-                    style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">React
-                    / Vue · 2+ yrs</span>
+                  <h4 style="margin-bottom:2px;font-size:1.15rem;">Senior Full-Stack Engineer</h4>
+                  <span style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">React / Node.js / TS · 4+ yrs</span>
                 </div>
               </div>
-              <div class="team-bio">
-                <p>We're seeking a frontend developer with a passion for responsive design and dynamic interfaces.
-                  You'll build beautiful user experiences across our products.</p>
+              <div class="team-bio flex-grow-1">
+                <p>Develop high-performance, accessible web applications and SaaS platforms using Next.js, React, TypeScript, and modern API gateways with rigorous automated testing.</p>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-                <span
-                  style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
-                <span
-                  style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
+                <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
+                <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
               </div>
-              <a href="index.html#contact" class="btn btn-sm primary-btn-outline">Apply Now →</a>
+              <a href="index.html#contact" class="btn btn-sm primary-btn-outline w-100 text-center">Apply For Role →</a>
             </div>
           </div>
         </div>
 
+        <!-- Role 3: AI & Autonomous Agent Systems Engineer -->
         <div class="col-lg-4 col-md-6">
-          <div class="single-team reveal reveal-delay-2" style="min-height:auto;">
-            <div class="team-content" style="padding:28px;">
+          <div class="single-team reveal reveal-delay-3 h-100" style="min-height:auto;">
+            <div class="team-content d-flex flex-column h-100" style="padding:28px;">
               <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                <div
-                  style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
-                  <i class="lni lni-server"></i>
+                <div style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
+                  <i class="lni lni-bot"></i>
                 </div>
                 <div>
-                  <h4 style="margin-bottom:2px;">Backend Developer</h4>
-                  <span
-                    style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Node.js
-                    / Python · 3+ yrs</span>
+                  <h4 style="margin-bottom:2px;font-size:1.15rem;">AI & LLM Solutions Engineer</h4>
+                  <span style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Python / LangChain / RAG · 3+ yrs</span>
                 </div>
               </div>
-              <div class="team-bio">
-                <p>Looking for someone to build scalable APIs, cloud services, and robust database architectures that
-                  power our client applications.</p>
+              <div class="team-bio flex-grow-1">
+                <p>Build autonomous multi-agent systems, document synthesis RAG pipelines, and API tool-calling workflows that automate real-world enterprise operations securely.</p>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-                <span
-                  style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Hybrid</span>
-                <span
-                  style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
+                <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
+                <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
               </div>
-              <a href="index.html#contact" class="btn btn-sm primary-btn-outline">Apply Now →</a>
+              <a href="index.html#contact" class="btn btn-sm primary-btn-outline w-100 text-center">Apply For Role →</a>
             </div>
           </div>
         </div>
 
+        <!-- Role 4: Lead Cloud & DevOps Automation Engineer -->
         <div class="col-lg-4 col-md-6">
-          <div class="single-team reveal reveal-delay-3" style="min-height:auto;">
-            <div class="team-content" style="padding:28px;">
+          <div class="single-team reveal reveal-delay-1 h-100" style="min-height:auto;">
+            <div class="team-content d-flex flex-column h-100" style="padding:28px;">
               <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                <div
-                  style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
-                  <i class="lni lni-target"></i>
+                <div style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
+                  <i class="lni lni-cloud-network"></i>
                 </div>
                 <div>
-                  <h4 style="margin-bottom:2px;">Product Manager</h4>
-                  <span
-                    style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Agile
-                    · 5+ yrs</span>
+                  <h4 style="margin-bottom:2px;font-size:1.15rem;">DevOps & Cloud Engineer</h4>
+                  <span style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Kubernetes / Terraform · 4+ yrs</span>
                 </div>
               </div>
-              <div class="team-bio">
-                <p>Lead cross-functional teams to deliver tech solutions that delight users. Drive product vision from
-                  concept through launch and iteration.</p>
+              <div class="team-bio flex-grow-1">
+                <p>Architect automated CI/CD deployment pipelines, manage container orchestration clusters, and implement rigorous SOC2/ISO-aligned infrastructure as code across AWS and Azure.</p>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-                <span
-                  style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
-                <span
-                  style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
+                <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
+                <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
               </div>
-              <a href="index.html#contact" class="btn btn-sm primary-btn-outline">Apply Now →</a>
+              <a href="index.html#contact" class="btn btn-sm primary-btn-outline w-100 text-center">Apply For Role →</a>
             </div>
           </div>
         </div>
 
+        <!-- Role 5: Mobile App Developer -->
         <div class="col-lg-4 col-md-6">
-          <div class="single-team reveal reveal-delay-1" style="min-height:auto;">
-            <div class="team-content" style="padding:28px;">
+          <div class="single-team reveal reveal-delay-2 h-100" style="min-height:auto;">
+            <div class="team-content d-flex flex-column h-100" style="padding:28px;">
               <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                <div
-                  style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
-                  <i class="lni lni-layers"></i>
+                <div style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
+                  <i class="lni lni-mobile"></i>
                 </div>
                 <div>
-                  <h4 style="margin-bottom:2px;">UI/UX Designer</h4>
-                  <span
-                    style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Figma
-                    · 2+ yrs</span>
+                  <h4 style="margin-bottom:2px;font-size:1.15rem;">Mobile App Developer</h4>
+                  <span style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Flutter / React Native · 3+ yrs</span>
                 </div>
               </div>
-              <div class="team-bio">
-                <p>Design pixel-perfect interfaces that users love. You'll own the end-to-end design process from
-                  wireframes to high-fidelity prototypes.</p>
+              <div class="team-bio flex-grow-1">
+                <p>Build fluid cross-platform iOS and Android mobile applications integrated with enterprise APIs, offline synchronization, and native device capabilities.</p>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-                <span
-                  style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
-                <span
-                  style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
+                <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Remote</span>
+                <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
               </div>
-              <a href="index.html#contact" class="btn btn-sm primary-btn-outline">Apply Now →</a>
+              <a href="index.html#contact" class="btn btn-sm primary-btn-outline w-100 text-center">Apply For Role →</a>
             </div>
           </div>
         </div>
 
+        <!-- Role 6: General Application -->
         <div class="col-lg-4 col-md-6">
-          <div class="single-team reveal reveal-delay-2" style="min-height:auto;">
-            <div class="team-content" style="padding:28px;">
+          <div class="single-team reveal reveal-delay-3 h-100" style="min-height:auto;">
+            <div class="team-content d-flex flex-column h-100" style="padding:28px;">
               <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                <div
-                  style="width:44px;height:44px;background:var(--gradient-brand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:white;flex-shrink:0;">
-                  <i class="lni lni-support"></i>
+                <div style="width:44px;height:44px;background:linear-gradient(135deg,rgba(79,142,247,0.3),rgba(0,212,255,0.3));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--accent);border:1px dashed rgba(0,212,255,0.3);flex-shrink:0;">
+                  <i class="lni lni-plus"></i>
                 </div>
                 <div>
-                  <h4 style="margin-bottom:2px;">AI Agent Integration Team Lead</h4>
-                  <span
-                    style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Operations
-                    · 3+ yrs</span>
+                  <h4 style="margin-bottom:2px;font-size:1.15rem;">Open Engineering Application</h4>
+                  <span style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">All Disciplines</span>
                 </div>
               </div>
-              <div class="team-bio">
-                <p>Lead a high-performing AI agent integration team delivering exceptional client automation and
-                  support. You'll drive SLA adherence, quality assurance, and team development.</p>
+              <div class="team-bio flex-grow-1">
+                <p>Don't see an exact fit? We are always interested in senior software architects, systems engineers, and technical consultants with strong track records in enterprise delivery.</p>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-                <span
-                  style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">On-site</span>
-                <span
-                  style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Full-time</span>
+                <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Global</span>
+                <span style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Flexible</span>
               </div>
-              <a href="index.html#contact" class="btn btn-sm primary-btn-outline">Apply Now →</a>
+              <a href="index.html#contact" class="btn btn-sm primary-btn w-100 text-center">Submit Resume & Portfolio →</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="single-team reveal reveal-delay-3" style="min-height:auto;">
-            <div class="team-content" style="padding:28px;">
-              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                <div
-                  style="width:44px;height:44px;background:linear-gradient(135deg,rgba(79,142,247,0.3),rgba(0,212,255,0.3));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--accent);border:1px dashed rgba(0,212,255,0.3);flex-shrink:0;">
-                  <i class="lni lni-add"></i>
-                </div>
-                <div>
-                  <h4 style="margin-bottom:2px;">Open Application</h4>
-                  <span
-                    style="color:var(--accent);font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">All
-                    roles</span>
-                </div>
-              </div>
-              <div class="team-bio">
-                <p>Don't see the right role? We're always looking for exceptional talent. Send us your resume and tell
-                  us how you'd add value to our team.</p>
-              </div>
-              <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-                <span
-                  style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.2);color:var(--primary-light);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Any</span>
-                <span
-                  style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.15);color:var(--accent);font-size:0.75rem;padding:3px 10px;border-radius:50px;">Open</span>
-              </div>
-              <a href="index.html#contact" class="btn btn-sm primary-btn">Send Your CV →</a>
-            </div>
-          </div>
-        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="call-action py-5 text-center" style="background:var(--bg-card);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color);">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-3">Looking to Partner With Our Engineering Team?</h2>
+      <p class="text-secondary max-w-700 mx-auto mb-4">If your enterprise needs dedicated software engineering squads, legacy modernization, or custom AI agent integration, let's schedule an architectural discovery session.</p>
+      <a href="index.html#contact" class="btn primary-btn btn-lg">Discuss Your Project With Leadership</a>
     </div>
   </section>
 
   <!-- Footer -->
   <div id="footer-container"></div>
-  <a href="#" class="scroll-top btn-hover"><i class="lni lni-chevron-up"></i></a>
+  <a href="#" class="scroll-top btn-hover" aria-label="Scroll to top"><i class="lni lni-chevron-up"></i></a>
 
   <script src="components.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>

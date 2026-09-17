@@ -1,81 +1,166 @@
-<!--====== NAVBAR NINE PART START ======-->
-<section class="navbar-area navbar-nine">
+<!--====== NAVBAR COMPONENT ======-->
+<section class="navbar-area navbar-nine" role="banner">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo.png" alt="313 Tech Solutions" />
+        <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+          <!-- Brand Logo -->
+          <a class="navbar-brand" href="index.html" aria-label="313 Tech Solutions Home">
+            <img src="assets/images/logo.png" alt="313 Tech Solutions — Enterprise Software & AI Engineering" width="160" height="40" />
           </a>
+
+          <!-- Mobile Hamburger Toggler -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
-            aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="toggler-icon"></span>
             <span class="toggler-icon"></span>
             <span class="toggler-icon"></span>
           </button>
 
+          <!-- Main Desktop & Mobile Links -->
           <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="page-scroll" href="index.html#hero-area">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="page-scroll" href="index.html#services">Services</a>
+
+              <!-- Services Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li><a class="dropdown-item" href="custom-software-development.html"><i class="lni lni-code-alt"></i> Custom Software Development</a></li>
+                  <li><a class="dropdown-item" href="web-development-service.html"><i class="lni lni-display-alt"></i> Web Development &amp; SaaS</a></li>
+                  <li><a class="dropdown-item" href="mobile-app-development.html"><i class="lni lni-mobile"></i> Mobile App Development</a></li>
+                  <li><a class="dropdown-item" href="ai-agent-integration-services.html"><i class="lni lni-bot"></i> AI &amp; Agent Integration</a></li>
+                  <li><a class="dropdown-item" href="dotnet-development.html"><i class="lni lni-c-sharp"></i> Enterprise .NET Development</a></li>
+                  <li><a class="dropdown-item" href="software-modernization.html"><i class="lni lni-reload"></i> Software Modernization</a></li>
+                  <li><a class="dropdown-item" href="cloud-solutions.html"><i class="lni lni-cloud"></i> Cloud Solutions &amp; DevOps</a></li>
+                  <li><a class="dropdown-item" href="business-automation.html"><i class="lni lni-cog"></i> Business Automation</a></li>
+                  <li><a class="dropdown-item" href="e-commerce-development.html"><i class="lni lni-cart-full"></i> E-Commerce Development</a></li>
+                  <li><a class="dropdown-item" href="technology-consulting.html"><i class="lni lni-bulb"></i> Technology Consulting</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="page-scroll" href="index.html#pricing">Pricing</a>
+
+              <!-- Company Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about-us-full.html" id="companyDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                  <li><a class="dropdown-item" href="about-us-full.html"><i class="lni lni-information"></i> About 313 Tech</a></li>
+                  <li><a class="dropdown-item" href="team.html"><i class="lni lni-users"></i> Executive &amp; Engineering Team</a></li>
+                  <li><a class="dropdown-item" href="careers.html"><i class="lni lni-briefcase"></i> Careers &amp; Culture</a></li>
+                </ul>
               </li>
+
+              <li class="nav-item">
+                <a href="insights.html">Insights</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="page-scroll" href="index.html#pricing">Engagement Models</a>
+              </li>
+
               <li class="nav-item">
                 <a class="page-scroll" href="index.html#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="page-scroll" href="careers.html">Careers</a>
               </li>
             </ul>
           </div>
 
-          <div class="navbar-btn d-none d-lg-inline-block">
-            <a class="menu-bar" href="#side-menu-left"><i class="lni lni-menu"></i></a>
+          <!-- Right Action Bar: Theme Toggle, CTA, and Sidebar Trigger -->
+          <div class="navbar-actions d-flex align-items-center">
+            <!-- Polished Theme Switcher Button -->
+            <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Switch theme mode" title="Switch theme mode">
+              <i class="lni lni-night theme-icon-moon"></i>
+              <i class="lni lni-sun theme-icon-sun"></i>
+            </button>
+
+            <!-- B2B Discovery Call CTA -->
+            <div class="navbar-btn d-none d-sm-inline-flex ms-2">
+              <a href="index.html#contact" class="navbar-nav-cta">
+                <i class="lni lni-rocket-5"></i>
+                <span>Get in Touch</span>
+              </a>
+            </div>
+
+            <!-- Sidebar Drawer Trigger -->
+            <div class="navbar-btn ms-2">
+              <a class="menu-bar" href="#side-menu-left" aria-label="Open navigation drawer"><i class="lni lni-menu"></i></a>
+            </div>
           </div>
         </nav>
       </div>
     </div>
   </div>
 </section>
-<!--====== NAVBAR NINE PART ENDS ======-->
 
-<!--====== SIDEBAR PART START ======-->
-<div class="sidebar-left">
+<!--====== SIDEBAR DRAWER ======-->
+<aside class="sidebar-left" id="side-menu-left" aria-label="Off-canvas menu">
   <div class="sidebar-close">
-    <a class="close" href="#close"><i class="lni lni-close"></i></a>
+    <a class="close" href="#close" aria-label="Close navigation drawer"><i class="lni lni-close"></i></a>
   </div>
-  <div class="sidebar-content">
-    <div class="sidebar-logo">
-      <a href="index.html"><img src="assets/images/logo.png" alt="313 Tech Solutions" /></a>
+  <div class="sidebar-content" style="padding: 0 24px 40px;">
+    <div class="sidebar-logo mb-3">
+      <a href="index.html"><img src="assets/images/logo.png" alt="313 Tech Solutions" width="150" height="38" /></a>
     </div>
-    <p class="text">Your trusted partner in digital transformation.</p>
-    <div class="sidebar-menu">
-      <h5 class="menu-title">Quick Links</h5>
-      <ul>
-        <li><a href="about-us-full.html">About Us</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="news.html">Latest News</a></li>
-        <li><a href="bpo-services.html">AI Agent Integration Services</a></li>
-        <li><a href="web-development-service.html">Web Development</a></li>
-        <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="careers.html">Careers</a></li>
+    <p class="text mb-4" style="font-size:0.875rem; color:var(--text-secondary);">
+      International technology partner delivering custom software, autonomous AI integrations, cloud solutions, and enterprise modernization.
+    </p>
+
+    <!-- Theme Toggle inside Drawer -->
+    <div class="d-flex align-items-center justify-content-between p-2 mb-4 rounded" style="background:var(--bg-tertiary); border:1px solid var(--border-color);">
+      <span style="font-size:0.85rem; font-weight:600; color:var(--text-primary);">Theme Preference</span>
+      <button class="theme-toggle-btn" type="button" aria-label="Switch theme mode" style="width:36px; height:36px;">
+        <i class="lni lni-night theme-icon-moon"></i>
+        <i class="lni lni-sun theme-icon-sun"></i>
+      </button>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="sidebar-menu mb-4">
+      <h5 class="menu-title" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:12px;">Core Services</h5>
+      <ul style="display:flex; flex-direction:column; gap:8px;">
+        <li><a href="custom-software-development.html" style="font-size:0.88rem; color:var(--text-primary);"><i class="lni lni-code-alt me-2" style="color:var(--primary);"></i> Custom Software</a></li>
+        <li><a href="web-development-service.html" style="font-size:0.88rem; color:var(--text-primary);"><i class="lni lni-display-alt me-2" style="color:var(--primary);"></i> Web Applications</a></li>
+        <li><a href="ai-agent-integration-services.html" style="font-size:0.88rem; color:var(--text-primary);"><i class="lni lni-bot me-2" style="color:var(--primary);"></i> AI &amp; Agent Integration</a></li>
+        <li><a href="dotnet-development.html" style="font-size:0.88rem; color:var(--text-primary);"><i class="lni lni-c-sharp me-2" style="color:var(--primary);"></i> .NET Development</a></li>
+        <li><a href="cloud-solutions.html" style="font-size:0.88rem; color:var(--text-primary);"><i class="lni lni-cloud me-2" style="color:var(--primary);"></i> Cloud Solutions</a></li>
+        <li><a href="software-modernization.html" style="font-size:0.88rem; color:var(--text-primary);"><i class="lni lni-reload me-2" style="color:var(--primary);"></i> Software Modernization</a></li>
       </ul>
     </div>
+
+    <div class="sidebar-menu mb-4">
+      <h5 class="menu-title" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:12px;">Company &amp; Resources</h5>
+      <ul style="display:flex; flex-direction:column; gap:8px;">
+        <li><a href="about-us-full.html" style="font-size:0.88rem; color:var(--text-primary);">About Us</a></li>
+        <li><a href="team.html" style="font-size:0.88rem; color:var(--text-primary);">Our Team</a></li>
+        <li><a href="insights.html" style="font-size:0.88rem; color:var(--text-primary);">Insights &amp; Articles</a></li>
+        <li><a href="careers.html" style="font-size:0.88rem; color:var(--text-primary);">Careers</a></li>
+        <li><a href="index.html#contact" style="font-size:0.88rem; color:var(--text-primary);">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact details in sidebar -->
+    <div class="sidebar-contact pt-3" style="border-top:1px solid var(--border-color);">
+      <p style="font-size:0.82rem; margin-bottom:4px; color:var(--text-muted);">Direct Client Enquiry:</p>
+      <a href="mailto:sales@313techsolutions.com" style="font-size:0.88rem; font-weight:600; color:var(--primary); display:block; margin-bottom:4px;">sales@313techsolutions.com</a>
+      <a href="tel:+918700852782" style="font-size:0.88rem; color:var(--text-secondary); display:block; margin-bottom:16px;">(+91) 8700852782</a>
+    </div>
+
     <div class="sidebar-social">
-      <h5 class="social-title">Follow Us</h5>
-      <ul>
-        <li><a href="https://facebook.com" target="_blank"><i class="lni lni-facebook-filled"></i></a></li>
-        <li><a href="https://twitter.com" target="_blank"><i class="lni lni-twitter-original"></i></a></li>
-        <li><a href="https://linkedin.com" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
-        <li><a href="https://youtube.com" target="_blank"><i class="lni lni-youtube"></i></a></li>
+      <h5 class="social-title" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:10px;">Connect</h5>
+      <ul style="display:flex; gap:10px;">
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="lni lni-linkedin-original"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="lni lni-twitter-original"></i></a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="lni lni-facebook-filled"></i></a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="lni lni-youtube"></i></a></li>
       </ul>
     </div>
   </div>
-</div>
-<div class="overlay-left"></div>
-<!--====== SIDEBAR PART ENDS ======-->
+</aside>
+<div class="overlay-left" tabindex="-1" aria-hidden="true"></div>
+<!--====== NAVBAR COMPONENT END ======-->
