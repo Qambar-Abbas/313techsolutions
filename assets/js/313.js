@@ -60,20 +60,43 @@
   onScroll();
 
   // 4. Menu Drawer Toggle
-  const menuBtn = document.querySelector('.menu-btn');
-  if (menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = document.documentElement.classList.toggle('menu-open');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  const menuBtns = document.querySelectorAll('.menu-btn, #nav-toggle');
+  if (menuBtns.length > 0) {
+    menuBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = document.documentElement.classList.toggle('menu-open');
+        menuBtns.forEach((b) => b.setAttribute('aria-expanded', isOpen ? 'true' : 'false'));
+      });
     });
 
     // Close when clicking internal links inside menu
     document.querySelectorAll('.menu a').forEach((link) => {
       link.addEventListener('click', () => {
         document.documentElement.classList.remove('menu-open');
-        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtns.forEach((b) => b.setAttribute('aria-expanded', 'false'));
       });
     });
+
+    // Close when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.documentElement.classList.contains('menu-open')) {
+        document.documentElement.classList.remove('menu-open');
+        menuBtns.forEach((b) => b.setAttribute('aria-expanded', 'false'));
+      }
+    });
+  }
+
+  // Auto-scroll mobile nav tabs so active tab is centered
+  try {
+    const activeMobileTab = document.querySelector('.nav__m-tab.is-active, .nav__mobile-tabs .is-active');
+    if (activeMobileTab) {
+      setTimeout(() => {
+        activeMobileTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }, 100);
+    }
+  } catch (err) {
+    // Graceful fallback
   }
 
   // 5. Text Scramble Effect

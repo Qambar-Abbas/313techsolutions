@@ -142,23 +142,24 @@
       </ul>
 
       <!-- Right Action Pill & Status Clock -->
-                  <div class="nav__end">
+      <!-- Right Action Pill & Status Clock -->
+      <div class="nav__end">
         <div class="contact-actions contact-actions--nav" data-contact-actions>
-          <a href="tel:+918700852782" class="btn btn--primary btn--call" data-magnetic aria-label="Call Us">
+          <a href="tel:+918700852782" class="btn btn--primary btn--call btn--nav-action" data-magnetic aria-label="Call +91 8700852782" title="Call Us: +91 8700852782">
             <span class="roll">
-              <span>Call Us</span>
-              <span aria-hidden="true">Call Us</span>
+              <span class="nav-btn-text">Call Us</span>
+              <span aria-hidden="true" class="nav-btn-text">Call Us</span>
             </span>
             <span class="btn__ico">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
             </span>
           </a>
-          <a href="https://wa.me/918700852782?text=Hi%20there!%20I%20have%20an%20enquiry%20about%20your%20software%2C%20website%2C%20or%20mobile%20app%20services." target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--whatsapp" data-magnetic aria-label="WhatsApp">
+          <a href="https://wa.me/918700852782?text=Hi%20there!%20I%20have%20an%20enquiry%20about%20your%20software%2C%20website%2C%20or%20mobile%20app%20services." target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--whatsapp btn--nav-action" data-magnetic aria-label="WhatsApp" title="WhatsApp: +91 8700852782">
             <span class="roll">
-              <span class="flex items-center gap-1.5"><span class="live-status-dot"></span>WhatsApp</span>
-              <span aria-hidden="true" class="flex items-center gap-1.5"><span class="live-status-dot"></span>WhatsApp</span>
+              <span class="flex items-center gap-1.5"><span class="live-status-dot"></span><span class="nav-btn-text">WhatsApp</span></span>
+              <span aria-hidden="true" class="flex items-center gap-1.5"><span class="live-status-dot"></span><span class="nav-btn-text">WhatsApp</span></span>
             </span>
             <span class="btn__ico">
               <svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
@@ -167,7 +168,7 @@
             </span>
           </a>
         </div>
-        <a class="btn btn--light" href="#contact" data-magnetic>
+        <a class="btn btn--light btn--nav-cta" href="#contact" data-magnetic>
           <span class="roll">
             <span>Start a Project</span>
             <span aria-hidden="true">Start a Project</span>
@@ -178,6 +179,28 @@
             </svg>
           </span>
         </a>
+        <button type="button" class="menu-btn" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="menu-btn__label hidden md:inline">Menu</span>
+          <span class="menu-btn__i"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Tabs Bar (visible on mobile / tablet <= 1024px) -->
+    <div class="nav__mobile-bar" aria-label="Mobile Navigation Tabs">
+      <div class="wrap nav__mobile-wrap">
+        <ul class="nav__mobile-tabs" role="tablist">
+          <li><a href="index.html" class="nav__m-tab is-active" aria-current="page"><span class="nav__m-dot"></span>Home</a></li>
+          <li><a href="custom-software-development.html" class="nav__m-tab">Services</a></li>
+          <li><a href="projects.html" class="nav__m-tab">Projects</a></li>
+          <li><a href="about-us-full.html" class="nav__m-tab">About</a></li>
+          <li><a href="team.html" class="nav__m-tab">Team</a></li>
+          <li><a href="insights.html" class="nav__m-tab">Insights</a></li>
+          <li><a href="careers.html" class="nav__m-tab">Careers</a></li>
+          <li><a href="index.html#contact" class="nav__m-tab">Contact</a></li>
+        </ul>
+      </div>
+    </div>
       </div>
     </div>
   </header>
