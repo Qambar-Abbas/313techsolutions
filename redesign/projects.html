@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Projects &amp; Case Studies: Custom ERP, Mobile Apps &amp; Platforms | 313 Tech Solutions</title>
+  <meta name="description"
+    content="Explore real case studies of businesses moving from Excel spreadsheets and paper forms to tailor-made ERP systems, mobile applications, and web platforms." />
+  <link rel="canonical" href="https://313techsolutions.com/projects.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://313techsolutions.com/projects.html" />
+  <meta property="og:title" content="Projects &amp; Case Studies: Custom ERP, Mobile Apps &amp; Platforms | 313 Tech Solutions" />
+  <meta property="og:description"
+    content="Explore real case studies of businesses moving from Excel spreadsheets and paper forms to tailor-made ERP systems, mobile applications, and web platforms." />
+  <meta property="og:image" content="https://313techsolutions.com/assets/images/logo-white.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects &amp; Case Studies | 313 Tech Solutions" />
+  <meta name="twitter:description"
+    content="Explore real case studies of businesses moving from Excel spreadsheets and paper forms to tailor-made ERP systems, mobile applications, and web platforms." />
+  <meta name="twitter:image" content="https://313techsolutions.com/assets/images/logo-white.png" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+
+  <!-- Fonts & Master Stylesheet -->
+  <link rel="preload" href="assets/fonts/polysans-bulky.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/313.css" />
+
+  <!-- Three.js from Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandCyan: '#00f0ff',
+            brandViolet: '#8b5cf6',
+            brandDark: '#030712',
+          },
+          fontFamily: {
+            display: ['PolySans Bulky', 'Arial Black', 'sans-serif'],
+            sans: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Projects & Case Studies | 313 Tech Solutions",
+        "url": "https://313techsolutions.com/projects.html",
+        "description": "Custom ERP systems, mobile apps, online platforms, and corporate websites built to replace manual operations.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "313 Tech Solutions",
+          "url": "https://313techsolutions.com/"
+        }
+      }
+    ]
+  }</script>
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-brandCyan selection:text-black">
+
+  <!-- Background Layer 1: WebGL Fluid Simplex Noise Shader Canvas -->
+  <canvas id="shader-canvas-ANIMATION_3"></canvas>
+
+  <!-- Background Layer 2: Continuous Streaming Background Dots (313 engine) -->
+  <div id="hero-threejs-container"></div>
+
+  <!-- Ambient Pulsing Orb (313 drift) -->
+  <div class="orb orb--glow" style="--x:84%;--y:12%;--sz:70vmax" aria-hidden="true">
+    <i class="orb__i" style="--dr:1"></i>
+  </div>
+
+  <!-- Global Navigation Header -->
+  <header class="nav" role="banner">
+    <div class="wrap nav__in">
+      <a href="index.html" class="nav__logo flex items-center gap-3" aria-label="313 Tech Solutions Home">
+        <img src="assets/images/logo-white.png" alt="313 Tech Solutions Logo" class="h-9 w-auto" />
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav__links">
+        <li><a href="index.html#services" class="nav__link">Services</a></li>
+        <li><a href="index.html#who-we-serve" class="nav__link">Who We Serve</a></li>
+        <li><a href="projects.html" class="nav__link is-active">Projects</a></li>
+        <li><a href="index.html#approach" class="nav__link">Approach</a></li>
+        <li><a href="index.html#process" class="nav__link">Process</a></li>
+        <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
+        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <!-- Right Action Pill & Status Clock -->
+      <div class="nav__end">
+        <span class="nav__time">
+          <i class="nav__dot"></i>
+          <span>313 LIVE</span>
+          <span data-clock>--:--</span>
+        </span>
+        <a class="btn btn--light" href="index.html#contact" data-magnetic>
+          <span class="roll">
+            <span>Start a Project</span>
+            <span aria-hidden="true">Start a Project</span>
+          </span>
+          <span class="btn__ico">
+            <svg class="arrow" viewBox="0 0 10 10">
+              <path d="M1 9 9 1M3 1h6v6"></path>
+            </svg>
+          </span>
+        </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation Menu">
+          <span class="menu-btn__t hidden sm:inline">Menu</span>
+          <span class="menu-btn__i"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fullscreen Overlay Menu Drawer -->
+  <div class="menu" id="site-menu" aria-hidden="true">
+    <div class="wrap grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <nav class="lg:col-span-8">
+        <ul class="menu__links">
+          <li><a href="index.html"><sup>01</sup><span>Home</span></a></li>
+          <li><a href="index.html#services"><sup>02</sup><span>Services</span></a></li>
+          <li><a href="index.html#who-we-serve"><sup>03</sup><span>Who We Serve</span></a></li>
+          <li><a href="projects.html"><sup>04</sup><span>Projects</span></a></li>
+          <li><a href="index.html#approach"><sup>05</sup><span>Approach</span></a></li>
+          <li><a href="index.html#process"><sup>06</sup><span>Process</span></a></li>
+          <li><a href="index.html#faq"><sup>07</sup><span>FAQ</span></a></li>
+          <li><a href="about-us-full.html"><sup>08</sup><span>About Us</span></a></li>
+          <li><a href="team.html"><sup>09</sup><span>Team</span></a></li>
+          <li><a href="insights.html"><sup>10</sup><span>Insights</span></a></li>
+          <li><a href="careers.html"><sup>11</sup><span>Careers</span></a></li>
+          <li><a href="index.html#contact"><sup>12</sup><span>Say Hello</span></a></li>
+        </ul>
+      </nav>
+      <div class="lg:col-span-4 border-l border-white/10 pl-8 hidden lg:block space-y-6">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-cyan-400 font-mono mb-3">Enterprise Disciplines</p>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="custom-software-development.html" class="hover:text-white transition-colors">Custom Software Development</a></li>
+            <li><a href="web-development-service.html" class="hover:text-white transition-colors">Web Development</a></li>
+            <li><a href="mobile-app-development.html" class="hover:text-white transition-colors">Mobile Engineering</a></li>
+            <li><a href="ai-agent-integration-services.html" class="hover:text-white transition-colors">AI Agent Integration</a></li>
+            <li><a href="dotnet-development.html" class="hover:text-white transition-colors">Enterprise .NET Solutions</a></li>
+            <li><a href="cloud-solutions.html" class="hover:text-white transition-colors">Cloud &amp; DevOps Architecture</a></li>
+            <li><a href="business-automation.html" class="hover:text-white transition-colors">Process Automation</a></li>
+            <li><a href="software-modernization.html" class="hover:text-white transition-colors">Software Modernization</a></li>
+          </ul>
+        </div>
+        <div class="pt-4 border-t border-white/10">
+          <p class="text-xs text-white/40">Direct Inquiries: <a href="mailto:contact@313techsolutions.com" class="text-white hover:text-cyan-400">contact@313techsolutions.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ========================================================================
+         PAGE HERO SECTION
+         ======================================================================== -->
+    <section class="py-20 sm:py-24 relative z-10 border-b border-white/10">
+      <div class="wrap">
+        <div class="max-w-4xl">
+          <p class="label mb-4 sm:mb-6">
+            <span class="label__rule" aria-hidden="true"></span>
+            <span data-scramble>System Reference &amp; Case Studies</span>
+          </p>
+          <h1 class="f-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
+            Systems built to empower<br />
+            <span class="text-cyan-400 drop-shadow-[0_0_24px_rgba(0,240,255,0.45)]">daily business operations.</span>
+          </h1>
+          <p class="text-base sm:text-lg text-white/70 font-sans max-w-3xl leading-relaxed">
+            See how forward-thinking businesses moved from messy Excel spreadsheets, manual paper records, and chaotic WhatsApp groups to tailor-made ERPs, mobile apps, and unified cloud platforms.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8 pt-4 border-t border-white/10 text-xs font-mono">
+            <a href="#fitcom" class="px-4 py-2 rounded-full bg-white/5 border border-white/15 text-white/80 hover:text-white hover:border-cyan-400 transition-colors">01. Fitness Platform &amp; App</a>
+            <a href="#waste-erp" class="px-4 py-2 rounded-full bg-white/5 border border-white/15 text-white/80 hover:text-white hover:border-cyan-400 transition-colors">02. Industrial Waste ERP</a>
+            <a href="#travel-erp" class="px-4 py-2 rounded-full bg-white/5 border border-white/15 text-white/80 hover:text-white hover:border-cyan-400 transition-colors">03. Travel Agency ERP</a>
+            <a href="#aurora" class="px-4 py-2 rounded-full bg-white/5 border border-white/15 text-white/80 hover:text-white hover:border-cyan-400 transition-colors">04. Fleet &amp; Rental System</a>
+            <a href="#corporate-web" class="px-4 py-2 rounded-full bg-white/5 border border-white/15 text-white/80 hover:text-white hover:border-cyan-400 transition-colors">05. Technical Web Flagships</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CASE STUDY 1: FITCOM FITNESS PLATFORM & APP
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 relative z-10 border-b border-white/10" id="fitcom">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5 sticky top-28 space-y-6">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]"></span>
+              <span class="text-xs uppercase font-mono tracking-widest text-cyan-400">Platform &amp; Mobile App</span>
+            </div>
+            <h2 class="f-display text-3xl sm:text-5xl font-bold tracking-tight text-white">
+              Fitcom Fitness GYM Member System
+            </h2>
+            <p class="text-sm sm:text-base text-white/70 font-sans leading-relaxed">
+              An all-in-one member community platform and native mobile application engineered for multi-location gyms. Replaced manual booking clipboards and WhatsApp reminders with automated scheduling, trainer timetables, loyalty tiers, and turnstile QR check-in.
+            </p>
+
+            <div class="glass-card p-5 space-y-3">
+              <h4 class="text-xs uppercase font-mono text-cyan-300 tracking-wider">Before vs. After Transformation</h4>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="p-3 rounded-lg bg-red-950/30 border border-red-500/20 text-red-200">
+                  <b class="block text-red-400 mb-1">Before:</b>
+                  Paper sign-in sheets, manual WhatsApp reminders, frequent double bookings.
+                </div>
+                <div class="p-3 rounded-lg bg-cyan-950/30 border border-cyan-500/20 text-cyan-200">
+                  <b class="block text-cyan-400 mb-1">After:</b>
+                  Automated booking engine, QR access, automated Gold/Platinum tiers, zero paper.
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-xs uppercase font-mono text-white/50 tracking-wider">Core Capabilities Delivered</h4>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-white/80 font-sans">
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Real-Time Class Scheduling</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Member Loyalty Points (1,280+)</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Contactless Turnstile QR</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Trainer Availability Roster</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Automated Push Reminders</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> iOS &amp; Android Native Stacks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-2xl">
+              <img src="assets/images/projects/fitcom-hero.webp" alt="Fitcom Mobile App and Member Portal Preview" class="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/fitcom-portal-1.webp" alt="Fitcom Portal Class Management" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/fitcom-portal-2.webp" alt="Fitcom Member Loyalty Tiers" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CASE STUDY 2: INDUSTRIAL WASTE MANAGEMENT ERP
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 relative z-10 border-b border-white/10" id="waste-erp">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5 sticky top-28 space-y-6">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#10b981]"></span>
+              <span class="text-xs uppercase font-mono tracking-widest text-emerald-400">Custom Cloud ERP</span>
+            </div>
+            <h2 class="f-display text-3xl sm:text-5xl font-bold tracking-tight text-white">
+              Industrial Waste Management ERP
+            </h2>
+            <p class="text-sm sm:text-base text-white/70 font-sans leading-relaxed">
+              A comprehensive ERP platform for Alam Aliran Kualiti that digitized the entire plant lifecycle: incoming drum receiving, batch chemical processing, live inventory balances, sales orders, and automated delivery orders.
+            </p>
+
+            <div class="glass-card p-5 space-y-3">
+              <h4 class="text-xs uppercase font-mono text-emerald-300 tracking-wider">Before vs. After Transformation</h4>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="p-3 rounded-lg bg-red-950/30 border border-red-500/20 text-red-200">
+                  <b class="block text-red-400 mb-1">Before:</b>
+                  Physical handwritten carbon sheets, separate Excel files across plant bays, lost stock counts.
+                </div>
+                <div class="p-3 rounded-lg bg-emerald-950/30 border border-emerald-500/20 text-emerald-200">
+                  <b class="block text-emerald-400 mb-1">After:</b>
+                  Live chemical drum balance, instant sales-to-delivery orders, 100% digital audit trail.
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-xs uppercase font-mono text-white/50 tracking-wider">Core Capabilities Delivered</h4>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-white/80 font-sans">
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Live Drum Balance (650 units)</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Automated Tare Receiving Slips</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Scheduled Delivery Orders</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Multi-Bay Yard Tracking</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> DOE Regulatory Audit Compliance</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Role-Based Operator Permissions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <!-- Before Proof Image -->
+            <div class="rounded-2xl overflow-hidden border border-red-500/30 bg-black/60 shadow-xl relative">
+              <div class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-red-950/80 border border-red-500/40 text-[11px] font-mono text-red-300 uppercase">
+                Legacy Workflow: Paper Process Records &amp; Excel
+              </div>
+              <img src="assets/images/projects/waste-before.webp" alt="Legacy carbon-copy paper process records" class="w-full h-auto object-cover opacity-85 hover:opacity-100 transition-opacity" loading="lazy" />
+            </div>
+
+            <!-- After Production Screenshots -->
+            <div class="rounded-2xl overflow-hidden border border-emerald-500/30 bg-black/60 shadow-xl relative">
+              <div class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-[11px] font-mono text-emerald-300 uppercase">
+                Live System: Real-Time Plant Inventory Balance
+              </div>
+              <img src="assets/images/projects/waste-inventory.webp" alt="Industrial ERP Real-Time Inventory Screen" class="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/waste-sales.webp" alt="Sales Order Processing Screen" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/waste-so.webp" alt="Order Fulfillment Workflow" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CASE STUDY 3: EZI2TRAVEL AGENCY ENTERPRISE ERP
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 relative z-10 border-b border-white/10" id="travel-erp">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5 sticky top-28 space-y-6">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]"></span>
+              <span class="text-xs uppercase font-mono tracking-widest text-cyan-400">Enterprise Travel ERP</span>
+            </div>
+            <h2 class="f-display text-3xl sm:text-5xl font-bold tracking-tight text-white">
+              Ezi2Travel Tour &amp; Financial ERP
+            </h2>
+            <p class="text-sm sm:text-base text-white/70 font-sans leading-relaxed">
+              A comprehensive travel agency operating system unifying trip planning, group manifest management, multi-currency flight/hotel bookings, and automated quotation-to-invoice accounting pipelines.
+            </p>
+
+            <div class="glass-card p-5 space-y-3">
+              <h4 class="text-xs uppercase font-mono text-cyan-300 tracking-wider">Before vs. After Transformation</h4>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="p-3 rounded-lg bg-red-950/30 border border-red-500/20 text-red-200">
+                  <b class="block text-red-400 mb-1">Before:</b>
+                  Separate Excel sheets per tour date, manual forex conversions, delayed client invoices.
+                </div>
+                <div class="p-3 rounded-lg bg-cyan-950/30 border border-cyan-500/20 text-cyan-200">
+                  <b class="block text-cyan-400 mb-1">After:</b>
+                  Automated manifest exports, one-click invoice stamping, live tour P&amp;L margins.
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-xs uppercase font-mono text-white/50 tracking-wider">Core Capabilities Delivered</h4>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-white/80 font-sans">
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Group Manifest Exporter</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Automated Invoice Stamping</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Multi-Currency Margin Calc</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Real-Time Tour P&amp;L Analytics</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Supplier Booking Tracking</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Payment Milestone Triggers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <!-- Before Proof Image -->
+            <div class="rounded-2xl overflow-hidden border border-red-500/30 bg-black/60 shadow-xl relative">
+              <div class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-red-950/80 border border-red-500/40 text-[11px] font-mono text-red-300 uppercase">
+                Legacy Workflow: Fragmented Tour Excel Spreadsheets
+              </div>
+              <img src="assets/images/projects/travel-before.webp" alt="Legacy travel spreadsheets" class="w-full h-auto object-cover opacity-85 hover:opacity-100 transition-opacity" loading="lazy" />
+            </div>
+
+            <!-- After Production Screenshots -->
+            <div class="rounded-2xl overflow-hidden border border-cyan-500/30 bg-black/60 shadow-xl relative">
+              <div class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-[11px] font-mono text-cyan-300 uppercase">
+                Live System: Real-Time Tour Operations Dashboard
+              </div>
+              <img src="assets/images/projects/travel-dash.webp" alt="Travel agency ERP dashboard" class="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/travel-invoice.webp" alt="Automated Invoicing Engine" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/travel-report.webp" alt="Financial Tour Profit & Loss Report" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CASE STUDY 4: AURORA CAR RENTAL & FLEET DISPATCH PLATFORM
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 relative z-10 border-b border-white/10" id="aurora">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5 sticky top-28 space-y-6">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#10b981]"></span>
+              <span class="text-xs uppercase font-mono tracking-widest text-emerald-400">Fleet Logistics Platform</span>
+            </div>
+            <h2 class="f-display text-3xl sm:text-5xl font-bold tracking-tight text-white">
+              Aurora Fleet &amp; Car Rental System
+            </h2>
+            <p class="text-sm sm:text-base text-white/70 font-sans leading-relaxed">
+              A staff dispatch platform and mobile booking portal engineered for rental car companies. Manages vehicle availability calendars, customer reservations, contactless digital checkouts, and maintenance intervals from any mobile device.
+            </p>
+
+            <div class="glass-card p-5 space-y-3">
+              <h4 class="text-xs uppercase font-mono text-emerald-300 tracking-wider">Before vs. After Transformation</h4>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="p-3 rounded-lg bg-red-950/30 border border-red-500/20 text-red-200">
+                  <b class="block text-red-400 mb-1">Before:</b>
+                  Paper clipboards for car condition checks, untracked damage claims, uncoordinated car pickups.
+                </div>
+                <div class="p-3 rounded-lg bg-emerald-950/30 border border-emerald-500/20 text-emerald-200">
+                  <b class="block text-emerald-400 mb-1">After:</b>
+                  Timestamped digital photo inspection, real-time fleet availability, instant security deposit refund.
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-xs uppercase font-mono text-white/50 tracking-wider">Core Capabilities Delivered</h4>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-white/80 font-sans">
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Real-Time Fleet Availability</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Mobile Customer Bookings</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Digital Handover Inspections</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Preventive Maintenance Alerts</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Automated Rental Agreements</li>
+                <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Driver License Verification</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-2xl">
+              <img src="assets/images/projects/aurora-hero.webp" alt="Aurora Car Rental Booking System" class="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/aurora-dashboard.webp" alt="Aurora Fleet Dashboard" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-white/15 bg-black/60 shadow-xl">
+                <img src="assets/images/projects/aurora-bookings.webp" alt="Aurora Customer Booking Calendar" class="w-full h-auto object-cover" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CASE STUDY 5: TECHNICAL CORPORATE WEB FLAGSHIPS
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 relative z-10 border-b border-white/10" id="corporate-web">
+      <div class="wrap">
+        <div class="max-w-4xl mb-12">
+          <p class="label mb-3">
+            <span class="label__rule" aria-hidden="true"></span>
+            <span data-scramble>Technical Web Engineering</span>
+          </p>
+          <h2 class="f-display text-4xl sm:text-6xl font-bold tracking-tight text-white mb-4">
+            Corporate web flagships built for speed &amp; conversion.
+          </h2>
+          <p class="text-sm sm:text-base text-white/70 font-sans leading-relaxed">
+            Fast, responsive corporate websites with technical SEO, dynamic content architecture, and sub-100ms Core Web Vitals for industrial, legal, property, and environmental category leaders.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="glass-card p-4 group">
+            <div class="rounded-xl overflow-hidden border border-white/10 mb-4 bg-black/40">
+              <img src="assets/images/projects/web-hpe.webp" alt="HPE Industrial Engineering Website" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <span class="text-[10px] font-mono text-cyan-300 uppercase tracking-wider">Industrial Engineering</span>
+            <h3 class="f-display text-lg font-bold text-white mt-1">HPE Industrial</h3>
+            <p class="text-xs text-white/60 font-sans mt-1">Heavy engineering equipment catalog, technical data sheets &amp; quote inquiry portal.</p>
+          </div>
+
+          <div class="glass-card p-4 group">
+            <div class="rounded-xl overflow-hidden border border-white/10 mb-4 bg-black/40">
+              <img src="assets/images/projects/web-synchong-hoe.webp" alt="Syn Chong Hoe Machinery Website" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <span class="text-[10px] font-mono text-cyan-300 uppercase tracking-wider">Machinery &amp; Equipment</span>
+            <h3 class="f-display text-lg font-bold text-white mt-1">Syn Chong Hoe</h3>
+            <p class="text-xs text-white/60 font-sans mt-1">Industrial parts distribution system with searchable specifications and inquiry cart.</p>
+          </div>
+
+          <div class="glass-card p-4 group">
+            <div class="rounded-xl overflow-hidden border border-white/10 mb-4 bg-black/40">
+              <img src="assets/images/projects/web-eco-fresh.webp" alt="Eco Fresh Environmental Website" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <span class="text-[10px] font-mono text-cyan-300 uppercase tracking-wider">Environmental CleanTech</span>
+            <h3 class="f-display text-lg font-bold text-white mt-1">Eco Fresh</h3>
+            <p class="text-xs text-white/60 font-sans mt-1">Waste reduction and green technology solutions platform with sustainability calculator.</p>
+          </div>
+
+          <div class="glass-card p-4 group">
+            <div class="rounded-xl overflow-hidden border border-white/10 mb-4 bg-black/40">
+              <img src="assets/images/projects/web-jlee.webp" alt="JLee Law Practice Website" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <span class="text-[10px] font-mono text-cyan-300 uppercase tracking-wider">Legal Services</span>
+            <h3 class="f-display text-lg font-bold text-white mt-1">JLee Law Practice</h3>
+            <p class="text-xs text-white/60 font-sans mt-1">Corporate law firm flagship with practice area directories and secure client intake forms.</p>
+          </div>
+
+          <div class="glass-card p-4 group">
+            <div class="rounded-xl overflow-hidden border border-white/10 mb-4 bg-black/40">
+              <img src="assets/images/projects/web-sunrise-terraces.webp" alt="Sunrise Terraces Property Showcase" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <span class="text-[10px] font-mono text-cyan-300 uppercase tracking-wider">Real Estate &amp; Development</span>
+            <h3 class="f-display text-lg font-bold text-white mt-1">Sunrise Terraces</h3>
+            <p class="text-xs text-white/60 font-sans mt-1">Interactive floorplan viewer, 3D unit walkthroughs, and VIP booking registration.</p>
+          </div>
+
+          <div class="glass-card p-4 group">
+            <div class="rounded-xl overflow-hidden border border-white/10 mb-4 bg-black/40">
+              <img src="assets/images/projects/web-alpha-carbons.webp" alt="Alpha Carbons Advanced Materials" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <span class="text-[10px] font-mono text-cyan-300 uppercase tracking-wider">Advanced Materials</span>
+            <h3 class="f-display text-lg font-bold text-white mt-1">Alpha Carbons</h3>
+            <p class="text-xs text-white/60 font-sans mt-1">Global industrial exporter website with multilingual product documentation and RFQ engine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         BOTTOM ENGAGEMENT CTA
+         ======================================================================== -->
+    <section class="py-16 sm:py-20 relative z-10">
+      <div class="wrap text-center">
+        <div class="max-w-2xl mx-auto space-y-6">
+          <p class="label justify-center">
+            <span class="label__rule" aria-hidden="true"></span>
+            <span data-scramble>Ready to Systemize</span>
+          </p>
+          <h2 class="f-display text-3xl sm:text-5xl font-bold tracking-tight text-white">
+            Have a system in mind?<br />
+            <span class="text-cyan-400">Let's build it right.</span>
+          </h2>
+          <p class="text-sm sm:text-base text-white/70 font-sans">
+            Tell us about your daily operations, what tools you are using today, and where work gets stuck. We'll map the optimal digital system architecture for your business.
+          </p>
+          <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
+            <a class="btn btn--light" href="index.html#contact" data-magnetic>
+              <span class="roll">
+                <span>Start a Project Consultation</span>
+                <span aria-hidden="true">Start a Project Consultation</span>
+              </span>
+              <span class="btn__ico">
+                <svg class="arrow" viewBox="0 0 10 10">
+                  <path d="M1 9 9 1M3 1h6v6"></path>
+                </svg>
+              </span>
+            </a>
+            <a class="btn btn--outline" href="mailto:contact@313techsolutions.com" data-magnetic>
+              <span class="roll">
+                <span>Email Our Architects</span>
+                <span aria-hidden="true">Email Our Architects</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="foot" role="contentinfo">
+    <div class="foot__depth">
+      <div class="foot__glow"></div>
+    </div>
+    <div class="wrap relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-5 space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/images/logo-white.png" alt="313 Tech Solutions" class="h-8 w-auto" />
+          </a>
+          <p class="text-xs text-white/60 font-sans max-w-sm leading-relaxed">
+            Engineering proprietary business operating systems, custom cloud ERPs, and high-performance applications with 100% intellectual property ownership.
+          </p>
+          <p class="text-xs font-mono text-cyan-300">
+            London · San Francisco · Singapore · Kuala Lumpur
+          </p>
+        </div>
+
+        <div class="lg:col-span-3 space-y-2">
+          <p class="text-xs uppercase font-mono tracking-wider text-white/40">Navigation</p>
+          <ul class="space-y-1.5 text-xs text-white/70">
+            <li><a href="index.html#services" class="hover:text-cyan-400 transition-colors">Services</a></li>
+            <li><a href="index.html#who-we-serve" class="hover:text-cyan-400 transition-colors">Who We Serve</a></li>
+            <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects &amp; Case Studies</a></li>
+            <li><a href="index.html#approach" class="hover:text-cyan-400 transition-colors">Engineering Philosophy</a></li>
+            <li><a href="index.html#process" class="hover:text-cyan-400 transition-colors">Delivery Methodology</a></li>
+            <li><a href="index.html#faq" class="hover:text-cyan-400 transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-2">
+          <p class="text-xs uppercase font-mono tracking-wider text-white/40">Direct Contact</p>
+          <p class="text-xs text-white/70 font-sans">
+            Have a project in mind or need an architectural review?<br />
+            <a href="mailto:contact@313techsolutions.com" class="text-cyan-400 hover:underline">contact@313techsolutions.com</a>
+          </p>
+          <p class="text-xs text-white/40 font-mono pt-3">
+            © 2026 313 Tech Solutions. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/313.js"></script>
+
+  <!-- ThreeJS Background Dots Effect Script -->
+  <script>
+    (function () {
+      const container = document.getElementById('hero-threejs-container');
+      if (!container || typeof THREE === 'undefined') return;
+
+      function start() {
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 14;
+
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.domElement.style.position = 'fixed';
+        renderer.domElement.style.top = '0';
+        renderer.domElement.style.left = '0';
+        renderer.domElement.style.width = '100vw';
+        renderer.domElement.style.height = '100vh';
+        renderer.domElement.style.zIndex = '0';
+        renderer.domElement.style.pointerEvents = 'none';
+        container.appendChild(renderer.domElement);
+
+        window.addEventListener('resize', () => {
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        const particleCount = 1400;
+        const geometry = new THREE.BufferGeometry();
+        const positions = new Float32Array(particleCount * 3);
+        const bgPositions = new Float32Array(particleCount * 3);
+        const colors = new Float32Array(particleCount * 3);
+        const speedFactors = new Float32Array(particleCount);
+
+        for (let i = 0; i < particleCount; i++) {
+          const idx = i * 3;
+          const x = (Math.random() - 0.5) * 46;
+          const y = (Math.random() - 0.5) * 32;
+          const z = (Math.random() - 0.5) * 12 - 2;
+
+          positions[idx] = x;
+          positions[idx + 1] = y;
+          positions[idx + 2] = z;
+
+          bgPositions[idx] = x;
+          bgPositions[idx + 1] = y;
+          bgPositions[idx + 2] = z;
+
+          const isCyan = Math.random() > 0.45;
+          colors[idx] = isCyan ? 0.0 : 0.6;
+          colors[idx + 1] = isCyan ? 0.94 : 0.45;
+          colors[idx + 2] = isCyan ? 1.0 : 0.95;
+
+          speedFactors[i] = 0.35 + Math.random() * 0.75;
+        }
+
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+        function createDot() {
+          const c = document.createElement('canvas');
+          c.width = 64; c.height = 64;
+          const ctx = c.getContext('2d');
+          const g = ctx.createRadialGradient(32, 32, 0, 32, 32, 30);
+          g.addColorStop(0, 'rgba(255,255,255,1)');
+          g.addColorStop(0.35, 'rgba(0,240,255,0.7)');
+          g.addColorStop(1, 'rgba(0,0,0,0)');
+          ctx.fillStyle = g;
+          ctx.beginPath();
+          ctx.arc(32, 32, 30, 0, Math.PI * 2);
+          ctx.fill();
+          return new THREE.CanvasTexture(c);
+        }
+
+        const pMaterial = new THREE.PointsMaterial({
+          size: 0.16,
+          vertexColors: true,
+          transparent: true,
+          opacity: 0.45,
+          map: createDot(),
+          blending: THREE.AdditiveBlending,
+          depthWrite: false
+        });
+
+        const particleSystem = new THREE.Points(geometry, pMaterial);
+        scene.add(particleSystem);
+
+        let lastScrollY = window.scrollY;
+        let scrollVelocity = 0.0;
+        let flowY = 0.0;
+        let flowX = 0.0;
+
+        window.addEventListener('scroll', () => {
+          const curY = window.scrollY;
+          const dY = curY - lastScrollY;
+          lastScrollY = curY;
+          scrollVelocity += dY * 0.003;
+        }, { passive: true });
+
+        const clock = new THREE.Clock();
+
+        function animate() {
+          requestAnimationFrame(animate);
+          const dt = Math.min(clock.getDelta(), 0.08);
+
+          scrollVelocity *= 0.93;
+          const activeFlowSpeed = 0.75 + Math.abs(scrollVelocity) * 1.6;
+          flowY += activeFlowSpeed * dt;
+          flowX += 0.18 * dt;
+
+          const posAttr = geometry.attributes.position;
+          const posArr = posAttr.array;
+
+          for (let i = 0; i < particleCount; i++) {
+            const idx = i * 3;
+            const spd = speedFactors[i];
+
+            let gy = bgPositions[idx + 1] + flowY * spd;
+            let gx = bgPositions[idx] + flowX * spd;
+
+            gy = ((gy + 16.0) % 32.0 + 32.0) % 32.0 - 16.0;
+            gx = ((gx + 23.0) % 46.0 + 46.0) % 46.0 - 23.0;
+
+            posArr[idx] = gx;
+            posArr[idx + 1] = gy;
+            posArr[idx + 2] = bgPositions[idx + 2];
+          }
+          posAttr.needsUpdate = true;
+
+          renderer.render(scene, camera);
+        }
+        animate();
+      }
+      start();
+    })();
+  </script>
+</body>
+
+</html>
