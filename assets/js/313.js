@@ -129,7 +129,7 @@
     });
   });
 
-  // 7. Mechanical Odometer Rolling Cylinder Animation (Exact 313 parity)
+  // 7. Mechanical Odometer Rolling Cylinder Animation (Exact 313 parity - Silky Smooth)
   function initOdometers() {
     const elements = document.querySelectorAll('.metric-counter, [data-count]');
     elements.forEach((el, elIndex) => {
@@ -142,7 +142,7 @@
         el.insertAdjacentHTML('afterend', `<span class="sr-only">${raw}</span>`);
       }
       el.classList.add('od');
-      const delay = elIndex * 90;
+      const delay = elIndex * 120;
       el.style.setProperty('--dl', delay + 'ms');
 
       el.innerHTML = digits.map((dStr, j) => {
@@ -159,13 +159,22 @@
         return `<span class="od__d" style="--k:${k};--j:${j}"><span class="od__g">${dStr}</span><span class="od__s">${spans}</span></span>`;
       }).join('');
 
+      // Intersection Observer: Start smoothly when scroll reaches the element
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            el.classList.add('is-on');
+            requestAnimationFrame(() => {
+              el.classList.add('is-on');
+            });
+          } else if (entry.boundingClientRect.top > (window.innerHeight || document.documentElement.clientHeight)) {
+            // Reset when scrolled back above, so scrolling down replays smoothly
+            el.classList.remove('is-on');
           }
         });
-      }, { threshold: 0.35 });
+      }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -40px 0px'
+      });
       observer.observe(el);
     });
   }
@@ -184,15 +193,15 @@
       let isRunning = false;
 
       function update() {
-        // Silky smooth momentum lerp
-        currentProgress += (targetProgress - currentProgress) * 0.065;
+        // Responsive smooth momentum lerp
+        currentProgress += (targetProgress - currentProgress) * 0.12;
 
         wordSpans.forEach((w, i) => {
           const wordThreshold = i / totalWords;
-          const wordWindow = 1.8 / totalWords;
+          const wordWindow = 1.4 / totalWords;
           const wordProg = Math.max(0, Math.min(1, (currentProgress - wordThreshold) / wordWindow));
 
-          if (wordProg >= 0.75) {
+          if (wordProg >= 0.7) {
             w.classList.add('on');
           } else {
             w.classList.remove('on');
@@ -210,10 +219,10 @@
       function onScroll() {
         const rect = textEl.getBoundingClientRect();
         const vh = window.innerHeight;
-        // Start scrub when top reaches 88% of viewport,
-        // and complete smoothly across a generous distance of 1.15 * vh (slowed down and luxurious!)
-        const scrollStart = vh * 0.88;
-        const scrollDistance = vh * 1.15;
+        // Start scrub when top enters comfortably (78% of viewport)
+        // and complete highlight when centered in viewport (35% from top), before ever reaching top edge!
+        const scrollStart = vh * 0.78;
+        const scrollDistance = vh * 0.48;
         targetProgress = Math.max(0, Math.min(1, (scrollStart - rect.top) / scrollDistance));
 
         if (!isRunning) {
@@ -535,7 +544,102 @@
       });
     });
   }
-  // 13. Cybernetic Mouse Cursor & Staggered Trail System (Reference Parity)
+  initFaqAccordion();
+
+  // 13. Potadot-Style Interactive Services Expandable Accordion ([data-sx-root])
+  // Reverse-engineered 1:1 from Potadot (https://potadot.com.my)
+  function initSxServices() {
+    const roots = document.querySelectorAll('[data-sx-root]');
+    roots.forEach((root) => {
+      const items = Array.from(root.querySelectorAll('.sx-item'));
+      if (!items.length) return;
+      let cur = 0;
+      let userInteracted = false;
+      let autoTimer = null;
+
+      function setActive(idx) {
+        cur = (idx + items.length) % items.length;
+        items.forEach((item, i) => {
+          const isOpen = i === cur;
+          item.classList.toggle('is-open', isOpen);
+          item.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+
+      let nextAllowedTime = 0;
+      let pendingHoverIdx = -1;
+      let pendingTimer = null;
+
+      function triggerItem(idx) {
+        if (idx !== cur) {
+          setActive(idx);
+          nextAllowedTime = performance.now() + 620; // 620ms smooth transition buffer
+        }
+      }
+
+      items.forEach((item, idx) => {
+        item.addEventListener('pointermove', (e) => {
+          if (e.pointerType !== 'mouse' || idx === cur) return;
+          userInteracted = true;
+          const now = performance.now();
+          if (now >= nextAllowedTime) {
+            clearTimeout(pendingTimer);
+            pendingHoverIdx = -1;
+            triggerItem(idx);
+            return;
+          }
+          if (pendingHoverIdx !== idx) {
+            pendingHoverIdx = idx;
+            clearTimeout(pendingTimer);
+            pendingTimer = setTimeout(() => {
+              pendingHoverIdx = -1;
+              if (item.matches(':hover')) triggerItem(idx);
+            }, nextAllowedTime - now + 20);
+          }
+        });
+
+        item.addEventListener('pointerleave', () => {
+          if (pendingHoverIdx === idx) {
+            clearTimeout(pendingTimer);
+            pendingHoverIdx = -1;
+          }
+        });
+
+        item.addEventListener('focusin', () => {
+          userInteracted = true;
+          triggerItem(idx);
+        });
+
+        item.addEventListener('click', (e) => {
+          if (!e.target.closest('a')) {
+            userInteracted = true;
+            triggerItem(idx);
+          }
+        });
+      });
+
+      // Auto-cycle through items if user has not interacted
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver((entries) => {
+          clearInterval(autoTimer);
+          if (entries[0] && entries[0].isIntersecting && window.innerWidth > 900) {
+            autoTimer = setInterval(() => {
+              if (userInteracted) {
+                clearInterval(autoTimer);
+              } else {
+                setActive(cur + 1);
+              }
+            }, 5200);
+          }
+        }, { threshold: 0.35 }).observe(root);
+      }
+
+      setActive(0);
+    });
+  }
+  initSxServices();
+
+  // 14. Cybernetic Mouse Cursor & Staggered Trail System (Reference Parity)
   function initCyberneticCursor() {
     if (!window.matchMedia('(pointer: fine)').matches) return;
 

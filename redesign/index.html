@@ -142,12 +142,31 @@
       </ul>
 
       <!-- Right Action Pill & Status Clock -->
-      <div class="nav__end">
-        <span class="nav__time">
-          <i class="nav__dot"></i>
-          <span>313 LIVE</span>
-          <span data-clock>--:--</span>
-        </span>
+                  <div class="nav__end">
+        <div class="contact-actions contact-actions--nav" data-contact-actions>
+          <a href="tel:+918700852782" class="btn btn--primary btn--call" data-magnetic aria-label="Call Us">
+            <span class="roll">
+              <span>Call Us</span>
+              <span aria-hidden="true">Call Us</span>
+            </span>
+            <span class="btn__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </span>
+          </a>
+          <a href="https://wa.me/918700852782?text=Hi%20there!%20I%20have%20an%20enquiry%20about%20your%20software%2C%20website%2C%20or%20mobile%20app%20services." target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--whatsapp" data-magnetic aria-label="WhatsApp">
+            <span class="roll">
+              <span class="flex items-center gap-1.5"><span class="live-status-dot"></span>WhatsApp</span>
+              <span aria-hidden="true" class="flex items-center gap-1.5"><span class="live-status-dot"></span>WhatsApp</span>
+            </span>
+            <span class="btn__ico">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </span>
+          </a>
+        </div>
         <a class="btn btn--light" href="#contact" data-magnetic>
           <span class="roll">
             <span>Start a Project</span>
@@ -159,10 +178,6 @@
             </svg>
           </span>
         </a>
-        <button class="menu-btn" type="button" aria-expanded="false" aria-label="Toggle Navigation Menu">
-          <span class="menu-btn__t hidden sm:inline">Menu</span>
-          <span class="menu-btn__i"><i></i><i></i></span>
-        </button>
       </div>
     </div>
   </header>
@@ -257,42 +272,6 @@
           </div>
         </div>
 
-        <!-- Metric Counter Grid in Hero Footer -->
-        <div class="hero__foot">
-          <div>
-            <div
-              class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight flex items-baseline">
-              <span class="metric-counter" data-count="120">0</span>
-              <span class="text-cyan-400 font-sans text-2xl sm:text-3xl ml-1">+</span>
-            </div>
-            <p class="text-xs uppercase tracking-wider text-white/50 font-mono mt-1">Enterprise Deliveries</p>
-          </div>
-          <div>
-            <div
-              class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight flex items-baseline">
-              <span class="metric-counter" data-count="350">0</span>
-              <span class="text-cyan-400 font-sans text-2xl sm:text-3xl ml-1">+</span>
-            </div>
-            <p class="text-xs uppercase tracking-wider text-white/50 font-mono mt-1">Software Engineers</p>
-          </div>
-          <div>
-            <div
-              class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight flex items-baseline">
-              <span class="metric-counter" data-count="85">0</span>
-              <span class="text-cyan-400 font-sans text-2xl sm:text-3xl ml-1">+</span>
-            </div>
-            <p class="text-xs uppercase tracking-wider text-white/50 font-mono mt-1">Cloud Deployments</p>
-          </div>
-          <div>
-            <div
-              class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight flex items-baseline">
-              <span class="metric-counter" data-count="12">0</span>
-              <span class="text-cyan-400 font-sans text-2xl sm:text-3xl ml-1">+</span>
-            </div>
-            <p class="text-xs uppercase tracking-wider text-white/50 font-mono mt-1">Years Continuous Innovation</p>
-          </div>
-        </div>
-
         <!-- Interactive 3D System Morph Badge (Potadot Style) -->
         <div class="morph-badge" id="hero-morph-badge" aria-label="Interactive 3D System Morph">
           <span class="mb-ic">
@@ -305,7 +284,7 @@
     </section>
 
     <!-- ========================================================================
-         CORE ARCHITECTURE STATEMENT SECTION: (Long Text with Natural Scrub)
+         MISSION & CLIENT FIT STATEMENT SECTION: (Interactive Scrub Text)
          Natural scroll-linked word highlight (.statement__scrub-text [data-scrub] .sw)
          ======================================================================== -->
     <section class="py-12 sm:py-16 relative z-10 border-t border-white/10" id="architecture" data-statement>
@@ -313,54 +292,92 @@
         <div class="max-w-5xl">
           <p class="label mb-4 sm:mb-6">
             <span class="label__rule" aria-hidden="true"></span>
-            <span data-scramble>Enterprise Core Architecture</span>
+            <span data-scramble>Looking For The Right Partner?</span>
           </p>
           <h2 class="statement__scrub-text f-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white mb-6 sm:mb-8" data-scrub>
-            <span class="sw">The</span>
-            <span class="sw">architecture</span>
-            <span class="sw">takes</span>
-            <span class="sw">the</span>
-            <span class="sw">shape</span>
-            <span class="sw">of</span>
+            <span class="sw">Need</span>
+            <span class="sw">a</span>
+            <span class="sw acc">website,</span>
+            <span class="sw acc">mobile</span>
+            <span class="sw acc">app,</span>
+            <span class="sw">or</span>
+            <span class="sw acc">custom</span>
+            <span class="sw acc">software</span>
+            <span class="sw">for</span>
             <span class="sw">your</span>
-            <span class="sw acc">mission.</span>
+            <span class="sw">business?</span>
+            <span class="sw">Struggling</span>
+            <span class="sw">to</span>
+            <span class="sw">find</span>
+            <span class="sw">the</span>
+            <span class="sw">right</span>
+            <span class="sw">team?</span>
+            <span class="sw acc">Look</span>
+            <span class="sw acc">no</span>
+            <span class="sw acc">further.</span>
             <span class="sw">We</span>
             <span class="sw">engineer</span>
-            <span class="sw">deterministic</span>
-            <span class="sw acc">AI</span>
-            <span class="sw acc">agents,</span>
-            <span class="sw">high-concurrency</span>
-            <span class="sw">cloud</span>
-            <span class="sw">microservices,</span>
+            <span class="sw acc">seamless</span>
+            <span class="sw acc">digital</span>
+            <span class="sw acc">products</span>
             <span class="sw">and</span>
-            <span class="sw">production</span>
-            <span class="sw">platforms</span>
+            <span class="sw acc">AI</span>
+            <span class="sw acc">workflows</span>
             <span class="sw">built</span>
-            <span class="sw">for</span>
-            <span class="sw acc">sub-second</span>
-            <span class="sw acc">speed.</span>
+            <span class="sw">to</span>
+            <span class="sw acc">scale.</span>
           </h2>
           <div class="flex flex-wrap items-center gap-6 sm:gap-8 text-xs font-mono uppercase tracking-widest text-cyan-300">
             <span class="flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]"></span>
-              Human Taste
+              Dedicated Engineering Squads
             </span>
             <span class="flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]"></span>
-              Machine Precision
+              Guaranteed Delivery Milestones
             </span>
             <span class="flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]"></span>
-              Zero Vendor Lock-in
+              100% Code &amp; IP Ownership
             </span>
+          </div>
+
+          <!-- Reusable Contact Actions Component (Call Us & WhatsApp) -->
+          <div class="mt-8 sm:mt-10 contact-actions" data-contact-actions>
+            <a href="tel:+918700852782" class="btn btn--primary btn--call" data-magnetic aria-label="Call Us">
+              <span class="roll">
+                <span>Call Us</span>
+                <span aria-hidden="true">Call Us</span>
+              </span>
+              <span class="btn__ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+            </a>
+
+            <a href="https://wa.me/918700852782?text=Hi%20there!%20I%20have%20an%20enquiry%20about%20your%20software%2C%20website%2C%20or%20mobile%20app%20services." 
+               target="_blank" rel="noopener noreferrer" 
+               class="btn btn--ghost btn--whatsapp" 
+               data-magnetic aria-label="Chat on WhatsApp">
+              <span class="roll">
+                <span class="flex items-center gap-2"><span class="live-status-dot"></span>WhatsApp</span>
+                <span aria-hidden="true" class="flex items-center gap-2"><span class="live-status-dot"></span>WhatsApp</span>
+              </span>
+              <span class="btn__ico">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ========================================================================
-         WHO WE SERVE: Interactive System Orchestration Layer
-         4 Business Models with Live Pipeline Runner, Live Metrics & Automation
+         WHO WE SERVE: Interactive Engineering & Digital Transformation Showcase
+         4 Core Solutions: Web Platforms, Mobile Apps, Custom ERP & AI Automation
          ======================================================================== -->
     <section class="serve py-12 sm:py-16 relative z-10 border-t border-white/10" id="who-we-serve" data-serve aria-labelledby="serve-title">
       <div class="wrap serve-grid">
@@ -368,13 +385,13 @@
           <div>
             <p class="label mb-3">
               <span class="label__rule" aria-hidden="true"></span>
-              <span data-scramble>System Orchestration</span>
+              <span data-scramble>Who We Serve</span>
             </p>
             <h2 class="f-display text-4xl sm:text-5xl font-bold tracking-tight text-white" id="serve-title">
-              See where your<br />business fits.
+              Engineered for your<br />scale &amp; industry.
             </h2>
             <p class="text-sm sm:text-base text-white/70 font-sans mt-3">
-              Four kinds of businesses we build for, and what transforms once daily operations run on a unified proprietary platform. Pick one or let them cycle automatically.
+              Explore how 313 Tech Solutions turns manual workflows and complex operations into seamless digital platforms. Pick a solution or let them cycle automatically.
             </p>
           </div>
 
@@ -383,11 +400,13 @@
               <button class="serve-tab" type="button" role="tab" aria-selected="true" aria-controls="scene-0" id="stab-0">
                 <span class="ic">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 8V6M10 6h4"/>
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
                   </svg>
                 </span>
-                <b>Customer Experience</b>
-                <span class="d">Smooth from the first booking to repeat loyalty</span>
+                <b>Websites &amp; Web Platforms</b>
+                <span class="d">Immersive digital frontends with sub-second performance</span>
                 <span class="go" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 6l6 6-6 6"/>
@@ -399,12 +418,13 @@
             <li>
               <button class="serve-tab" type="button" role="tab" aria-selected="false" aria-controls="scene-1" id="stab-1">
                 <span class="ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round">
-                    <path d="M4 9h16l-1.5-5h-13zM5 9v11h14V9M9 20v-6h6v6"/>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
                   </svg>
                 </span>
-                <b>Service Industry</b>
-                <span class="d">Bookings, members, quotations, and automated alerts</span>
+                <b>Mobile App Engineering</b>
+                <span class="d">High-performance iOS &amp; Android apps built to scale</span>
                 <span class="go" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 6l6 6-6 6"/>
@@ -416,12 +436,14 @@
             <li>
               <button class="serve-tab" type="button" role="tab" aria-selected="false" aria-controls="scene-2" id="stab-2">
                 <span class="ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round">
-                    <path d="M3 21V10l5 3V10l5 3V10l5 3V4h3v17z"/>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
                   </svg>
                 </span>
-                <b>SMEs &amp; Factories</b>
-                <span class="d">Turn manual operations and spreadsheets into one digital ERP</span>
+                <b>Custom Software &amp; ERP</b>
+                <span class="d">Unified business systems replacing spreadsheets &amp; manual tasks</span>
                 <span class="go" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 6l6 6-6 6"/>
@@ -434,11 +456,11 @@
               <button class="serve-tab" type="button" role="tab" aria-selected="false" aria-controls="scene-3" id="stab-3">
                 <span class="ic">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M9 15l-3-3c1-4 4-8 11-9-1 7-5 10-9 11zM14.5 9.5h.01"/>
+                    <path d="M12 2a4 4 0 0 1 4 4c0 1.9-1.3 3.5-3 3.9V13h3a3 3 0 0 1 3 3v2h2v4H3v-4h2v-2a3 3 0 0 1 3-3h3V9.9C9.3 9.5 8 7.9 8 6a4 4 0 0 1 4-4z"/>
                   </svg>
                 </span>
-                <b>Startup Founders</b>
-                <span class="d">Build a brand-new multi-tenant platform from idea to launch</span>
+                <b>AI Agents &amp; Automations</b>
+                <span class="d">Autonomous multi-agent pipelines operating 24/7 on autopilot</span>
                 <span class="go" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 6l6 6-6 6"/>
@@ -452,8 +474,8 @@
           <div class="pt-2">
             <a class="btn btn--light" href="projects.html" data-magnetic>
               <span class="roll">
-                <span>View Real Case Studies</span>
-                <span aria-hidden="true">View Real Case Studies</span>
+                <span>View Engineering Case Studies</span>
+                <span aria-hidden="true">View Engineering Case Studies</span>
               </span>
               <span class="btn__ico">
                 <svg class="arrow" viewBox="0 0 10 10">
@@ -466,83 +488,89 @@
 
         <div class="serve-stage">
           <article class="scene" id="scene-0" data-scene="journey">
-        <div class="scene-cap"><div><h3>Customer experience</h3><p>From the first booking to the next visit, every step feels smooth for your customer.</p></div><span class="tagline">Customer journey</span></div>
-        <div class="scene-body sa">
-          <div class="sa-cards" aria-hidden="true">
-            <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span class="ui-strong">Facial treatment</span><span class="ui-mini">Sat · 10:00 AM</span><span class="ui-pill"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg> Booked online</span></div>
-            <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span><span class="ui-strong">Reminder sent</span><span class="ui-mini">"See you tomorrow at 10:00 AM"</span></div>
-            <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14a4 4 0 0 0 7 0M9 9.5h.01M15 9.5h.01"/></svg></span><span class="ui-strong">Checked in</span><span class="ui-mini">Room 2 · on time</span><span class="meter"><i></i></span></div>
-            <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span><span class="ui-strong">Welcome back!</span><span class="ui-mini">6th visit · +50 points</span></div>
-          </div>
-          <div class="sa-track">
-            <div class="sa-line"><i></i></div><span class="sa-runner" aria-hidden="true"></span>
-            <div class="sa-node"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></svg></span>Book online</div>
-            <div class="sa-node"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>Instant updates</div>
-            <div class="sa-node"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14a4 4 0 0 0 7 0M9 9.5h.01M15 9.5h.01"/></svg></span>Smooth service</div>
-            <div class="sa-node last"><span class="n"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Loyal &amp; returning</div>
-          </div>
-          <div class="sa-foot"><span>Happier customers, more repeat business</span><span class="stars" aria-label="5 stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span></div>
-        </div>
-      </article>
+            <div class="scene-cap"><div><h3>Websites &amp; Platforms</h3><p>From dynamic landing experiences to conversion checkout, optimized for high traffic and speed.</p></div><span class="tagline">Web Architecture</span></div>
+            <div class="scene-body sa">
+              <div class="sa-cards" aria-hidden="true">
+                <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><span class="ui-strong">Edge Request</span><span class="ui-mini">Global CDN · &lt; 15ms</span><span class="ui-pill"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg> Fast Routing</span></div>
+                <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg></span><span class="ui-strong">Modern SSR Render</span><span class="ui-mini">313 Core Pipeline</span></div>
+                <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span><span class="ui-strong">100/100 Vitals</span><span class="ui-mini">Zero CLS · 60 FPS</span><span class="meter"><i></i></span></div>
+                <div class="ui-card sa-card"><span class="ico-s"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span><span class="ui-strong">High Conversion</span><span class="ui-mini">+45% client revenue</span></div>
+              </div>
+              <div class="sa-track">
+                <div class="sa-line"><i></i></div><span class="sa-runner" aria-hidden="true"></span>
+                <div class="sa-node"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Fast DNS</div>
+                <div class="sa-node"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg></span>Dynamic SSR</div>
+                <div class="sa-node"><span class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Instant Paint</div>
+                <div class="sa-node last"><span class="n"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Max Impact</div>
+              </div>
+              <div class="sa-foot"><span>Uncompromising performance, zero vendor lock-in</span><span class="stars" aria-label="5 stars"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span></div>
+            </div>
+          </article>
+
           <article class="scene" id="scene-1" data-scene="frontdesk">
-        <div class="scene-cap"><div><h3>Service industry</h3><p>Bookings, members, quotations and reminders in one place, for yoga studios, gyms, dental clinics, pet grooming and more.</p></div><span class="tagline">Front desk system</span></div>
-        <div class="scene-body sb">
-          <div class="sb-top"><span class="dots"><i></i><i></i><i></i></span>Front desk<span class="biz">for <span class="word">Yoga studio</span></span></div>
-          <div class="sb-grid">
-            <div class="sb-tile"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> Booking &amp; scheduling</h4><div class="cal"><span class="hd">M</span><span class="hd">T</span><span class="hd">W</span><span class="hd">T</span><span class="hd">F</span><span class="hd">S</span><span class="hd">S</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
-            <div class="sb-tile"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0M16 4.5a3.5 3.5 0 0 1 0 7M21 20a6 6 0 0 0-3-5.2"/></svg> Customers &amp; loyalty</h4>
-              <div class="member"><div class="row"><span>Member · Gold</span><span>Aishah R.</span></div><span class="pts">0</span><div class="row"><span>points</span><span>Next tier: Platinum</span></div><div class="meter"><i></i></div></div></div>
-            <div class="sb-tile"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h6M9 16h6"/></svg> Quotation &amp; invoicing</h4>
-              <div class="doc"><span class="t">Quotation #Q-0142</span><span class="lns"><span class="ln"></span><span class="ln s"></span><span class="ln"></span><span class="stamp">PAID</span></span><span class="tot"><span>Total</span><span>RM 380.00</span></span></div></div>
-            <div class="sb-tile"><h4><span class="bell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span> Reminders &amp; follow-ups</h4>
-              <div class="rem"><div class="msg">Class tomorrow, 8:00 AM<b>Sent ✓</b></div><div class="msg">Membership renews in 3 days<b>Sent ✓</b></div><div class="msg">How was your visit? Rate us<b>Sent ✓</b></div></div></div>
-          </div>
-        </div>
-      </article>
+            <div class="scene-cap"><div><h3>Mobile App Engineering</h3><p>Intuitive iOS &amp; Android applications with real-time sync, offline storage, and responsive UX.</p></div><span class="tagline">Mobile Architecture</span></div>
+            <div class="scene-body sb">
+              <div class="sb-top"><span class="dots"><i></i><i></i><i></i></span>Mobile Engine<span class="biz">cross-platform <span class="word">iOS &amp; Android</span></span></div>
+              <div class="sb-grid">
+                <div class="sb-tile"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Release Pipeline</h4><div class="cal"><span class="hd">M</span><span class="hd">T</span><span class="hd">W</span><span class="hd">T</span><span class="hd">F</span><span class="hd">S</span><span class="hd">S</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                <div class="sb-tile"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg> Active Users &amp; Sync</h4>
+                  <div class="member"><div class="row"><span>App Tier · Production</span><span>Global Sync</span></div><span class="pts">0</span><div class="row"><span>sessions</span><span>Target: 500k+ MAU</span></div><div class="meter"><i></i></div></div></div>
+                <div class="sb-tile"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> API &amp; Security Layer</h4>
+                  <div class="doc"><span class="t">Auth Token #SEC-313</span><span class="lns"><span class="ln"></span><span class="ln s"></span><span class="ln"></span><span class="stamp">VALID</span></span><span class="tot"><span>Latency</span><span>&lt; 8.2ms</span></span></div></div>
+                <div class="sb-tile"><h4><span class="bell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span> Real-Time Push Events</h4>
+                  <div class="rem"><div class="msg">Order Dispatched · WebSocket<b>Live ✓</b></div><div class="msg">Biometric Session Verified<b>Live ✓</b></div><div class="msg">State Synced to Cloud DB<b>Live ✓</b></div></div></div>
+              </div>
+            </div>
+          </article>
+
           <article class="scene" id="scene-2" data-scene="digital">
-        <div class="scene-cap"><div><h3>SMEs &amp; factories</h3><p>Paper forms, Excel sheets and chat follow-ups become one system with real-time data and fewer errors.</p></div><span class="tagline">Manual → digital</span></div>
-        <div class="scene-body sc">
-          <div class="sc-col">
-            <div class="sc-pile" aria-hidden="true">
-              <div class="mess paper"><span class="h">PROCESS RECORD</span><span class="ln"></span><span class="ln s"></span><span class="ln"></span><span class="ln s"></span><span class="ln"></span></div>
-              <div class="mess xls"><span class="hd"></span><span class="hd"></span><span class="hd"></span><span class="hd"></span><span class="hd"></span><span></span><span class="g"></span><span></span><span class="y"></span><span></span><span></span><span class="g"></span><span></span><span class="y"></span><span></span><span></span><span class="g"></span><span></span><span class="y"></span><span></span></div>
-              <div class="mess chat c1">How many drums left in stock?</div>
-              <div class="mess chat c2">Wait, let me check the Excel…</div>
+            <div class="scene-cap"><div><h3>Custom Software &amp; ERP</h3><p>Manual paperwork, fragmented spreadsheets, and scattered tools unified into one proprietary core system.</p></div><span class="tagline">Spreadsheets → ERP Core</span></div>
+            <div class="scene-body sc">
+              <div class="sc-col">
+                <div class="sc-pile" aria-hidden="true">
+                  <div class="mess paper"><span class="h">MANUAL WORKFLOW</span><span class="ln"></span><span class="ln s"></span><span class="ln"></span><span class="ln s"></span><span class="ln"></span></div>
+                  <div class="mess xls"><span class="hd"></span><span class="hd"></span><span class="hd"></span><span class="hd"></span><span class="hd"></span><span></span><span class="g"></span><span></span><span class="y"></span><span></span><span></span><span class="g"></span><span></span><span class="y"></span><span></span><span></span><span class="g"></span><span></span><span class="y"></span><span></span></div>
+                  <div class="mess chat c1">Where is the updated invoice file?</div>
+                  <div class="mess chat c2">Checking 3 different sheets now…</div>
+                </div>
+                <div class="cap"><b>Fragmented</b>Spreadsheets &amp; manual delays</div>
+              </div>
+              <span class="sc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <div class="sc-col">
+                <div class="sc-win">
+                  <div class="hd"><span>313 ERP Portal</span><span class="live">Live</span></div>
+                  <div class="kpis"><div class="kpi"><small>Active Tasks</small><b>650</b></div><div class="kpi"><small>Automated</small><b>500</b></div><div class="kpi"><small>Pending Review</small><b>200</b></div></div>
+                  <div class="bars" aria-hidden="true"><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:62%"></i><i style="height:95%"></i></div>
+                  <div class="rows"><div>Automated Ledger Sync<b>+100% Acc</b></div><div>Role-Based Permissions<b>Enforced</b></div><div>Real-Time Exec Reporting<b>Instant</b></div></div>
+                </div>
+                <div class="cap"><b>Custom 313 Portal</b>Unified data, 100% transparency</div>
+              </div>
             </div>
-            <div class="cap"><b>Manual</b>Paper, Excel &amp; chat follow-ups</div>
-          </div>
-          <span class="sc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <div class="sc-col">
-            <div class="sc-win">
-              <div class="hd"><span>Inventory</span><span class="live">Live</span></div>
-              <div class="kpis"><div class="kpi"><small>Balance</small><b>650</b></div><div class="kpi"><small>Total in</small><b>500</b></div><div class="kpi"><small>Total out</small><b>200</b></div></div>
-              <div class="bars" aria-hidden="true"><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:62%"></i><i style="height:95%"></i></div>
-              <div class="rows"><div>Receiving · PLASTIC-2-44GLN<b>+20 pcs</b></div><div>Sales order · IBC Tank<b>−40 pcs</b></div><div>Delivery order · PNV 1918<b>Done</b></div></div>
-            </div>
-            <div class="cap"><b>Digital system</b>One place, real-time, fewer errors</div>
-          </div>
-        </div>
-      </article>
+          </article>
+
           <article class="scene" id="scene-3" data-scene="founders">
-        <div class="scene-cap"><div><h3>Startup founders</h3><p>Got an idea for a platform? We take it from concept to a market-ready product.</p></div><span class="tagline">Idea → launch</span></div>
-        <div class="scene-body sd">
-          <div class="phone" aria-hidden="true"><div class="screen">
-            <div class="app shop"><div class="bar-t">Shop<span class="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2L20 8H6.2"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg><b>0</b></span></div>
-              <div class="grid4"><div class="p"><span class="im" style="background:#DDF2E4"></span><span class="ln"></span><span class="pr">RM 49</span></div><div class="p"><span class="im" style="background:#F6E3D2"></span><span class="ln"></span><span class="pr">RM 129</span></div><div class="p"><span class="im" style="background:#E3E8F4"></span><span class="ln"></span><span class="pr">RM 35</span></div><div class="p"><span class="im" style="background:#F3EBC9"></span><span class="ln"></span><span class="pr">RM 88</span></div></div>
-              <span class="btn-a">Add to cart</span></div>
-            <div class="app ride"><div class="map-s"><svg viewBox="0 0 200 400" preserveAspectRatio="none"><path class="route" d="M30 330 C 60 280, 40 230, 100 200 S 170 120, 160 60" fill="none" stroke="#3DB663" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 9"/><circle cx="160" cy="60" r="9" fill="#B07040"/><circle class="car" cx="30" cy="330" r="10" fill="#0A282D" stroke="#fff" stroke-width="4"/></svg></div>
-              <div class="ui-card ride-card"><span class="ui-strong">Driver on the way</span><span class="ui-mini">Arriving in 3 min · Proton X50</span></div></div>
-            <div class="app invest"><div class="bar-t">Portfolio<span class="ui-pill">+4.2%</span></div><span class="ui-mini">Total value</span><span class="bal">RM 12,480.50</span>
-              <svg viewBox="0 0 200 90"><path class="spark" d="M0 70 L25 62 L45 66 L70 48 L95 52 L120 34 L145 40 L170 20 L200 14" fill="none" stroke="#3DB663" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div class="chips"><span>1D</span><span>1W</span><span class="on">1M</span><span>1Y</span></div></div>
-            <div class="app member-app"><div class="bar-t">Membership</div><div class="mcard"><span class="ui-mini" style="color:#fff">Member since 2025</span><b>Gold tier</b><span style="font-size:11px">1,280 points</span></div><span class="qr"></span><span class="ui-mini" style="text-align:center">Scan at the counter</span></div>
-          </div></div>
-          <div class="sd-side">
-            <div class="plat"><div><b>E-commerce</b><span>like Shopee</span></div><div><b>On-demand</b><span>like Grab</span></div><div><b>Investment</b><span>app</span></div><div><b>Membership</b><span>app</span></div></div>
-            <div class="launch" aria-hidden="true"><span class="rail"><i></i></span><span class="rocket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M9 15l-3-3c1-4 4-8 11-9-1 7-5 10-9 11zM14.5 9.5h.01"/></svg></span><span>Idea</span><span>Design</span><span>Build</span><span>Launch</span></div>
-          </div>
+            <div class="scene-cap"><div><h3>AI Agents &amp; Automations</h3><p>Autonomous LLM pipelines and intelligent workflows taking manual workloads completely off your plate.</p></div><span class="tagline">Workflows on Autopilot</span></div>
+            <div class="scene-body sd">
+              <div class="phone" aria-hidden="true"><div class="screen">
+                <div class="app shop"><div class="bar-t">AI Agent 01<span class="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.9-1.3 3.5-3 3.9V13h3a3 3 0 0 1 3 3v2h2v4H3v-4h2v-2a3 3 0 0 1 3-3h3V9.9C9.3 9.5 8 7.9 8 6a4 4 0 0 1 4-4z"/></svg><b>Active</b></span></div>
+                  <div class="grid4"><div class="p"><span class="im" style="background:#DDF2E4"></span><span class="ln"></span><span class="pr">Auto-Triage</span></div><div class="p"><span class="im" style="background:#F6E3D2"></span><span class="ln"></span><span class="pr">Doc Parse</span></div><div class="p"><span class="im" style="background:#E3E8F4"></span><span class="ln"></span><span class="pr">CRM Sync</span></div><div class="p"><span class="im" style="background:#F3EBC9"></span><span class="ln"></span><span class="pr">Escalate</span></div></div>
+                  <span class="btn-a">Pipeline Running</span></div>
+                <div class="app ride"><div class="map-s"><svg viewBox="0 0 200 400" preserveAspectRatio="none"><path class="route" d="M30 330 C 60 280, 40 230, 100 200 S 170 120, 160 60" fill="none" stroke="#00f0ff" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 9"/><circle cx="160" cy="60" r="9" fill="#8b5cf6"/><circle class="car" cx="30" cy="330" r="10" fill="#0A282D" stroke="#fff" stroke-width="4"/></svg></div>
+                  <div class="ui-card ride-card"><span class="ui-strong">Multi-Agent Dispatch</span><span class="ui-mini">Automated ticket resolved · 1.2s</span></div></div>
+                <div class="app invest"><div class="bar-t">AI Efficiency<span class="ui-pill">+94.2%</span></div><span class="ui-mini">Hours Saved Weekly</span><span class="bal">42.5 hrs</span>
+                  <svg viewBox="0 0 200 90"><path class="spark" d="M0 70 L25 62 L45 66 L70 48 L95 52 L120 34 L145 40 L170 20 L200 14" fill="none" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <div class="chips"><span>1D</span><span>1W</span><span class="on">1M</span><span>1Y</span></div></div>
+                <div class="app member-app"><div class="bar-t">Autonomous Guardrails</div><div class="mcard"><span class="ui-mini" style="color:#fff">Verification Pipeline</span><b>Deterministic</b><span style="font-size:11px">99.9% Accuracy</span></div><span class="qr"></span><span class="ui-mini" style="text-align:center">Zero Hallucinations</span></div>
+              </div></div>
+              <div class="sd-side">
+                <div class="plat"><div><b>Support Bot</b><span>24/7 Agent</span></div><div><b>Data Scraping</b><span>Automated</span></div><div><b>Document AI</b><span>Instant OCR</span></div><div><b>ERP Trigger</b><span>Webhook Sync</span></div></div>
+                <div class="launch" aria-hidden="true"><span class="rail"><i></i></span><span class="rocket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M9 15l-3-3c1-4 4-8 11-9-1 7-5 10-9 11zM14.5 9.5h.01"/></svg></span><span>Trigger</span><span>AI Parse</span><span>Action</span><span>Verified</span></div>
+              </div>
+            </div>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
         </div>
       </div>
     </section>
@@ -550,149 +578,194 @@
 <!-- ========================================================================
          SERVICES SECTION: Iconic 313 .srow List
          ======================================================================== -->
-    <section class="py-12 sm:py-16 relative z-10 border-t border-white/10" id="services">
+    <section class="py-12 sm:py-20 relative z-10 border-t border-white/10 sx-sec" id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
           <div>
-            <p class="label">
+            <p class="label mb-3">
               <span class="label__rule" aria-hidden="true"></span>
               <span data-scramble>Services &amp; Packages</span>
             </p>
-            <h2 class="f-display text-4xl sm:text-6xl font-bold tracking-tight">
-              Ten core disciplines.<br />
-              <span class="acc">One engineering partner.</span>
+            <h2 class="f-display text-4xl sm:text-6xl font-bold tracking-tight" id="services-title">
+              Four ways we build for you.<br />
+              <span class="acc">Engineered for your scale.</span>
             </h2>
           </div>
-          <p class="text-sm text-white/50 max-w-sm font-sans">
-            Full-lifecycle technical delivery from architecture blueprint to deployment and managed SLA operations.
+          <p class="text-sm sm:text-base text-white/50 max-w-xl font-sans">
+            From the system that runs your back office to the app in your customer's pocket. Every platform is designed from scratch around your unique workflow.
           </p>
         </div>
 
-        <!-- 10 Service Rows -->
-        <div class="services-list">
-          <a class="srow" href="custom-software-development.html" data-rv>
-            <span class="srow__n">01</span>
-            <span class="srow__t">Custom Software Development</span>
-            <span class="srow__d">Tailor-made enterprise software architectures, backend APIs, and microservices
-              engineered for high-concurrency scale.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
+        <!-- Potadot-Style Interactive Services Horizontal Expandable Accordion -->
+        <div class="sx mt-8 sm:mt-12" data-sx-root>
+          <!-- 01. Business & ERP System -->
+          <article class="sx-item is-open" data-sx="0" tabindex="0" aria-expanded="true">
+            <div class="sx-tab"><span class="sx-n">01</span><span class="sx-name">Business &amp; ERP System</span></div>
+            <div class="sx-body">
+              <div class="sx-copy">
+                <span class="sx-n">01 / 04</span>
+                <h3>Business &amp; ERP System</h3>
+                <p class="sub">Built for your daily operations, multi-department workflows, and high-concurrency scale.</p>
+                <ul class="ticks">
+                  <li>Tailored to your unique business SOP and operational logic</li>
+                  <li>Standardizes processes across departments, warehouses &amp; branches</li>
+                  <li>Real-time inventory, financial tracking and automated SLA control</li>
+                  <li>High-concurrency microservices, resilient, and enterprise-secure</li>
+                </ul>
+                <a class="btn btn--primary mt-2" href="custom-software-development.html" data-magnetic>
+                  <span>Explore Business &amp; ERP System</span>
+                  <span class="btn__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                </a>
+              </div>
+              <div class="sx-visual">
+                <div class="mk mk-erp" aria-hidden="true">
+                  <div class="mk-win">
+                    <div class="mk-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+                    <div class="mk-main">
+                      <div class="mk-top"><span>Operations Dashboard</span><span class="mk-pill">Live Sync</span></div>
+                      <div class="mk-kpis">
+                        <div><small>Active Stock</small><b>650</b></div>
+                        <div><small>Monthly Jobs</small><b>128</b></div>
+                        <div><small>On-Time SLA</small><b>99.4%</b></div>
+                      </div>
+                      <div class="mk-chart"><i style="--h:38%"></i><i style="--h:54%"></i><i style="--h:46%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:84%"></i><i style="--h:76%"></i><i style="--h:92%"></i></div>
+                      <div class="mk-table">
+                        <div class="mk-row"><span>ERP-0142</span><span>Distributed Inventory DB</span><em class="ok">Delivered</em></div>
+                        <div class="mk-row"><span>ERP-0143</span><span>Automated Workflow Pipeline</span><em class="wait">In production</em></div>
+                        <div class="mk-row"><span>ERP-0144</span><span>Multi-Tenant ERP Node</span><em class="new">New order</em></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
 
-          <a class="srow" href="web-development-service.html" data-rv>
-            <span class="srow__n">02</span>
-            <span class="srow__t">Web Application Engineering</span>
-            <span class="srow__d">Ultra-fast web platforms built with modern React, Next.js, and TypeScript, optimized
-              for sub-100ms Core Web Vitals.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
+          <!-- 02. Online Platform -->
+          <article class="sx-item" data-sx="1" tabindex="0" aria-expanded="false">
+            <div class="sx-tab"><span class="sx-n">02</span><span class="sx-name">Online Platform</span></div>
+            <div class="sx-body">
+              <div class="sx-copy">
+                <span class="sx-n">02 / 04</span>
+                <h3>Online Platform</h3>
+                <p class="sub">Transform business ideas into scalable, market-leading digital platforms.</p>
+                <ul class="ticks">
+                  <li>From concept blueprint to resilient, market-ready web platform</li>
+                  <li>Sub-100ms Core Web Vitals with seamless user journeys</li>
+                  <li>Architected to handle surging user demand and peak concurrency</li>
+                  <li>Integrated automated self-service, booking &amp; payments</li>
+                </ul>
+                <a class="btn btn--primary mt-2" href="web-development-service.html" data-magnetic>
+                  <span>Explore Online Platform</span>
+                  <span class="btn__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                </a>
+              </div>
+              <div class="sx-visual">
+                <div class="mk mk-plat" aria-hidden="true">
+                  <div class="mk-win mk-browser">
+                    <div class="mk-bar"><i></i><i></i><i></i><span>portal.313techsolutions.com</span></div>
+                    <div class="mk-body">
+                      <div class="mk-top"><span>Book an Architecture Session</span><span class="mk-pill">Open Now</span></div>
+                      <div class="mk-days"><span><small>Mon</small>6</span><span><small>Tue</small>7</span><span><small>Wed</small>8</span><span class="on"><small>Thu</small>9</span><span><small>Fri</small>10</span></div>
+                      <div class="mk-slots"><span class="off">09:00</span><span>10:00</span><span class="on">11:00</span><span>14:00</span><span class="off">15:30</span><span>17:00</span></div>
+                      <div class="mk-cta">Confirm Reservation</div>
+                    </div>
+                  </div>
+                  <div class="mk-toast"><b></b><span><strong>New Booking Confirmed</strong>Thu 9 · 11:00 AM · Corporate SLA</span></div>
+                </div>
+              </div>
+            </div>
+          </article>
 
-          <a class="srow" href="mobile-app-development.html" data-rv>
-            <span class="srow__n">03</span>
-            <span class="srow__t">Mobile App Development</span>
-            <span class="srow__d">High-fidelity native and cross-platform iOS and Android applications crafted with
-              Flutter, React Native, and Swift.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
+          <!-- 03. Mobile Application -->
+          <article class="sx-item" data-sx="2" tabindex="0" aria-expanded="false">
+            <div class="sx-tab"><span class="sx-n">03</span><span class="sx-name">Mobile Application</span></div>
+            <div class="sx-body">
+              <div class="sx-copy">
+                <span class="sx-n">03 / 04</span>
+                <h3>Mobile Application</h3>
+                <p class="sub">Extend your platform directly into the hands of your customers and field teams.</p>
+                <ul class="ticks">
+                  <li>High-fidelity native &amp; cross-platform iOS and Android apps</li>
+                  <li>Real-time push alerts, telemetry &amp; offline data synchronization</li>
+                  <li>Integrated biometric authentication and secure multi-currency payments</li>
+                  <li>End-to-end App Store &amp; Google Play Store lifecycle support</li>
+                </ul>
+                <a class="btn btn--primary mt-2" href="mobile-app-development.html" data-magnetic>
+                  <span>Explore Mobile Application</span>
+                  <span class="btn__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                </a>
+              </div>
+              <div class="sx-visual">
+                <div class="mk mk-mob" aria-hidden="true">
+                  <div class="mk-phone">
+                    <div class="mk-notch"></div>
+                    <div class="mk-screen">
+                      <div class="mk-hi"><small>System Telemetry</small><strong>Hi, Alex</strong></div>
+                      <div class="mk-card"><small>Enterprise Tier · Global Node</small><strong>1,280 pts</strong><span class="mk-qr"></span></div>
+                      <div class="mk-list">
+                        <div class="mk-li"><b style="background:#00f0ff"></b><span><strong>API Gateway</strong>Production Sync · Fast</span><em>Live</em></div>
+                        <div class="mk-li"><b style="background:#8b5cf6"></b><span><strong>Microservices</strong>Distributed Cluster</span><em>Ready</em></div>
+                        <div class="mk-li"><b style="background:#10b981"></b><span><strong>Neural Pipeline</strong>RAG Reasoning Node</span><em>Sync</em></div>
+                      </div>
+                      <div class="mk-nav"><i class="on"></i><i></i><i></i><i></i></div>
+                    </div>
+                  </div>
+                  <div class="mk-push"><b></b><span><strong>Cluster Sync Complete</strong>All nodes verified · Zero downtime</span></div>
+                </div>
+              </div>
+            </div>
+          </article>
 
-          <a class="srow" href="ai-agent-integration-services.html" data-rv>
-            <span class="srow__n">04</span>
-            <span class="srow__t">AI Agent Integration Services</span>
-            <span class="srow__d">Autonomous agent workflows, enterprise RAG pipelines, fine-tuned LLMs, and real-time
-              intelligent data reasoning engines.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
+          <!-- 04. Website Design -->
+          <article class="sx-item" data-sx="3" tabindex="0" aria-expanded="false">
+            <div class="sx-tab"><span class="sx-n">04</span><span class="sx-name">Website Design</span></div>
+            <div class="sx-body">
+              <div class="sx-copy">
+                <span class="sx-n">04 / 04</span>
+                <h3>Website Design</h3>
+                <p class="sub">First impression matters — engineered to project technical dominance and convert.</p>
+                <ul class="ticks">
+                  <li>High-conversion corporate web platforms and headless digital storefronts</li>
+                  <li>Architected to project authority and reflect technical excellence</li>
+                  <li>Sub-second load times, technical SEO dominance &amp; schema markup</li>
+                  <li>Flawless responsiveness across desktop, tablet, and mobile displays</li>
+                </ul>
+                <a class="btn btn--primary mt-2" href="web-development-service.html" data-magnetic>
+                  <span>Explore Website Design</span>
+                  <span class="btn__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                </a>
+              </div>
+              <div class="sx-visual">
+                <div class="mk mk-web" aria-hidden="true">
+                  <div class="mk-win mk-browser">
+                    <div class="mk-bar"><i></i><i></i><i></i><span>313techsolutions.com</span></div>
+                    <div class="mk-body mk-site">
+                      <div class="mk-snav"><b></b><i></i><i></i><i></i><span></span></div>
+                      <div class="mk-hero"><div><i class="h1"></i><i class="h2"></i><i class="p"></i><i class="p s"></i><span class="btn"></span></div><div class="mk-img"></div></div>
+                      <div class="mk-feats"><div><b></b><i></i><i class="s"></i></div><div><b></b><i></i><i class="s"></i></div><div><b></b><i></i><i class="s"></i></div></div>
+                    </div>
+                  </div>
+                  <div class="mk-mini"><div class="mk-snav"><b></b><span></span></div><i class="h1"></i><div class="mk-img"></div><i class="p"></i></div>
+                  <div class="mk-seo"><small>Google Search</small><strong>313 Tech Solutions — Enterprise Software</strong><span>313techsolutions.com</span></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
 
-          <a class="srow" href="dotnet-development.html" data-rv>
-            <span class="srow__n">05</span>
-            <span class="srow__t">.NET Enterprise Development</span>
-            <span class="srow__d">Robust mission-critical backend solutions powered by .NET 8/9, Azure microservices,
-              and enterprise SQL pipelines.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
-
-          <a class="srow" href="software-modernization.html" data-rv>
-            <span class="srow__n">06</span>
-            <span class="srow__t">Software Modernization</span>
-            <span class="srow__d">Migrate legacy monoliths into cloud-native microservices, modern container stacks, and
-              modern event-driven architectures.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
-
-          <a class="srow" href="cloud-solutions.html" data-rv>
-            <span class="srow__n">07</span>
-            <span class="srow__t">Cloud &amp; DevOps Architecture</span>
-            <span class="srow__d">Multi-cloud deployments across AWS, Azure, and GCP with automated CI/CD pipelines,
-              Kubernetes, and Terraform IaC.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
-
-          <a class="srow" href="business-automation.html" data-rv>
-            <span class="srow__n">08</span>
-            <span class="srow__t">Business Process Automation</span>
-            <span class="srow__d">Eliminate operational friction through automated data processing, API integration, and
-              bespoke workflow bots.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
-
-          <a class="srow" href="e-commerce-development.html" data-rv>
-            <span class="srow__n">09</span>
-            <span class="srow__t">E-Commerce Engineering</span>
-            <span class="srow__d">Headless commerce architectures, custom Shopify Plus setups, and high-conversion
-              payment gateway integrations.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
-          </a>
-
-          <a class="srow" href="technology-consulting.html" data-rv>
-            <span class="srow__n">10</span>
-            <span class="srow__t">Strategic Technology Consulting</span>
-            <span class="srow__d">Executive technical audits, architecture roadmap planning, code health inspections,
-              and fractional CTO advisory.</span>
-            <span class="srow__go" aria-hidden="true">
-              <svg class="arrow" viewBox="0 0 10 10">
-                <path d="M1 9 9 1M3 1h6v6"></path>
-              </svg>
-            </span>
+        <!-- Capability Expansion Strip -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10 mt-10 sm:mt-14">
+          <p class="text-xs sm:text-sm text-white/50 max-w-xl">
+            Need a specialized infrastructure? We also architect Cloud &amp; DevOps, AI Agent Integration, Software Modernization, Distributed Backend APIs &amp; Process Automation.
+          </p>
+          <a class="btn btn--outline flex-shrink-0" href="projects.html" data-magnetic>
+            <span>View All Engineering Capabilities &amp; Case Studies</span>
+            <span class="btn__ico"><svg class="arrow" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 9 9 1M3 1h6v6"></path></svg></span>
           </a>
         </div>
       </div>
     </section>
-
     <!-- ========================================================================
          SYSTEM REFERENCE & REAL CASE STUDIES SECTION
          High-Resolution Production Platforms, Custom ERPs & Apps
@@ -1079,7 +1152,72 @@
       </div>
     </section>
 
-<!-- ========================================================================
+    <!-- ========================================================================
+         KEY METRICS & ENTERPRISE IMPACT SECTION (120+, 350+, 85+, 12+)
+         Smooth Mechanical Odometer Cylinders with Scroll-Triggered Roll
+         ======================================================================== -->
+    <section class="py-16 sm:py-24 relative z-10 border-t border-white/10 overflow-hidden" id="impact-metrics" aria-label="Enterprise Impact Metrics">
+      <div class="wrap">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
+          <div>
+            <p class="label">
+              <span class="label__rule" aria-hidden="true"></span>
+              <span data-scramble>Enterprise Scale &amp; Proven Track Record</span>
+            </p>
+            <h2 class="f-display text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2">
+              Measurable outcomes. Engineered to scale.
+            </h2>
+          </div>
+          <p class="text-sm text-white/50 max-w-sm font-sans">
+            Delivering mission-critical digital systems, robust architectures, and elite dedicated engineering for global industry leaders.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div class="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-400/40 transition-all duration-500 relative overflow-hidden group">
+            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight flex items-baseline">
+              <span class="metric-counter" data-count="120">0</span>
+              <span class="text-cyan-400 font-sans text-3xl sm:text-4xl ml-1">+</span>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-white/60 font-mono mt-3">Enterprise Deliveries</p>
+            <p class="text-xs text-white/40 mt-1 font-sans">End-to-end custom software &amp; web platforms</p>
+          </div>
+
+          <div class="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-400/40 transition-all duration-500 relative overflow-hidden group">
+            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-violet-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight flex items-baseline">
+              <span class="metric-counter" data-count="350">0</span>
+              <span class="text-cyan-400 font-sans text-3xl sm:text-4xl ml-1">+</span>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-white/60 font-mono mt-3">Software Engineers</p>
+            <p class="text-xs text-white/40 mt-1 font-sans">Full-stack architects, AI &amp; cloud talent</p>
+          </div>
+
+          <div class="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-400/40 transition-all duration-500 relative overflow-hidden group">
+            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight flex items-baseline">
+              <span class="metric-counter" data-count="85">0</span>
+              <span class="text-cyan-400 font-sans text-3xl sm:text-4xl ml-1">+</span>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-white/60 font-mono mt-3">Cloud Deployments</p>
+            <p class="text-xs text-white/40 mt-1 font-sans">Zero-downtime microservices &amp; pipelines</p>
+          </div>
+
+          <div class="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-400/40 transition-all duration-500 relative overflow-hidden group">
+            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight flex items-baseline">
+              <span class="metric-counter" data-count="12">0</span>
+              <span class="text-cyan-400 font-sans text-3xl sm:text-4xl ml-1">+</span>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-white/60 font-mono mt-3">Years Continuous Innovation</p>
+            <p class="text-xs text-white/40 mt-1 font-sans">Delivering technology leadership since 2014</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
          CLIENT PROOF SECTION: "In Good Company" (All 6 Clients)
          ======================================================================== -->
     <section class="py-12 sm:py-16 relative z-10 border-t border-white/10" id="clients">
