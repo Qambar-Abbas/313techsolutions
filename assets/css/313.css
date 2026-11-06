@@ -293,10 +293,16 @@ a:hover>.roll>span+span {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: var(--s-5);
+  gap: 4px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 4px 6px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--r-pill);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 1024px) {
@@ -306,17 +312,56 @@ a:hover>.roll>span+span {
 }
 
 .nav__link {
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 500;
-  color: var(--c-dim);
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
   position: relative;
-  padding-block: var(--s-2);
-  transition: color 0.25s var(--e-out);
+  padding: 6px 14px;
+  border-radius: var(--r-pill);
+  transition: color 0.25s var(--e-out), background-color 0.25s var(--e-out), border-color 0.25s var(--e-out), box-shadow 0.25s var(--e-out);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .nav__link:hover {
   color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav__link.is-active {
+  color: #ffffff;
+  background: rgba(0, 240, 255, 0.12);
+  border-color: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.2), inset 0 0 10px rgba(0, 240, 255, 0.08);
+  font-weight: 600;
+}
+
+.nav__link.is-active::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 8px #00f0ff;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.8;
+    box-shadow: 0 0 14px #00f0ff, 0 0 4px #00e599;
+  }
 }
 
 .nav__end {
@@ -1008,18 +1053,23 @@ html.menu-open .menu {
 
 .statement__scrub-text .sw {
   display: inline;
-  color: rgba(255, 255, 255, 0.35);
-  transition: color 0.4s cubic-bezier(0.22, 1, 0.36, 1), text-shadow 0.4s;
+  color: rgba(255, 255, 255, 0.28);
+  opacity: 0.35;
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              text-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   margin-right: 0.12em;
 }
 
 .statement__scrub-text .sw.on {
   color: #ffffff;
+  opacity: 1;
 }
 
 .statement__scrub-text .sw.on.acc {
   color: var(--c-accent);
-  text-shadow: 0 0 32px rgba(0, 240, 255, 0.65);
+  text-shadow: 0 0 32px rgba(0, 240, 255, 0.7);
+  opacity: 1;
 }
 
 /* 3. 3D Flipping Rotating Accent Words (.rot) */
@@ -3742,4 +3792,357 @@ html.menu-open .menu {
 
 .faq-item.is-open .faq-body {
   display: block;
+}
+
+/* ==========================================================================
+   Hero Interactive 3D System Morph Badge (.morph-badge)
+   ========================================================================== */
+.morph-badge {
+  position: absolute;
+  right: clamp(24px, 6vw, 96px);
+  bottom: 36px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 10px;
+  border-radius: 999px;
+  background: rgba(14, 14, 22, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.12);
+  font-family: var(--f-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.4s var(--e-out), transform 0.4s var(--e-out), border-color 0.3s;
+}
+
+.morph-badge:hover {
+  border-color: rgba(0, 240, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 28px rgba(0, 240, 255, 0.2);
+}
+
+@media (max-width: 900px) {
+  .morph-badge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 24px;
+    margin-inline: auto;
+    width: fit-content;
+  }
+}
+
+.morph-badge .mb-ic {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.morph-badge .mb-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c-accent);
+  box-shadow: 0 0 8px var(--c-accent);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.morph-badge.is-morphing .mb-dot {
+  transform: scale(1.3);
+  background: #ffffff;
+  box-shadow: 0 0 12px #ffffff;
+}
+
+.morph-badge .mb-name {
+  font-size: 13px;
+  letter-spacing: -0.01em;
+  min-width: 175px;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.morph-badge .mb-pills {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding-left: 8px;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.morph-badge .mb-pills button {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s;
+}
+
+.morph-badge .mb-pills button:hover {
+  background: rgba(0, 240, 255, 0.5);
+}
+
+.morph-badge .mb-pills button.on {
+  width: 26px;
+  background: rgba(0, 240, 255, 0.25);
+}
+
+.morph-badge .mb-pills button.on::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--c-accent);
+  box-shadow: 0 0 6px var(--c-accent);
+  transform-origin: left;
+  transform: scaleX(var(--prog, 1));
+}
+
+/* ==========================================================================
+   Cybernetic Interactive Cursor System (.cursor, .cursor-dot, .cursor-trail)
+   Matches Reference Site (Potadot / Dozfx)
+   ========================================================================== */
+.cursor,
+.cursor-dot,
+.cursor-trail {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+@media (pointer: fine) {
+  body.has-custom-cursor {
+    cursor: default;
+  }
+  body.has-custom-cursor a,
+  body.has-custom-cursor button,
+  body.has-custom-cursor [role="button"] {
+    cursor: pointer;
+  }
+
+  .cursor.is-live,
+  .cursor-dot.is-live,
+  .cursor-trail.is-live {
+    opacity: 1;
+  }
+}
+
+.cursor-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--c-accent);
+  box-shadow: 0 0 10px var(--c-accent), 0 0 20px rgba(0, 240, 255, 0.4);
+  transition: width 0.3s var(--e-expo), height 0.3s var(--e-expo), background-color 0.3s;
+}
+
+.cursor {
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(0, 240, 255, 0.45);
+  background: rgba(0, 240, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              height 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.4s,
+              border-color 0.4s,
+              transform 0.2s;
+}
+
+.cursor span {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s, transform 0.3s var(--e-expo);
+}
+
+.cursor.is-hover {
+  width: 58px;
+  height: 58px;
+  border-color: rgba(0, 240, 255, 0.8);
+  background: rgba(0, 240, 255, 0.12);
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.25);
+}
+
+.cursor.has-label {
+  width: 84px;
+  height: 84px;
+  border-color: #00f0ff;
+  background: #00f0ff;
+  box-shadow: 0 0 32px rgba(0, 240, 255, 0.6);
+}
+
+.cursor.has-label span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cursor.is-down {
+  transform: translate(-50%, -50%) scale(0.82);
+}
+
+.cursor-trail {
+  width: 5px;
+  height: 5px;
+  background: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
+}
+
+/* ==========================================================================
+   Cybernetic Dot-Matrix Preloader (313 Tech Solutions)
+   Three.js Luminous Additive Particles + Fluid Wave + Holographic Tilt & Hover
+   ========================================================================== */
+.site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: #030712;
+  background: radial-gradient(ellipse at 50% 45%, #071530 0%, #030712 65%, #010307 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s;
+  will-change: opacity, transform;
+}
+
+.site-loader.is-loaded {
+  opacity: 0;
+  transform: scale(1.035);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.site-loader__inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.site-loader__canvas-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.site-loader__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: crosshair;
+}
+
+.site-loader__hud {
+  position: absolute;
+  bottom: clamp(28px, 6vh, 56px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 90%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  pointer-events: none;
+}
+
+.site-loader__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--c-dim);
+  text-transform: uppercase;
+}
+
+.site-loader__signal {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff, 0 0 20px rgba(0, 240, 255, 0.6);
+  animation: pulse-dot 1.2s infinite ease-in-out;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.site-loader__progress-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.site-loader__progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00f0ff 0%, #38bdf8 50%, #00e599 100%);
+  box-shadow: 0 0 12px #00f0ff, 0 0 24px rgba(0, 240, 255, 0.5);
+  border-radius: 9999px;
+  transition: width 0.08s linear;
+}
+
+.site-loader__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.site-loader__pct {
+  color: #00f0ff;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--f-mono);
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
 }

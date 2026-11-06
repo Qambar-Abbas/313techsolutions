@@ -86,6 +86,30 @@
 
 <body class="bg-black text-white antialiased selection:bg-brandCyan selection:text-black">
 
+  <!-- ========================================================================
+       Cybernetic Dot-Matrix Preloader (313 Tech Solutions)
+       ======================================================================== -->
+  <aside id="site-loader" class="site-loader" aria-label="Loading 313 Tech Solutions">
+    <div class="site-loader__inner">
+      <div class="site-loader__canvas-wrap">
+        <canvas id="loader-canvas" class="site-loader__canvas"></canvas>
+      </div>
+      <div class="site-loader__hud">
+        <div class="site-loader__status">
+          <span class="flex items-center"><span class="site-loader__signal"></span><span id="loader-status-text">INITIALIZING 313 CORE</span></span>
+          <span class="site-loader__pct" id="loader-counter">0%</span>
+        </div>
+        <div class="site-loader__progress-bar">
+          <div class="site-loader__progress-fill" id="loader-progress-bar"></div>
+        </div>
+        <div class="site-loader__meta">
+          <span>LATENCY &lt; 1ms</span>
+          <span class="site-loader__tag">SYSTEM 313 ACTIVE</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
   <!-- Background Layer 1: WebGL Fluid Simplex Noise Shader Canvas -->
   <canvas id="shader-canvas-ANIMATION_3"></canvas>
 
@@ -107,14 +131,14 @@
       </a>
 
       <!-- Desktop Links -->
-      <ul class="nav__links">
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#who-we-serve" class="nav__link">Who We Serve</a></li>
-        <li><a href="#projects" class="nav__link">Projects</a></li>
-        <li><a href="#approach" class="nav__link">Approach</a></li>
-        <li><a href="#process" class="nav__link">Process</a></li>
-        <li><a href="#faq" class="nav__link">FAQ</a></li>
-        <li><a href="#contact" class="nav__link">Contact</a></li>
+      <ul class="nav__links" role="tablist">
+        <li><a href="index.html" class="nav__link is-active" aria-current="page">Home</a></li>
+        <li><a href="custom-software-development.html" class="nav__link">Services</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="about-us-full.html" class="nav__link">About</a></li>
+        <li><a href="team.html" class="nav__link">Team</a></li>
+        <li><a href="insights.html" class="nav__link">Insights</a></li>
+        <li><a href="careers.html" class="nav__link">Careers</a></li>
       </ul>
 
       <!-- Right Action Pill & Status Clock -->
@@ -149,17 +173,13 @@
       <nav class="lg:col-span-8">
         <ul class="menu__links">
           <li><a href="index.html"><sup>01</sup><span>Home</span></a></li>
-          <li><a href="#services"><sup>02</sup><span>Services</span></a></li>
-          <li><a href="#who-we-serve"><sup>03</sup><span>Who We Serve</span></a></li>
-          <li><a href="#projects"><sup>04</sup><span>Projects</span></a></li>
-          <li><a href="#approach"><sup>05</sup><span>Approach</span></a></li>
-          <li><a href="#process"><sup>06</sup><span>Process</span></a></li>
-          <li><a href="#faq"><sup>07</sup><span>FAQ</span></a></li>
-          <li><a href="about-us-full.html"><sup>08</sup><span>About Us</span></a></li>
-          <li><a href="team.html"><sup>09</sup><span>Team</span></a></li>
-          <li><a href="insights.html"><sup>10</sup><span>Insights</span></a></li>
-          <li><a href="careers.html"><sup>11</sup><span>Careers</span></a></li>
-          <li><a href="#contact"><sup>12</sup><span>Say Hello</span></a></li>
+          <li><a href="custom-software-development.html"><sup>02</sup><span>Services</span></a></li>
+          <li><a href="projects.html"><sup>03</sup><span>Projects</span></a></li>
+          <li><a href="about-us-full.html"><sup>04</sup><span>About Us</span></a></li>
+          <li><a href="team.html"><sup>05</sup><span>Team</span></a></li>
+          <li><a href="insights.html"><sup>06</sup><span>Insights</span></a></li>
+          <li><a href="careers.html"><sup>07</sup><span>Careers</span></a></li>
+          <li><a href="index.html#contact"><sup>08</sup><span>Contact</span></a></li>
         </ul>
       </nav>
       <div class="lg:col-span-4 border-l border-white/10 pl-8 hidden lg:block space-y-6">
@@ -201,16 +221,15 @@
         <div class="max-w-4xl">
           <p class="label">
             <span class="label__rule" aria-hidden="true"></span>
-            <span data-scramble>Enterprise Software · Cloud Architecture · Autonomous AI</span>
+            <span data-scramble>Websites · Mobile Apps · Custom Software · AI Automations</span>
           </p>
           <h1 class="hero__title">
-            <span>Engineered</span><br />
-            <span>for speed.</span><br />
-            <span>Built for <span class="acc">tomorrow.</span></span>
+            <span>Your digital</span><br />
+            <span>transformation &amp;</span><br />
+            <span>online presence <span class="acc">partner.</span></span>
           </h1>
           <p class="hero__claim">
-            We architect and deploy mission-critical software systems, enterprise cloud infrastructures, and autonomous
-            AI agents. Human taste leads. Machine precision scales.
+            We build beautiful &amp; immersive websites, mobile apps, custom software solutions, and AI automations workflows. Turning manual workflows and complex operations into seamless digital experiences.
           </p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="#contact" data-magnetic>
@@ -272,6 +291,15 @@
             </div>
             <p class="text-xs uppercase tracking-wider text-white/50 font-mono mt-1">Years Continuous Innovation</p>
           </div>
+        </div>
+
+        <!-- Interactive 3D System Morph Badge (Potadot Style) -->
+        <div class="morph-badge" id="hero-morph-badge" aria-label="Interactive 3D System Morph">
+          <span class="mb-ic">
+            <i class="mb-dot"></i>
+          </span>
+          <span class="mb-name" id="morph-shape-name">AI &amp; Neural Architecture</span>
+          <div class="mb-pills" id="morph-shape-pills" role="tablist"></div>
         </div>
       </div>
     </section>
@@ -1431,10 +1459,13 @@
   </script>
 
   <!-- ========================================================================
-       THREE.JS ORGANIC SPHERE BALL TRANSFORMING INTO BACKGROUND ON SCROLL
+       THREE.JS INTERACTIVE 3D IT MORPHING SPHERE & SYSTEM ARCHITECTURE
+       Transitions between 6 IT Shapes (ERP, Cloud, Mobile, Web, APIs, AI)
+       with Responsive Mouse Hover Fluid Dynamics, Scaled Grand Geometry,
+       and transforms seamlessly into continuous background river on scroll
        ======================================================================== -->
   <script>
-    (function initThreeScrollMorph() {
+    (function initThreeMorphingSystem() {
       const container = document.getElementById('hero-threejs-container');
       if (!container) return;
 
@@ -1460,79 +1491,16 @@
           renderer.setSize(window.innerWidth, window.innerHeight);
         }, { passive: true });
 
-        // 48,000 Particle Cloud
-        const particleCount = 48000;
+        // 30,000 High-Density Particle Cloud
+        const particleCount = 30000;
         const geometry = new THREE.BufferGeometry();
         const positions = new Float32Array(particleCount * 3);
-        const basePositions = new Float32Array(particleCount * 3);
         const bgPositions = new Float32Array(particleCount * 3);
         const speedFactors = new Float32Array(particleCount);
         const colors = new Float32Array(particleCount * 3);
 
-        const baseRadius = 6.0;
-        const colorCyan = new THREE.Color(0x00f0ff);
-        const colorViolet = new THREE.Color(0x8b5cf6);
-        const colorWhite = new THREE.Color(0xffffff);
-        const colorSky = new THREE.Color(0x38bdf8);
-
-        for (let i = 0; i < particleCount; i++) {
-          // Fibonacci spherical distribution for organic sphere
-          const phi = Math.acos(1 - 2 * (i + 0.5) / particleCount);
-          const theta = Math.PI * (1 + Math.sqrt(5)) * (i + 0.5);
-
-          const ux = Math.sin(phi) * Math.cos(theta);
-          const uy = Math.sin(phi) * Math.sin(theta);
-          const uz = Math.cos(phi);
-
-          // Harmonic contours
-          const harmonic =
-            0.30 * Math.sin(3 * theta) * Math.sin(2 * phi) +
-            0.24 * Math.cos(2 * theta + phi) * Math.sin(phi) +
-            0.18 * Math.sin(5 * theta) * Math.cos(3 * phi);
-
-          const volDepth = (Math.random() - 0.5) * 0.45;
-          const r = baseRadius + harmonic + volDepth;
-
-          const sx = r * ux;
-          const sy = r * uy;
-          const sz = r * uz;
-
-          basePositions[i * 3] = sx;
-          basePositions[i * 3 + 1] = sy;
-          basePositions[i * 3 + 2] = sz;
-
-          positions[i * 3] = sx;
-          positions[i * 3 + 1] = sy;
-          positions[i * 3 + 2] = sz;
-
-          // Structured 3D Frustum distribution: NEVER behind camera (camera at z=19, bounds [-22, 6])
-          const boundsX = 46.0;
-          const boundsY = 32.0;
-          const boundsZ = 28.0;
-
-          bgPositions[i * 3] = (Math.random() - 0.5) * boundsX;
-          bgPositions[i * 3 + 1] = (Math.random() - 0.5) * boundsY;
-          bgPositions[i * 3 + 2] = -22.0 + Math.random() * boundsZ;
-
-          speedFactors[i] = 0.75 + Math.random() * 0.5;
-
-          // Glowing gradient color distribution
-          const mixFactor = (sy / baseRadius + 1) * 0.5;
-          let pColor = colorCyan.clone().lerp(colorViolet, Math.max(0, Math.min(1, mixFactor)));
-          const rand = Math.random();
-          if (rand > 0.82) {
-            pColor = colorSky.clone().lerp(colorWhite, 0.75);
-          } else if (rand > 0.95) {
-            pColor = colorWhite.clone();
-          }
-
-          colors[i * 3] = pColor.r;
-          colors[i * 3 + 1] = pColor.g;
-          colors[i * 3 + 2] = pColor.b;
-        }
-
-        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+        const rnd = Math.random;
+        const S = 1.25; // Proportional grand scale factor for all IT shapes
 
         // Circular Glow Dot Texture
         function createDot() {
@@ -1553,11 +1521,407 @@
           return tex;
         }
 
+        // ==============================================================
+        // PRECOMPUTE 6 IT SHAPES (Scaled Grand Dimensions)
+        // ==============================================================
+        const shapes = [];
+
+        // ----------------------------------------------------
+        // Shape 0: Cyber AI Sphere (Restored to Grand Base Radius 6.4)
+        // ----------------------------------------------------
+        const s0 = new Float32Array(particleCount * 3);
+        const c0 = new Float32Array(particleCount * 3);
+        const colCyan = new THREE.Color(0x00f0ff);
+        const colViolet = new THREE.Color(0x8b5cf6);
+        const colWhite = new THREE.Color(0xffffff);
+
+        for (let i = 0; i < particleCount; i++) {
+          const phi = Math.acos(1 - 2 * (i + 0.5) / particleCount);
+          const theta = Math.PI * (1 + Math.sqrt(5)) * (i + 0.5);
+
+          const harmonic =
+            0.35 * Math.sin(3 * theta) * Math.sin(2 * phi) +
+            0.28 * Math.cos(2 * theta + phi) * Math.sin(phi) +
+            0.20 * Math.sin(5 * theta) * Math.cos(3 * phi);
+
+          const r = 6.4 + harmonic + (rnd() - 0.5) * 0.40;
+
+          const sx = r * Math.sin(phi) * Math.cos(theta);
+          const sy = r * Math.sin(phi) * Math.sin(theta);
+          const sz = r * Math.cos(phi);
+
+          s0[i * 3]     = sx;
+          s0[i * 3 + 1] = sy;
+          s0[i * 3 + 2] = sz;
+
+          const mix = (sy / 6.4 + 1) * 0.5;
+          let clr = colCyan.clone().lerp(colViolet, Math.max(0, Math.min(1, mix)));
+          if (rnd() > 0.88) clr = clr.lerp(colWhite, 0.8);
+
+          c0[i * 3]     = clr.r;
+          c0[i * 3 + 1] = clr.g;
+          c0[i * 3 + 2] = clr.b;
+        }
+        shapes.push({ name: "AI & Neural Architecture", coords: s0, colors: c0 });
+
+        // ----------------------------------------------------
+        // Shape 1: Custom ERP & Business Systems (Desktop Monitor & 3D Bar Columns)
+        // ----------------------------------------------------
+        const s1 = new Float32Array(particleCount * 3);
+        const c1 = new Float32Array(particleCount * 3);
+        const colEmerald = new THREE.Color(0x00e599);
+        const colGold = new THREE.Color(0xfbbf24);
+
+        for (let i = 0; i < particleCount; i++) {
+          const p = rnd();
+          let x = 0, y = 0, z = 0;
+          let clr = colEmerald.clone();
+
+          if (p < 0.28) {
+            // Monitor Frame
+            const perimW = 10.4 * S, perimH = 6.6 * S;
+            const d = rnd() * (perimW + perimH) * 2;
+            if (d < perimW) {
+              x = -perimW / 2 + d; y = perimH / 2 + 0.6 * S;
+            } else if (d < perimW + perimH) {
+              x = perimW / 2; y = perimH / 2 + 0.6 * S - (d - perimW);
+            } else if (d < perimW * 2 + perimH) {
+              x = perimW / 2 - (d - (perimW + perimH)); y = -perimH / 2 + 0.6 * S;
+            } else {
+              x = -perimW / 2; y = -perimH / 2 + 0.6 * S + (d - (perimW * 2 + perimH));
+            }
+            x += (rnd() - 0.5) * 0.25; y += (rnd() - 0.5) * 0.25; z = (rnd() - 0.5) * 0.5;
+            clr = colCyan.clone();
+          } else if (p < 0.38) {
+            // Stand & Base
+            if (rnd() < 0.45) {
+              x = (rnd() - 0.5) * 1.4 * S; y = (-2.7 - rnd() * 2.2) * S; z = (rnd() - 0.5) * 0.7;
+            } else {
+              const angle = rnd() * Math.PI * 2, rad = Math.sqrt(rnd()) * 2.8 * S;
+              x = Math.cos(angle) * rad * 1.3; y = -5.8 + (rnd() - 0.5) * 0.3; z = Math.sin(angle) * rad * 0.7;
+            }
+            clr = colCyan.clone().lerp(colViolet, 0.4);
+          } else if (p < 0.80) {
+            // 4 Volumetric Bar Chart Pillars
+            const barIdx = Math.floor(rnd() * 4);
+            const barX = (-3.15 + barIdx * 2.1) * S;
+            const barHeights = [2.2, 4.2, 3.1, 5.2];
+            const bh = barHeights[barIdx] * S;
+            const bw = 1.35 * S;
+            const side = rnd();
+            if (side < 0.4) {
+              x = barX + (rnd() - 0.5) * bw; y = -2.2 * S + rnd() * bh; z = 0.65 + (rnd() - 0.5) * 0.2;
+            } else if (side < 0.7) {
+              x = barX + (rnd() < 0.5 ? -1 : 1) * (bw / 2); y = -2.2 * S + rnd() * bh; z = (rnd() - 0.5) * 1.3;
+            } else {
+              x = barX + (rnd() - 0.5) * bw; y = -2.2 * S + bh + (rnd() - 0.5) * 0.2; z = (rnd() - 0.5) * 1.3;
+              if (barIdx === 3) clr = colGold.clone();
+            }
+            if (barIdx === 3 && rnd() > 0.4) clr = colGold.clone();
+            else clr = colEmerald.clone().lerp(colCyan, barIdx / 3);
+          } else {
+            // Screen Grid & Sparkline
+            if (rnd() < 0.4) {
+              const t = rnd();
+              x = (-3.8 + t * 7.6) * S;
+              y = (-1.2 + 1.2 * t + 2.5 * Math.sin(t * Math.PI * 1.4)) * S;
+              z = 0.8 + (rnd() - 0.5) * 0.25;
+              clr = colWhite.clone();
+            } else {
+              x = (rnd() - 0.5) * 9.6 * S;
+              y = (0.6 + (rnd() - 0.5) * 5.6) * S;
+              z = -0.3 + (rnd() - 0.5) * 0.25;
+              clr = colCyan.clone().lerp(colEmerald, 0.5);
+            }
+          }
+
+          s1[i * 3]     = x; s1[i * 3 + 1] = y; s1[i * 3 + 2] = z;
+          c1[i * 3]     = clr.r; c1[i * 3 + 1] = clr.g; c1[i * 3 + 2] = clr.b;
+        }
+        shapes.push({ name: "Custom ERP & Business Systems", coords: s1, colors: c1 });
+
+        // ----------------------------------------------------
+        // Shape 2: Cloud & DevOps Infrastructure
+        // ----------------------------------------------------
+        const s2 = new Float32Array(particleCount * 3);
+        const c2 = new Float32Array(particleCount * 3);
+        const colSky = new THREE.Color(0x38bdf8);
+
+        const cloudSpheres = [
+          { cx: 0.0 * S,  cy: 3.2 * S, cz: 0.0, r: 2.7 * S },
+          { cx: -2.8 * S, cy: 2.2 * S, cz: 0.0, r: 2.1 * S },
+          { cx: 2.7 * S,  cy: 2.0 * S, cz: 0.0, r: 2.0 * S },
+          { cx: 0.8 * S,  cy: 4.3 * S, cz: 0.0, r: 1.8 * S }
+        ];
+
+        for (let i = 0; i < particleCount; i++) {
+          const p = rnd();
+          let x = 0, y = 0, z = 0;
+          let clr = colSky.clone();
+
+          if (p < 0.55) {
+            const s = cloudSpheres[Math.floor(rnd() * cloudSpheres.length)];
+            const phi = rnd() * Math.PI;
+            const theta = rnd() * Math.PI * 2;
+            const rad = s.r * (0.85 + rnd() * 0.15);
+            x = s.cx + rad * Math.sin(phi) * Math.cos(theta) * 1.1;
+            y = s.cy + rad * Math.sin(phi) * Math.sin(theta);
+            z = s.cz + rad * Math.cos(phi) * 0.85;
+            if (y < 1.3 * S) y = 1.3 * S + (rnd() - 0.5) * 0.3;
+            clr = colSky.clone().lerp(colWhite, rnd() * 0.4);
+          } else if (p < 0.90) {
+            const tier = Math.floor(rnd() * 3);
+            const tierY = (-0.6 - tier * 1.5) * S;
+            const w = 7.6 * S, h = 0.9 * S, d = 2.8 * S;
+            const f = rnd();
+            if (f < 0.45) {
+              x = (rnd() - 0.5) * w; y = tierY + (rnd() - 0.5) * h; z = d / 2 + (rnd() - 0.5) * 0.2;
+              if (rnd() > 0.85) clr = colCyan.clone();
+            } else if (f < 0.75) {
+              x = (rnd() - 0.5) * w; y = tierY + (rnd() < 0.5 ? h / 2 : -h / 2); z = (rnd() - 0.5) * d;
+            } else {
+              x = (rnd() < 0.5 ? w / 2 : -w / 2); y = tierY + (rnd() - 0.5) * h; z = (rnd() - 0.5) * d;
+            }
+            clr = clr.lerp(colCyan, 0.4);
+          } else {
+            const colX = (-2.5 + Math.floor(rnd() * 4) * 1.66) * S;
+            x = colX + (rnd() - 0.5) * 0.25;
+            y = (-3.8 + rnd() * 5.2) * S;
+            z = (rnd() - 0.5) * 1.4;
+            clr = colCyan.clone();
+          }
+
+          s2[i * 3]     = x; s2[i * 3 + 1] = y; s2[i * 3 + 2] = z;
+          c2[i * 3]     = clr.r; c2[i * 3 + 1] = clr.g; c2[i * 3 + 2] = clr.b;
+        }
+        shapes.push({ name: "Cloud & DevOps Infrastructure", coords: s2, colors: c2 });
+
+        // ----------------------------------------------------
+        // Shape 3: Mobile Engineering & Smartphone App
+        // ----------------------------------------------------
+        const s3 = new Float32Array(particleCount * 3);
+        const c3 = new Float32Array(particleCount * 3);
+        const colPhone = new THREE.Color(0x10b981);
+
+        for (let i = 0; i < particleCount; i++) {
+          const p = rnd();
+          let x = 0, y = 0, z = 0;
+          let clr = colPhone.clone();
+
+          if (p < 0.35) {
+            const pw = 6.4 * S, ph = 11.6 * S;
+            const d = rnd() * (pw + ph) * 2;
+            if (d < pw) {
+              x = -pw / 2 + d; y = ph / 2;
+            } else if (d < pw + ph) {
+              x = pw / 2; y = ph / 2 - (d - pw);
+            } else if (d < pw * 2 + ph) {
+              x = pw / 2 - (d - (pw + ph)); y = -ph / 2;
+            } else {
+              x = -pw / 2; y = -ph / 2 + (d - (pw * 2 + ph));
+            }
+            x += (rnd() - 0.5) * 0.25; y += (rnd() - 0.5) * 0.25; z = (rnd() - 0.5) * 0.6;
+            clr = colCyan.clone();
+          } else if (p < 0.42) {
+            x = (rnd() - 0.5) * 1.8 * S;
+            y = 4.8 * S + (rnd() - 0.5) * 0.4;
+            z = 0.4 + (rnd() - 0.5) * 0.15;
+            clr = colWhite.clone();
+          } else if (p < 0.82) {
+            const cardType = rnd();
+            if (cardType < 0.35) {
+              x = (rnd() - 0.5) * 5.0 * S;
+              y = 2.4 * S + (rnd() - 0.5) * 1.8 * S;
+              z = 0.45 + (rnd() - 0.5) * 0.2;
+              clr = colEmerald.clone();
+            } else if (cardType < 0.70) {
+              const isLeft = rnd() < 0.5;
+              x = (isLeft ? -1.35 : 1.35) * S + (rnd() - 0.5) * 2.1 * S;
+              y = -0.3 * S + (rnd() - 0.5) * 1.8 * S;
+              z = 0.45 + (rnd() - 0.5) * 0.2;
+              clr = isLeft ? colCyan.clone() : colPhone.clone();
+            } else {
+              x = (rnd() - 0.5) * 5.0 * S;
+              y = -2.5 * S + (rnd() - 0.5) * 1.4 * S;
+              z = 0.45 + (rnd() - 0.5) * 0.2;
+              clr = colSky.clone();
+            }
+          } else {
+            x = (rnd() - 0.5) * 2.2 * S;
+            y = -4.9 * S + (rnd() - 0.5) * 0.2;
+            z = 0.4 + (rnd() - 0.5) * 0.15;
+            clr = colWhite.clone();
+          }
+
+          s3[i * 3]     = x; s3[i * 3 + 1] = y; s3[i * 3 + 2] = z;
+          c3[i * 3]     = clr.r; c3[i * 3 + 1] = clr.g; c3[i * 3 + 2] = clr.b;
+        }
+        shapes.push({ name: "Mobile App Engineering", coords: s3, colors: c3 });
+
+        // ----------------------------------------------------
+        // Shape 4: Web Applications & Platforms
+        // ----------------------------------------------------
+        const s4 = new Float32Array(particleCount * 3);
+        const c4 = new Float32Array(particleCount * 3);
+        const colPurple = new THREE.Color(0xc084fc);
+
+        for (let i = 0; i < particleCount; i++) {
+          const p = rnd();
+          let x = 0, y = 0, z = 0;
+          let clr = colCyan.clone();
+
+          if (p < 0.30) {
+            const bw = 11.2 * S, bh = 7.4 * S;
+            const d = rnd() * (bw + bh) * 2;
+            if (d < bw) {
+              x = -bw / 2 + d; y = bh / 2;
+            } else if (d < bw + bh) {
+              x = bw / 2; y = bh / 2 - (d - bw);
+            } else if (d < bw * 2 + bh) {
+              x = bw / 2 - (d - (bw + bh)); y = -bh / 2;
+            } else {
+              x = -bw / 2; y = -bh / 2 + (d - (bw * 2 + bh));
+            }
+            x += (rnd() - 0.5) * 0.25; y += (rnd() - 0.5) * 0.25; z = (rnd() - 0.5) * 0.45;
+            clr = colCyan.clone();
+          } else if (p < 0.40) {
+            if (rnd() < 0.35) {
+              const dotIdx = Math.floor(rnd() * 3);
+              const dotX = (-4.7 + dotIdx * 0.7) * S;
+              const angle = rnd() * Math.PI * 2;
+              const r = Math.sqrt(rnd()) * 0.25 * S;
+              x = dotX + Math.cos(angle) * r;
+              y = 2.8 * S + Math.sin(angle) * r;
+              z = 0.28;
+              clr = dotIdx === 0 ? new THREE.Color(0xf87171) : dotIdx === 1 ? colGold : colEmerald;
+            } else {
+              x = (-1.8 + rnd() * 5.8) * S;
+              y = 2.8 * S + (rnd() - 0.5) * 0.45 * S;
+              z = 0.28;
+              clr = colWhite.clone();
+            }
+          } else if (p < 0.75) {
+            // Glowing 3D Code Symbol: < / >
+            const sym = rnd();
+            if (sym < 0.35) {
+              const t = rnd();
+              if (t < 0.5) {
+                const s = t * 2; x = (-1.5 - (1 - s) * 1.5) * S; y = s * 1.8 * S;
+              } else {
+                const s = (t - 0.5) * 2; x = (-3.0 + s * 1.5) * S; y = -s * 1.8 * S;
+              }
+              x += (rnd() - 0.5) * 0.3; y += (rnd() - 0.5) * 0.3; z = 0.8 + (rnd() - 0.5) * 0.35;
+              clr = colCyan.clone();
+            } else if (sym < 0.65) {
+              const t = rnd();
+              x = (-0.8 + t * 1.6) * S;
+              y = (-1.9 + t * 3.8) * S;
+              x += (rnd() - 0.5) * 0.3; y += (rnd() - 0.5) * 0.3; z = 0.8 + (rnd() - 0.5) * 0.35;
+              clr = colWhite.clone();
+            } else {
+              const t = rnd();
+              if (t < 0.5) {
+                const s = t * 2; x = (1.5 + s * 1.5) * S; y = s * 1.8 * S;
+              } else {
+                const s = (t - 0.5) * 2; x = (3.0 - s * 1.5) * S; y = -s * 1.8 * S;
+              }
+              x += (rnd() - 0.5) * 0.3; y += (rnd() - 0.5) * 0.3; z = 0.8 + (rnd() - 0.5) * 0.35;
+              clr = colPurple.clone();
+            }
+          } else {
+            x = (rnd() - 0.5) * 9.8 * S;
+            y = -2.2 * S + (rnd() - 0.5) * 1.3 * S;
+            z = -0.1 + (rnd() - 0.5) * 0.25;
+            clr = colCyan.clone().lerp(colPurple, 0.4);
+          }
+
+          s4[i * 3]     = x; s4[i * 3 + 1] = y; s4[i * 3 + 2] = z;
+          c4[i * 3]     = clr.r; c4[i * 3 + 1] = clr.g; c4[i * 3 + 2] = clr.b;
+        }
+        shapes.push({ name: "Web Applications & Platforms", coords: s4, colors: c4 });
+
+        // ----------------------------------------------------
+        // Shape 5: Distributed Microservices & Network Mesh
+        // ----------------------------------------------------
+        const s5 = new Float32Array(particleCount * 3);
+        const c5 = new Float32Array(particleCount * 3);
+
+        const netNodes = [
+          { x: 0 * S,        y: 0 * S,        z: 0 * S,        weight: 1.6 },
+          { x: -3.8 * S,     y: 2.8 * S,      z: 1.8 * S,      weight: 1.0 },
+          { x: 3.8 * S,      y: 2.8 * S,      z: -1.8 * S,     weight: 1.0 },
+          { x: -3.8 * S,     y: -2.8 * S,     z: -1.8 * S,     weight: 1.0 },
+          { x: 3.8 * S,      y: -2.8 * S,     z: 1.8 * S,      weight: 1.0 },
+          { x: 0 * S,        y: 4.5 * S,      z: -1.2 * S,     weight: 1.0 },
+          { x: 0 * S,        y: -4.5 * S,     z: 1.2 * S,      weight: 1.0 },
+          { x: -4.8 * S,     y: 0 * S,        z: -1.0 * S,     weight: 1.0 },
+          { x: 4.8 * S,      y: 0 * S,        z: 1.0 * S,      weight: 1.0 }
+        ];
+        const netEdges = [
+          [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6], [0, 7], [0, 8],
+          [1, 5], [2, 5], [3, 6], [4, 6], [1, 7], [3, 7], [2, 8], [4, 8]
+        ];
+
+        for (let i = 0; i < particleCount; i++) {
+          const p = rnd();
+          let x = 0, y = 0, z = 0;
+          let clr = colCyan.clone();
+
+          if (p < 0.55) {
+            const n = netNodes[Math.floor(rnd() * netNodes.length)];
+            const phi = rnd() * Math.PI;
+            const theta = rnd() * Math.PI * 2;
+            const r = (0.35 + rnd() * 0.8) * n.weight * S;
+            x = n.x + r * Math.sin(phi) * Math.cos(theta);
+            y = n.y + r * Math.sin(phi) * Math.sin(theta);
+            z = n.z + r * Math.cos(phi);
+            clr = n.weight > 1.2 ? colWhite.clone() : colCyan.clone();
+          } else {
+            const e = netEdges[Math.floor(rnd() * netEdges.length)];
+            const n1 = netNodes[e[0]];
+            const n2 = netNodes[e[1]];
+            const t = rnd();
+            x = n1.x + (n2.x - n1.x) * t + (rnd() - 0.5) * 0.25;
+            y = n1.y + (n2.y - n1.y) * t + (rnd() - 0.5) * 0.25;
+            z = n1.z + (n2.z - n1.z) * t + (rnd() - 0.5) * 0.25;
+            clr = colEmerald.clone().lerp(colCyan, t);
+          }
+
+          s5[i * 3]     = x; s5[i * 3 + 1] = y; s5[i * 3 + 2] = z;
+          c5[i * 3]     = clr.r; c5[i * 3 + 1] = clr.g; c5[i * 3 + 2] = clr.b;
+        }
+        shapes.push({ name: "Distributed Microservices & APIs", coords: s5, colors: c5 });
+
+        // Initialize positions & background streaming particles
+        const boundsX = 46.0;
+        const boundsY = 32.0;
+        const boundsZ = 28.0;
+
+        for (let i = 0; i < particleCount; i++) {
+          const idx = i * 3;
+          positions[idx]     = s0[idx];
+          positions[idx + 1] = s0[idx + 1];
+          positions[idx + 2] = s0[idx + 2];
+
+          bgPositions[idx]     = (rnd() - 0.5) * boundsX;
+          bgPositions[idx + 1] = (rnd() - 0.5) * boundsY;
+          bgPositions[idx + 2] = -22.0 + rnd() * boundsZ;
+
+          speedFactors[i] = 0.75 + rnd() * 0.5;
+
+          colors[idx]     = c0[idx];
+          colors[idx + 1] = c0[idx + 1];
+          colors[idx + 2] = c0[idx + 2];
+        }
+
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
         const pMaterial = new THREE.PointsMaterial({
-          size: 0.085,
+          size: 0.086,
           vertexColors: true,
           transparent: true,
-          opacity: 0.88,
+          opacity: 0.90,
           map: createDot(),
           blending: THREE.AdditiveBlending,
           depthWrite: false
@@ -1566,7 +1930,7 @@
         const particleSystem = new THREE.Points(geometry, pMaterial);
         scene.add(particleSystem);
 
-        // Orbital Halo Ring (2,800 points)
+        // Orbital Halo Ring for AI Sphere
         const ringCount = 2800;
         const ringGeo = new THREE.BufferGeometry();
         const ringPos = new Float32Array(ringCount * 3);
@@ -1575,20 +1939,20 @@
 
         for (let i = 0; i < ringCount; i++) {
           const angle = (i / ringCount) * Math.PI * 2;
-          const rRing = baseRadius * 1.28 + (Math.random() - 0.5) * 0.8;
+          const rRing = 6.4 * 1.30 + (rnd() - 0.5) * 0.9;
           const rx = Math.cos(angle) * rRing;
-          const ry = (Math.random() - 0.5) * 0.9;
+          const ry = (rnd() - 0.5) * 1.1;
           const rz = Math.sin(angle) * rRing;
 
-          baseRingPos[i * 3] = rx;
+          baseRingPos[i * 3]     = rx;
           baseRingPos[i * 3 + 1] = ry;
           baseRingPos[i * 3 + 2] = rz;
 
-          ringPos[i * 3] = rx;
+          ringPos[i * 3]     = rx;
           ringPos[i * 3 + 1] = ry;
           ringPos[i * 3 + 2] = rz;
 
-          ringColors[i * 3] = 0.0;
+          ringColors[i * 3]     = 0.0;
           ringColors[i * 3 + 1] = 0.94;
           ringColors[i * 3 + 2] = 1.0;
         }
@@ -1596,10 +1960,10 @@
         ringGeo.setAttribute('color', new THREE.BufferAttribute(ringColors, 3));
 
         const ringMat = new THREE.PointsMaterial({
-          size: 0.075,
+          size: 0.078,
           vertexColors: true,
           transparent: true,
-          opacity: 0.40,
+          opacity: 0.42,
           map: createDot(),
           blending: THREE.AdditiveBlending,
           depthWrite: false
@@ -1608,19 +1972,83 @@
         ringSystem.rotation.x = Math.PI * 0.28;
         scene.add(ringSystem);
 
-        // Mouse tracking
+        // ==============================================================
+        // MORPH CONTROLLER & UI BADGE SETUP
+        // ==============================================================
+        const badge = document.getElementById('hero-morph-badge');
+        const badgeName = document.getElementById('morph-shape-name');
+        const badgePills = document.getElementById('morph-shape-pills');
+
+        let currentShapeIdx = 0;
+        let fromShapeIdx = 0;
+        let toShapeIdx = 0;
+        let morphProgress = 1.0;
+        let isMorphing = false;
+        const MORPH_DURATION = 1.6;
+        const CYCLE_INTERVAL = 6.5;
+        let cycleTimer = 0;
+        let isBadgeHovered = false;
+
+        if (badgePills) {
+          badgePills.innerHTML = '';
+          shapes.forEach((s, idx) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.setAttribute('aria-label', s.name);
+            if (idx === 0) btn.classList.add('on');
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              triggerMorph(idx);
+            });
+            badgePills.appendChild(btn);
+          });
+        }
+
+        if (badge) {
+          badge.addEventListener('mouseenter', () => { isBadgeHovered = true; });
+          badge.addEventListener('mouseleave', () => { isBadgeHovered = false; });
+          badge.addEventListener('click', () => {
+            triggerMorph((currentShapeIdx + 1) % shapes.length);
+          });
+        }
+
+        function triggerMorph(targetIdx) {
+          if (targetIdx === currentShapeIdx && !isMorphing) return;
+          fromShapeIdx = currentShapeIdx;
+          toShapeIdx = targetIdx;
+          morphProgress = 0.0;
+          isMorphing = true;
+          cycleTimer = 0;
+
+          if (badge) badge.classList.add('is-morphing');
+          if (badgeName) {
+            badgeName.style.opacity = '0';
+            setTimeout(() => {
+              badgeName.textContent = shapes[targetIdx].name;
+              badgeName.style.opacity = '1';
+            }, 250);
+          }
+
+          if (badgePills) {
+            const btns = badgePills.querySelectorAll('button');
+            btns.forEach((b, idx) => {
+              b.classList.toggle('on', idx === targetIdx);
+              if (idx !== targetIdx) b.style.setProperty('--prog', '0');
+            });
+          }
+        }
+
+        // ==============================================================
+        // MOUSE / CURSOR TRACKING & FLUID HOVER DYNAMICS
+        // ==============================================================
         let targetMouseX = 0, targetMouseY = 0;
         let mouseX = 0, mouseY = 0;
-        let isHovered = false;
         let hoverIntensity = 0.0;
 
         window.addEventListener('mousemove', (e) => {
           targetMouseX = (e.clientX / window.innerWidth) * 2 - 1;
           targetMouseY = -(e.clientY / window.innerHeight) * 2 + 1;
-          isHovered = true;
         }, { passive: true });
-
-        window.addEventListener('mouseleave', () => { isHovered = false; });
 
         // Flow & Scroll tracking
         let scrollProgress = 0.0;
@@ -1643,122 +2071,188 @@
         onScroll();
 
         const clock = new THREE.Clock();
-        const rInfluence = 2.5;
-        const rInfSq = rInfluence * rInfluence;
 
         function animate() {
           requestAnimationFrame(animate);
           const dt = Math.min(clock.getDelta(), 0.08);
           const time = clock.getElapsedTime();
 
+          // Auto-Cycle Shape Morphing
+          if (!isBadgeHovered && scrollProgress < 0.25) {
+            cycleTimer += dt;
+            const progressRatio = Math.min(1.0, cycleTimer / CYCLE_INTERVAL);
+            if (badgePills) {
+              const activeBtn = badgePills.querySelector('button.on');
+              if (activeBtn) activeBtn.style.setProperty('--prog', progressRatio.toFixed(3));
+            }
+            if (cycleTimer >= CYCLE_INTERVAL && !isMorphing) {
+              triggerMorph((currentShapeIdx + 1) % shapes.length);
+            }
+          }
+
+          // Handle Active Morph Animation
+          if (isMorphing) {
+            morphProgress += dt / MORPH_DURATION;
+            if (morphProgress >= 1.0) {
+              morphProgress = 1.0;
+              isMorphing = false;
+              currentShapeIdx = toShapeIdx;
+              if (badge) badge.classList.remove('is-morphing');
+            }
+          }
+
+          // Smooth Cubic Easing for Morph
+          const easeMorph = morphProgress < 0.5
+            ? 4 * morphProgress * morphProgress * morphProgress
+            : 1 - Math.pow(-2 * morphProgress + 2, 3) / 2;
+
           // Smooth interpolate mouse tracking
-          mouseX += (targetMouseX - mouseX) * 0.08;
-          mouseY += (targetMouseY - mouseY) * 0.08;
+          mouseX += (targetMouseX - mouseX) * 0.09;
+          mouseY += (targetMouseY - mouseY) * 0.09;
 
-          const targetHover = isHovered ? 1.0 : 0.0;
-          hoverIntensity += (targetHover - hoverIntensity) * 0.08;
+          // Calculate 3D Cursor Raycast in World Coordinates
+          const vHalfH = Math.tan((camera.fov * Math.PI / 180) / 2) * camera.position.z;
+          const vHalfW = vHalfH * camera.aspect;
 
-          // Smooth interpolate scroll progress (ease-in-out)
+          // Position: Shifted prominently to the right on desktop!
+          const heroX = window.innerWidth > 1400 ? 5.2 : (window.innerWidth > 1024 ? 4.5 : (window.innerWidth > 900 ? 3.8 : 0.0));
+          const heroY = 0.2;
+
+          // Smooth interpolate scroll progress
           currentProgress += (scrollProgress - currentProgress) * 0.06;
           const easeProgress = currentProgress * currentProgress * (3 - 2 * currentProgress);
 
-          // Continuous directional flow: drifting steadily upwards and slightly diagonally
-          // Directional drift is ALWAYS active, never stops, and is boosted when scrolling down
+          particleSystem.position.x = THREE.MathUtils.lerp(heroX, 0.0, easeProgress);
+          particleSystem.position.y = THREE.MathUtils.lerp(heroY, -0.4, easeProgress);
+          ringSystem.position.x = particleSystem.position.x;
+          ringSystem.position.y = particleSystem.position.y;
+
+          // Target Hover near 3D shape
+          const cursorWorldX = mouseX * vHalfW - particleSystem.position.x;
+          const cursorWorldY = mouseY * vHalfH - particleSystem.position.y;
+          const cursorDistToShape = Math.hypot(cursorWorldX, cursorWorldY);
+
+          const targetHover = (cursorDistToShape < 9.5 && easeProgress < 0.35) ? 1.0 : 0.0;
+          hoverIntensity += (targetHover - hoverIntensity) * 0.10;
+
+          // Update Badge Visibility on Scroll
+          if (badge) {
+            badge.style.opacity = Math.max(0, 1 - easeProgress * 3.5).toFixed(2);
+            badge.style.pointerEvents = easeProgress > 0.08 ? 'none' : 'auto';
+            badge.style.transform = 'translateY(' + (easeProgress * 18).toFixed(1) + 'px)';
+          }
+
+          // Continuous directional flow: drifting steadily upwards and diagonally
           scrollVelocity *= 0.93;
           const activeFlowSpeed = 0.75 + Math.abs(scrollVelocity) * 1.6;
           flowY += activeFlowSpeed * dt;
           flowX += 0.18 * dt;
 
-          // Position: Sphere glides from hero right/center to full background center
-          const heroX = window.innerWidth > 960 ? 2.5 : 0.0;
-          particleSystem.position.x = THREE.MathUtils.lerp(heroX, 0.0, easeProgress);
-          particleSystem.position.y = THREE.MathUtils.lerp(0.1, -0.4, easeProgress);
-          ringSystem.position.x = particleSystem.position.x;
-          ringSystem.position.y = particleSystem.position.y;
+          // 3D Perspective Dynamic Tilt + Organic Rotation
+          const rotY = time * 0.07;
+          const tiltY = mouseX * 0.40 * hoverIntensity * (1.0 - easeProgress);
+          const tiltX = -mouseY * 0.30 * hoverIntensity * (1.0 - easeProgress);
 
-          // Dynamic rotation
-          const rotY = time * 0.06;
-          particleSystem.rotation.y = rotY;
-          particleSystem.rotation.x = THREE.MathUtils.lerp(0.02, 0.08, easeProgress);
-          ringSystem.rotation.y = -time * 0.04;
+          particleSystem.rotation.y = rotY + tiltY;
+          particleSystem.rotation.x = THREE.MathUtils.lerp(0.03, 0.08, easeProgress) + tiltX;
+          ringSystem.rotation.y = -time * 0.04 + tiltY * 0.5;
+          ringSystem.rotation.x = Math.PI * 0.28 + tiltX * 0.5;
 
-          // Adjust point size & opacity on transformation into background — NEVER disappear!
-          pMaterial.size = THREE.MathUtils.lerp(0.085, 0.065, easeProgress);
-          pMaterial.opacity = THREE.MathUtils.lerp(0.88, 0.72, easeProgress);
-          ringMat.opacity = THREE.MathUtils.lerp(0.40, 0.20, easeProgress);
+          // Ring visibility
+          const isSphereActive = (currentShapeIdx === 0 && !isMorphing) || (isMorphing && (fromShapeIdx === 0 || toShapeIdx === 0));
+          let ringTargetOpacity = 0.0;
+          if (isSphereActive) {
+            if (!isMorphing && currentShapeIdx === 0) ringTargetOpacity = 0.42;
+            else if (toShapeIdx === 0) ringTargetOpacity = 0.42 * easeMorph;
+            else if (fromShapeIdx === 0) ringTargetOpacity = 0.42 * (1 - easeMorph);
+          }
+          ringMat.opacity = THREE.MathUtils.lerp(ringTargetOpacity, 0.15 * ringTargetOpacity, easeProgress);
 
-          // Project cursor coordinates to 3D world space
-          const vHalfH = Math.tan((camera.fov * Math.PI / 180) / 2) * camera.position.z;
-          const vHalfW = vHalfH * camera.aspect;
-          const cursorWorldX = mouseX * vHalfW - particleSystem.position.x;
-          const cursorWorldY = mouseY * vHalfH - particleSystem.position.y;
+          pMaterial.size = THREE.MathUtils.lerp(0.086, 0.065, easeProgress);
+          pMaterial.opacity = THREE.MathUtils.lerp(0.92, 0.72, easeProgress);
 
-          const cosY = Math.cos(rotY);
-          const sinY = Math.sin(rotY);
+          const fromCoords = shapes[fromShapeIdx].coords;
+          const toCoords = shapes[toShapeIdx].coords;
+          const fromColors = shapes[fromShapeIdx].colors;
+          const toColors = shapes[toShapeIdx].colors;
 
           const posAttr = geometry.attributes.position;
+          const colAttr = geometry.attributes.color;
           const posArr = posAttr.array;
+          const colArr = colAttr.array;
 
-          // Interpolate individual particles from sphere shape to directional background river
+          const cosY = Math.cos(particleSystem.rotation.y);
+          const sinY = Math.sin(particleSystem.rotation.y);
+
+          // Update Particle Positions, Colors, and Interactive Hover Ripple
           for (let i = 0; i < particleCount; i++) {
             const idx = i * 3;
 
-            const sx = basePositions[idx];
-            const sy = basePositions[idx + 1];
-            const sz = basePositions[idx + 2];
+            // Interpolate coordinates between active shapes
+            let sx = THREE.MathUtils.lerp(fromCoords[idx], toCoords[idx], easeMorph);
+            let sy = THREE.MathUtils.lerp(fromCoords[idx + 1], toCoords[idx + 1], easeMorph);
+            let sz = THREE.MathUtils.lerp(fromCoords[idx + 2], toCoords[idx + 2], easeMorph);
 
+            // Responsive Mouse Hover Fluid Wave Ripple
+            if (hoverIntensity > 0.02 && easeProgress < 0.65) {
+              const rx = sx * cosY + sz * sinY;
+              const rz = -sx * sinY + sz * cosY;
+
+              if (rz > -2.6) {
+                const dx = rx - cursorWorldX;
+                const dy = sy - cursorWorldY;
+                const distSq = dx * dx + dy * dy;
+                const rInfluence = 4.4;
+
+                if (distSq < rInfluence * rInfluence) {
+                  const dist = Math.sqrt(distSq);
+                  const prox = 1.0 - (dist / rInfluence);
+                  const localWeight = prox * prox * (1.0 - easeProgress) * hoverIntensity;
+                  const ripple = Math.sin(dist * 4.8 - time * 7.5) * 0.85 * localWeight;
+                  const pushX = (dx / (dist + 0.1)) * 0.5 * localWeight;
+                  const pushY = (dy / (dist + 0.1)) * 0.5 * localWeight;
+
+                  sx += (sx / 6.4) * ripple + pushX;
+                  sy += (sy / 6.4) * ripple + pushY;
+                  sz += (sz / 6.4) * ripple;
+                }
+              }
+            }
+
+            // Interpolate colors between active shapes
+            const cr = THREE.MathUtils.lerp(fromColors[idx], toColors[idx], easeMorph);
+            const cg = THREE.MathUtils.lerp(fromColors[idx + 1], toColors[idx + 1], easeMorph);
+            const cb = THREE.MathUtils.lerp(fromColors[idx + 2], toColors[idx + 2], easeMorph);
+
+            // Continuous streaming background stream coordinates
             const spd = speedFactors[i];
             let gy = bgPositions[idx + 1] + flowY * spd;
             let gx = bgPositions[idx] + flowX * spd;
             let gz = bgPositions[idx + 2];
 
-            // Seamless infinite modular wrap inside bounds so they NEVER disappear!
-            // Y wrap in [-16, 16] (bounds 32)
+            // Infinite seamless modular wrapping
             gy = ((gy + 16.0) % 32.0 + 32.0) % 32.0 - 16.0;
-            // X wrap in [-23, 23] (bounds 46)
             gx = ((gx + 23.0) % 46.0 + 46.0) % 46.0 - 23.0;
 
-            // Lerp baseline coordinates between sphere and streaming directional background
-            let cx = THREE.MathUtils.lerp(sx, gx, easeProgress);
-            let cy = THREE.MathUtils.lerp(sy, gy, easeProgress);
-            let cz = THREE.MathUtils.lerp(sz, gz, easeProgress);
+            // Final coordinate: Lerp between 3D shape and directional starfield background
+            posArr[idx]     = THREE.MathUtils.lerp(sx, gx, easeProgress);
+            posArr[idx + 1] = THREE.MathUtils.lerp(sy, gy, easeProgress);
+            posArr[idx + 2] = THREE.MathUtils.lerp(sz, gz, easeProgress);
 
-            // Localized mouse deformation on sphere when near hero
-            if (hoverIntensity > 0.02 && easeProgress < 0.75) {
-              const rx = cx * cosY + cz * sinY;
-              const rz = -cx * sinY + cz * cosY;
-
-              if (rz > -1.2) {
-                const dx = rx - cursorWorldX;
-                const dy = cy - cursorWorldY;
-                const distSq = dx * dx + dy * dy;
-
-                if (distSq < rInfSq) {
-                  const dist = Math.sqrt(distSq);
-                  const prox = 1.0 - (dist / rInfluence);
-                  const localWeight = prox * prox * (1.0 - easeProgress) * hoverIntensity;
-                  const ripple = Math.sin(dist * 6.0 - time * 7.0) * 0.42 * localWeight;
-
-                  cx += (cx / baseRadius) * ripple;
-                  cy += (cy / baseRadius) * ripple;
-                  cz += (cz / baseRadius) * ripple;
-                }
-              }
-            }
-
-            posArr[idx] = cx;
-            posArr[idx + 1] = cy;
-            posArr[idx + 2] = cz;
+            colArr[idx]     = cr;
+            colArr[idx + 1] = cg;
+            colArr[idx + 2] = cb;
           }
           posAttr.needsUpdate = true;
+          colAttr.needsUpdate = true;
 
-          // Expand ring into cosmic plane as you scroll
+          // Ring expansion on scroll
           const ringPosAttr = ringGeo.attributes.position;
           const ringArr = ringPosAttr.array;
           const ringScale = THREE.MathUtils.lerp(1.0, 2.6, easeProgress);
           for (let i = 0; i < ringCount; i++) {
             const idx = i * 3;
-            ringArr[idx] = baseRingPos[idx] * ringScale;
+            ringArr[idx]     = baseRingPos[idx] * ringScale;
             ringArr[idx + 1] = baseRingPos[idx + 1] * (1.0 + easeProgress * 1.5);
             ringArr[idx + 2] = baseRingPos[idx + 2] * ringScale;
           }

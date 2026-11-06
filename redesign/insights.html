@@ -95,6 +95,30 @@
 
 <body class="bg-black text-white antialiased selection:bg-brandCyan selection:text-black">
 
+  <!-- ========================================================================
+       Cybernetic Dot-Matrix Preloader (313 Tech Solutions)
+       ======================================================================== -->
+  <aside id="site-loader" class="site-loader" aria-label="Loading 313 Tech Solutions">
+    <div class="site-loader__inner">
+      <div class="site-loader__canvas-wrap">
+        <canvas id="loader-canvas" class="site-loader__canvas"></canvas>
+      </div>
+      <div class="site-loader__hud">
+        <div class="site-loader__status">
+          <span class="flex items-center"><span class="site-loader__signal"></span><span id="loader-status-text">INITIALIZING 313 CORE</span></span>
+          <span class="site-loader__pct" id="loader-counter">0%</span>
+        </div>
+        <div class="site-loader__progress-bar">
+          <div class="site-loader__progress-fill" id="loader-progress-bar"></div>
+        </div>
+        <div class="site-loader__meta">
+          <span>LATENCY &lt; 1ms</span>
+          <span class="site-loader__tag">SYSTEM 313 ACTIVE</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
   <!-- Background Layer 1: WebGL Fluid Simplex Noise Shader Canvas -->
   <canvas id="shader-canvas-ANIMATION_3"></canvas>
 
@@ -114,14 +138,14 @@
       </a>
 
       <!-- Desktop Links -->
-      <ul class="nav__links">
-        <li><a href="index.html#services" class="nav__link">Services</a></li>
-        <li><a href="index.html#who-we-serve" class="nav__link">Who We Serve</a></li>
+      <ul class="nav__links" role="tablist">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="custom-software-development.html" class="nav__link">Services</a></li>
         <li><a href="projects.html" class="nav__link">Projects</a></li>
-        <li><a href="index.html#approach" class="nav__link">Approach</a></li>
-        <li><a href="index.html#process" class="nav__link">Process</a></li>
-        <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
-        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        <li><a href="about-us-full.html" class="nav__link">About</a></li>
+        <li><a href="team.html" class="nav__link">Team</a></li>
+        <li><a href="insights.html" class="nav__link is-active" aria-current="page">Insights</a></li>
+        <li><a href="careers.html" class="nav__link">Careers</a></li>
       </ul>
 
       <!-- Right Action Pill & Status Clock -->
@@ -156,17 +180,13 @@
       <nav class="lg:col-span-8">
         <ul class="menu__links">
           <li><a href="index.html"><sup>01</sup><span>Home</span></a></li>
-          <li><a href="index.html#services"><sup>02</sup><span>Services</span></a></li>
-          <li><a href="index.html#who-we-serve"><sup>03</sup><span>Who We Serve</span></a></li>
-          <li><a href="projects.html"><sup>04</sup><span>Projects</span></a></li>
-          <li><a href="index.html#approach"><sup>05</sup><span>Approach</span></a></li>
-          <li><a href="index.html#process"><sup>06</sup><span>Process</span></a></li>
-          <li><a href="index.html#faq"><sup>07</sup><span>FAQ</span></a></li>
-          <li><a href="about-us-full.html"><sup>08</sup><span>About Us</span></a></li>
-          <li><a href="team.html"><sup>09</sup><span>Team</span></a></li>
-          <li><a href="insights.html"><sup>10</sup><span>Insights</span></a></li>
-          <li><a href="careers.html"><sup>11</sup><span>Careers</span></a></li>
-          <li><a href="index.html#contact"><sup>12</sup><span>Say Hello</span></a></li>
+          <li><a href="custom-software-development.html"><sup>02</sup><span>Services</span></a></li>
+          <li><a href="projects.html"><sup>03</sup><span>Projects</span></a></li>
+          <li><a href="about-us-full.html"><sup>04</sup><span>About Us</span></a></li>
+          <li><a href="team.html"><sup>05</sup><span>Team</span></a></li>
+          <li><a href="insights.html"><sup>06</sup><span>Insights</span></a></li>
+          <li><a href="careers.html"><sup>07</sup><span>Careers</span></a></li>
+          <li><a href="index.html#contact"><sup>08</sup><span>Contact</span></a></li>
         </ul>
       </nav>
       <div class="lg:col-span-4 border-l border-white/10 pl-8 hidden lg:block space-y-6">
