@@ -757,6 +757,251 @@
 
 
   // ==========================================================================
+  // 3D Card Showroom (Trusted Worldwide)
+  // Perspective 3D Turntable Cylinder with Drag, Inertia, Orbit, Tilt & Pills
+  // ==========================================================================
+  function init3DCardShowroom() {
+    const viewport = document.getElementById('showroom-viewport');
+    const stage = document.getElementById('showroom-stage');
+    if (!viewport || !stage) return;
+
+    const cards = Array.from(stage.querySelectorAll('.showroom-card'));
+    const prevBtn = document.getElementById('sr-prev');
+    const nextBtn = document.getElementById('sr-next');
+    const counter = document.getElementById('sr-counter');
+    const orbitToggle = document.getElementById('sr-orbit-toggle');
+    const pills = Array.from(document.querySelectorAll('#showroom-pills .sr-pill'));
+
+    const count = cards.length;
+    if (count === 0) return;
+
+    const step = 360 / count; // 60 deg
+    let targetAngle = 0;
+    let activeIndex = 0;
+    let isOrbiting = true;
+    let orbitTimer = null;
+    let isDragging = false;
+    let startX = 0;
+    let startAngle = 0;
+    let dragDelta = 0;
+
+    function getRadius() {
+      const w = window.innerWidth;
+      if (w < 640) return 240;
+      if (w < 1024) return 320;
+      return 380;
+    }
+
+    let radius = getRadius();
+    window.addEventListener('resize', () => {
+      radius = getRadius();
+      updateCards(true);
+    }, { passive: true });
+
+    function updateCards(instant) {
+      if (instant) {
+        stage.classList.add('is-dragging');
+        stage.style.transform = `rotateY(${targetAngle}deg)`;
+        void stage.offsetWidth;
+        stage.classList.remove('is-dragging');
+      } else {
+        stage.style.transform = `rotateY(${targetAngle}deg)`;
+      }
+
+      // Determine active index
+      let normalized = ((-targetAngle % 360) + 360) % 360;
+      let rawIdx = Math.round(normalized / step) % count;
+      activeIndex = rawIdx;
+
+      if (counter) {
+        counter.textContent = `${String(activeIndex + 1).padStart(2, '0')} / ${String(count).padStart(2, '0')}`;
+      }
+
+      cards.forEach((card, i) => {
+        const cardAngle = i * step;
+        card.style.transform = `rotateY(${cardAngle}deg) translateZ(${radius}px)`;
+
+        // Calculate delta from front center
+        const totalAngle = (cardAngle + targetAngle) % 360;
+        let diff = ((totalAngle % 360) + 540) % 360 - 180;
+        const absDiff = Math.abs(diff);
+
+        if (absDiff < 30) {
+          card.classList.add('is-active');
+          card.setAttribute('aria-hidden', 'false');
+        } else {
+          card.classList.remove('is-active');
+          card.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      pills.forEach((pill, i) => {
+        if (i === activeIndex) {
+          pill.classList.add('is-active');
+          pill.setAttribute('aria-selected', 'true');
+        } else {
+          pill.classList.remove('is-active');
+          pill.setAttribute('aria-selected', 'false');
+        }
+      });
+    }
+
+    function rotateTo(idx) {
+      activeIndex = (idx + count) % count;
+      targetAngle = -activeIndex * step;
+      updateCards(false);
+    }
+
+    function next() {
+      targetAngle -= step;
+      updateCards(false);
+    }
+
+    function prev() {
+      targetAngle += step;
+      updateCards(false);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); pauseOrbitTemporarily(); });
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); pauseOrbitTemporarily(); });
+
+    // Click on individual cards
+    cards.forEach((card, i) => {
+      card.addEventListener('click', (e) => {
+        if (!card.classList.contains('is-active')) {
+          e.preventDefault();
+          rotateTo(i);
+          pauseOrbitTemporarily();
+        }
+      });
+
+      // Mousemove 3D tilt on active card
+      card.addEventListener('mousemove', (e) => {
+        if (!card.classList.contains('is-active')) return;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+
+        const tiltX = ((y / rect.height) - 0.5) * -10;
+        const tiltY = ((x / rect.width) - 0.5) * 10;
+        const baseAngle = i * step;
+        card.style.transform = `rotateY(${baseAngle}deg) translateZ(${radius}px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        const baseAngle = i * step;
+        card.style.transform = `rotateY(${baseAngle}deg) translateZ(${radius}px)`;
+      });
+    });
+
+    // Pills tab click
+    pills.forEach((pill, i) => {
+      pill.addEventListener('click', () => {
+        rotateTo(i);
+        pauseOrbitTemporarily();
+      });
+    });
+
+    // Drag / Swipe handling
+    function onPointerDown(e) {
+      if (e.target.closest('a') || e.target.closest('button')) return;
+      isDragging = true;
+      dragDelta = 0;
+      startX = e.pageX || (e.touches && e.touches[0].pageX);
+      startAngle = targetAngle;
+      stage.classList.add('is-dragging');
+      pauseOrbitTemporarily();
+    }
+
+    function onPointerMove(e) {
+      if (!isDragging) return;
+      const x = e.pageX || (e.touches && e.touches[0].pageX);
+      const diffX = x - startX;
+      dragDelta = Math.abs(diffX);
+      targetAngle = startAngle + (diffX * 0.28);
+      stage.style.transform = `rotateY(${targetAngle}deg)`;
+
+      // Update card focus live during drag
+      cards.forEach((card, i) => {
+        const cardAngle = i * step;
+        const totalAngle = (cardAngle + targetAngle) % 360;
+        let diff = ((totalAngle % 360) + 540) % 360 - 180;
+        if (Math.abs(diff) < 30) {
+          card.classList.add('is-active');
+        } else {
+          card.classList.remove('is-active');
+        }
+      });
+    }
+
+    function onPointerUp() {
+      if (!isDragging) return;
+      isDragging = false;
+      stage.classList.remove('is-dragging');
+      // Snap to nearest card
+      targetAngle = Math.round(targetAngle / step) * step;
+      updateCards(false);
+    }
+
+    viewport.addEventListener('mousedown', onPointerDown);
+    window.addEventListener('mousemove', onPointerMove);
+    window.addEventListener('mouseup', onPointerUp);
+
+    viewport.addEventListener('touchstart', onPointerDown, { passive: true });
+    window.addEventListener('touchmove', onPointerMove, { passive: true });
+    window.addEventListener('touchend', onPointerUp, { passive: true });
+
+    // Auto-orbit loop
+    function startOrbit() {
+      if (orbitTimer) clearInterval(orbitTimer);
+      orbitTimer = setInterval(() => {
+        if (isOrbiting && !isDragging) {
+          next();
+        }
+      }, 4500);
+    }
+
+    function pauseOrbitTemporarily() {
+      if (orbitTimer) clearInterval(orbitTimer);
+      if (isOrbiting) {
+        setTimeout(startOrbit, 5000);
+      }
+    }
+
+    if (orbitToggle) {
+      orbitToggle.addEventListener('click', () => {
+        isOrbiting = !isOrbiting;
+        orbitToggle.classList.toggle('is-paused', !isOrbiting);
+        if (isOrbiting) startOrbit();
+        else if (orbitTimer) clearInterval(orbitTimer);
+      });
+    }
+
+    viewport.addEventListener('mouseenter', () => {
+      if (isOrbiting && orbitTimer) clearInterval(orbitTimer);
+    });
+
+    viewport.addEventListener('mouseleave', () => {
+      if (isOrbiting) startOrbit();
+    });
+
+    // Keyboard support
+    viewport.setAttribute('tabindex', '0');
+    viewport.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { next(); pauseOrbitTemporarily(); }
+      if (e.key === 'ArrowLeft') { prev(); pauseOrbitTemporarily(); }
+    });
+
+    // Initial setup
+    updateCards(true);
+    startOrbit();
+  }
+  init3DCardShowroom();
+
+
+  // ==========================================================================
   // Orizon Lab "The Eclipse" 3D Kinetic Ring Loader
   // Tailored to 313 Tech Solutions Theme (Polished Obsidian Titanium, Electric Cyan & Violet)
   // Welcoming visitor messaging + Studio Lighting & Metallic Iridescent Waves
