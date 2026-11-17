@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow non-indexable fragments, legacy archives and staging
+Disallow: /.git/
+Disallow: /CNAME
+Disallow: /Old_website/
+Disallow: /redesign/
+Disallow: /navbar.html
+Disallow: /footer.html
+Disallow: /E-Commerce.html
+
+# Sitemap Location
+Sitemap: https://313techsolutions.com/sitemap.xml

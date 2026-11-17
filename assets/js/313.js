@@ -1248,7 +1248,7 @@
     const clock = new THREE.Clock();
 
     const isRepeat = !!sessionStorage.getItem('313_seen_loader');
-    const totalDuration = isRepeat ? 2.2 : 3.6;
+    const totalDuration = isRepeat ? 1.2 : 2.6;
     try { sessionStorage.setItem('313_seen_loader', '1'); } catch (e) {}
 
     let spin = 0;
@@ -1266,7 +1266,7 @@
         targetProgress = 1.0;
       }
 
-      progress += (targetProgress - progress) * 0.08;
+      progress += (targetProgress - progress) * 0.12;
       if (progress > 0.995 && targetProgress >= 1.0) {
         progress = 1.0;
       }
