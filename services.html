@@ -1927,8 +1927,8 @@
                 <a href="mailto:sales@313techsolutions.com" class="text-white hover:text-cyan-400 transition-colors block text-sm font-semibold">
                   sales@313techsolutions.com
                 </a>
-                <a href="mailto:contact@313techsolutions.com" class="text-white/70 hover:text-cyan-400 transition-colors block text-xs mt-1">
-                  contact@313techsolutions.com
+                <a href="mailto:sales@313techsolutions.com" class="text-white/70 hover:text-cyan-400 transition-colors block text-xs mt-1">
+                  sales@313techsolutions.com
                 </a>
               </div>
 
@@ -2212,13 +2212,24 @@
           submitBtn.disabled = true;
           submitBtn.classList.add('opacity-50');
 
+          const serviceVal = form.service ? form.service.value : 'General Inquiry';
+          const budgetVal = form.budget ? form.budget.value : 'Open for discussion';
+          const companyVal = form.company && form.company.value.trim() ? form.company.value.trim() : 'N/A';
+
           const templateParams = {
+            // Compatibility with EmailJS templates
+            from_name: form.name.value,
+            from_email: form.email.value,
+            from_phone: 'Not provided',
+            subject: `${serviceVal} (${budgetVal})`,
+            message: form.message.value,
+
+            // Structured parameters for enriched templates
             name: form.name.value,
             email: form.email.value,
-            company: form.company ? form.company.value : 'N/A',
-            service: form.service.value,
-            budget: form.budget.value,
-            message: form.message.value
+            service: serviceVal,
+            budget: budgetVal,
+            company: companyVal
           };
 
           if (typeof emailjs !== 'undefined') {
